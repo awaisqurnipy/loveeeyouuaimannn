@@ -269,6 +269,7 @@
 
     <canvas id="bg-canvas" class="fixed inset-0 w-full h-full pointer-events-none z-0"></canvas>
 
+    <!-- Stage Curtain Screen Overlay -->
     <div id="curtain-stage" class="curtain-container hidden">
         <div class="curtain-panel curtain-left"></div>
         <div class="curtain-panel curtain-right"></div>
@@ -416,7 +417,6 @@
             </div>
         </section>
 
-        <!-- CHAPTER 1.5: TEDDY BEAR DEDICATION -->
         <section id="chapter-teddy" class="chapter-page flex flex-col items-center justify-center text-center my-auto py-2 xs:py-4">
             <div class="w-full max-w-md flex flex-col items-center select-none px-2 xs:px-4">
                 
@@ -732,7 +732,7 @@
                     </div>
 
                     <div id="reason-heart-btn" onclick="revealNextReason()" class="w-20 h-20 xs:w-24 xs:h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-tr from-rose-600 via-pink-500 to-amber-400 flex items-center justify-center text-white text-3xl xs:text-4xl sm:text-5xl cursor-pointer shadow-[0_0_35px_rgba(244,114,182,0.8)] active:scale-90 transition mb-5 xs:mb-6 select-none animate-heartbeat">
-                        ❤️
+                        ❤️️
                     </div>
 
                     <p id="reason-text-box" class="font-serif text-pink-100 text-xs xs:text-sm sm:text-lg italic min-h-[80px] xs:min-h-[90px] flex items-center justify-center px-2 xs:px-4 leading-relaxed">
@@ -833,6 +833,8 @@
 
     </main>
 
+
+    <!-- SOULMATE SCANNER VIEW -->
     <div id="soulmate-modal" class="fixed inset-0 z-50 bg-[#080205]/95 backdrop-blur-2xl hidden flex-col items-center justify-between p-3 xs:p-4 sm:p-8 overflow-y-auto w-full h-full">
         <div class="w-full max-w-2xl flex justify-between items-center pt-2 px-2">
             <div class="flex items-center gap-2">
@@ -871,6 +873,7 @@
         </div>
     </div>
 
+    <!-- WHEEL OF ROMANTIC FATE VIEW -->
     <div id="wheel-modal" class="fixed inset-0 z-50 bg-[#080205]/95 backdrop-blur-2xl hidden flex-col items-center justify-between p-3 xs:p-4 sm:p-8 overflow-y-auto w-full h-full">
         <div class="w-full max-w-2xl flex justify-between items-center pt-2 px-2">
             <div class="flex items-center gap-2">
@@ -1264,7 +1267,7 @@
                     "Our late-night chats 🌙",
                     "Hearing her genuine laugh 🎶",
                     "Celebrating her 16th Birthday today 🎂",
-                    "Every single second spent with her ❤️️"
+                    "Every single second spent with her ❤"
                 ],
                 correct: 3
             }
@@ -1316,22 +1319,54 @@
                 bgAudio.onerror = () => {
                     console.warn('Background audio source not available or failed to load.');
                 };
-                const promise = bgAudio.play();
-                if (promise !== undefined) {
-                    promise.catch(() => {
-                        const unlockAudio = () => {
-                            bgAudio.play().catch(() => {});
-                            document.removeEventListener('click', unlockAudio);
-                            document.removeEventListener('touchstart', unlockAudio);
-                        };
-                        document.addEventListener('click', unlockAudio);
-                        document.addEventListener('touchstart', unlockAudio);
-                    });
-                }
+
+                const tryPlay = () => {
+                    initAudioContext();
+                    if (bgAudio.paused) {
+                        const playPromise = bgAudio.play();
+                        if (playPromise !== undefined) {
+                            playPromise.then(() => {
+                                removeUnlockListeners();
+                            }).catch(() => {
+                                // Autoplay blocked until user interaction
+                            });
+                        }
+                    }
+                };
+
+                const unlockAudio = () => {
+                    tryPlay();
+                };
+
+                const removeUnlockListeners = () => {
+                    document.removeEventListener('pointerdown', unlockAudio);
+                    document.removeEventListener('touchstart', unlockAudio);
+                    document.removeEventListener('mousedown', unlockAudio);
+                    document.removeEventListener('click', unlockAudio);
+                    document.removeEventListener('keydown', unlockAudio);
+                    window.removeEventListener('pointerdown', unlockAudio);
+                    window.removeEventListener('touchstart', unlockAudio);
+                    window.removeEventListener('click', unlockAudio);
+                };
+
+                document.addEventListener('pointerdown', unlockAudio, { passive: true });
+                document.addEventListener('touchstart', unlockAudio, { passive: true });
+                document.addEventListener('mousedown', unlockAudio, { passive: true });
+                document.addEventListener('click', unlockAudio, { passive: true });
+                document.addEventListener('keydown', unlockAudio, { passive: true });
+                window.addEventListener('pointerdown', unlockAudio, { passive: true });
+                window.addEventListener('touchstart', unlockAudio, { passive: true });
+                window.addEventListener('click', unlockAudio, { passive: true });
+
+                tryPlay();
             }
         }
 
         function navigateTo(chapterId) {
+            const bgAudio = document.getElementById('bg-audio');
+            if (bgAudio && bgAudio.paused) {
+                bgAudio.play().catch(() => {});
+            }
             const chapters = document.querySelectorAll('.chapter-page');
             chapters.forEach(ch => ch.classList.remove('active'));
             const target = document.getElementById(`chapter-${chapterId}`);
@@ -1362,6 +1397,10 @@
 
         function openHomeSealEnvelope() {
             initAudioContext();
+            const bgAudio = document.getElementById('bg-audio');
+            if (bgAudio && bgAudio.paused) {
+                bgAudio.play().catch(() => {});
+            }
             playSynthChime(659.25, 'triangle', 0.5);
             APP_STATE.pinInput = '';
             updatePinDots();
