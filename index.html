@@ -269,7 +269,6 @@
 
     <canvas id="bg-canvas" class="fixed inset-0 w-full h-full pointer-events-none z-0"></canvas>
 
-    <!-- STAGE CURTAIN MODAL -->
     <div id="curtain-stage" class="curtain-container hidden">
         <div class="curtain-panel curtain-left"></div>
         <div class="curtain-panel curtain-right"></div>
@@ -280,7 +279,6 @@
         </button>
     </div>
 
-    <!-- HEADER NAVIGATION -->
     <header class="fixed top-0 left-0 right-0 z-50 p-2.5 xs:p-3 sm:p-4 flex justify-between items-center pointer-events-auto bg-gradient-to-b from-black/90 via-black/60 to-transparent backdrop-blur-md">
         <div class="flex items-center space-x-2 cursor-pointer" onclick="navigateTo('index')">
             <span class="w-7 h-7 xs:w-8 xs:h-8 rounded-full bg-pink-500/20 border border-pink-400/40 flex items-center justify-center text-pink-300 shadow-[0_0_12px_rgba(244,114,182,0.4)]">
@@ -326,10 +324,9 @@
                 <i class="fa-solid fa-chevron-down text-[9px] text-pink-300 ml-0.5"></i>
             </button>
         </div>
-        <audio id="bg-audio" src="assets/audio/song.mp3" loop></audio>
+        <audio id="bg-audio" src="assets/audio/song.mp3" loop onerror="console.warn('Background audio file missing or unsupported in current environment.');"></audio>
     </header>
 
-    <!-- MOBILE EXTRAS MENU POPUP SHEET -->
     <div id="mobile-extras-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden flex-col justify-end sm:justify-center items-center p-2.5 xs:p-4 transition-all duration-300">
         <div class="glass-panel w-full max-w-sm rounded-3xl p-4 xs:p-5 border border-pink-400/40 shadow-2xl relative text-center max-h-[90dvh] overflow-y-auto">
             <button onclick="toggleMobileExtrasMenu()" class="absolute top-2.5 right-2.5 text-slate-400 hover:text-white text-base p-2">
@@ -369,7 +366,6 @@
         </div>
     </div>
 
-    <!-- FLOATING LOVE BUBBLE CONTAINER LAYER -->
     <div id="love-bubbles-layer" class="fixed inset-0 pointer-events-none z-40 overflow-hidden"></div>
     
     <main class="relative flex-grow z-10 pt-14 xs:pt-16 sm:pt-20 pb-10 xs:pb-12 sm:pb-16 px-2.5 xs:px-4 sm:px-6 max-w-4xl mx-auto w-full flex flex-col justify-center min-h-[calc(100dvh-60px)]">
@@ -458,7 +454,6 @@
             </div>
         </section>
 
-        <!-- CHAPTER 2: BIRTHDAY CAKE & LIVE METRICS -->
         <section id="chapter-birthday" class="chapter-page flex flex-col items-center justify-center text-center my-auto py-2 xs:py-4">
             <div class="w-full max-w-2xl flex flex-col items-center">
                 
@@ -582,7 +577,6 @@
             </div>
         </section>
 
-        <!-- CHAPTER 3: LOVE LETTER -->
         <section id="chapter-letter" class="chapter-page flex flex-col items-center justify-center text-center my-auto py-4 xs:py-6">
             <div class="max-w-2xl w-full flex flex-col items-center">
                 <div class="inline-block px-3 py-1 rounded-full bg-pink-500/20 border border-pink-400/30 text-pink-300 text-[10px] xs:text-[11px] uppercase tracking-widest font-bold mb-3 xs:mb-4">
@@ -656,7 +650,6 @@
             </div>
         </section>
 
-        <!-- CHAPTER 4: PHOTO & VIDEO GALLERY -->
         <section id="chapter-memories" class="chapter-page flex flex-col items-center my-auto py-4 xs:py-6">
             <div class="max-w-5xl w-full flex flex-col items-center">
                 <div class="inline-block px-3 py-1 rounded-full bg-pink-500/20 border border-pink-400/30 text-pink-300 text-[10px] xs:text-[11px] uppercase tracking-widest font-bold mb-2">
@@ -666,11 +659,11 @@
                 <h2 class="font-display text-xl xs:text-2xl sm:text-4xl text-pink-300 font-bold mb-1 pink-title-glow">Aiman's Polaroid & Video Gallery</h2>
                 <p class="text-slate-300 font-serif italic mb-4 xs:mb-6 text-center text-xs sm:text-sm">Click any photo or video clip to expand!</p>
 
-                <!-- <div class="mb-5 xs:mb-6">
+                <div class="mb-5 xs:mb-6">
                     <button onclick="openAddMemoryModal()" class="px-4 xs:px-5 py-2 xs:py-2.5 bg-slate-900/90 hover:bg-slate-800 border border-pink-400/40 rounded-full text-[11px] xs:text-xs font-semibold text-pink-300 transition shadow flex items-center gap-2">
                         <i class="fa-solid fa-plus-circle text-pink-400"></i> Add Custom Photo or Video Memory
                     </button>
-                </div> -->
+                </div>
 
                 <div id="polaroid-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 xs:gap-6 sm:gap-8 w-full px-1 xs:px-2"></div>
 
@@ -682,7 +675,6 @@
             </div>
         </section>
 
-        <!-- CHAPTER 5: OUR STORY TIMELINE -->
         <section id="chapter-story" class="chapter-page flex flex-col items-center my-auto py-4 xs:py-6">
             <div class="max-w-3xl w-full flex flex-col items-center">
                 <div class="inline-block px-3 py-1 rounded-full bg-pink-500/20 border border-pink-400/30 text-pink-300 text-[10px] xs:text-[11px] uppercase tracking-widest font-bold mb-2">
@@ -721,7 +713,6 @@
             </div>
         </section>
 
-        <!-- CHAPTER 6: WHY I LOVE AIMAN -->
         <section id="chapter-reasons" class="chapter-page flex flex-col items-center justify-center my-auto py-4 xs:py-6">
             <div class="max-w-xl w-full flex flex-col items-center text-center">
                 <div class="inline-block px-3 py-1 rounded-full bg-pink-500/20 border border-pink-400/30 text-pink-300 text-[10px] xs:text-[11px] uppercase tracking-widest font-bold mb-2">
@@ -757,7 +748,6 @@
             </div>
         </section>
 
-        <!-- CHAPTER 7: STARLIT FUTURE -->
         <section id="chapter-future" class="chapter-page flex flex-col items-center my-auto py-4 xs:py-6">
             <div class="max-w-3xl w-full flex flex-col items-center text-center">
                 <div class="inline-block px-3 py-1 rounded-full bg-pink-500/20 border border-pink-400/30 text-pink-300 text-[10px] xs:text-[11px] uppercase tracking-widest font-bold mb-2">
@@ -794,7 +784,6 @@
             </div>
         </section>
 
-        <!-- CHAPTER 8: GRAND FINALE -->
         <section id="chapter-final" class="chapter-page flex flex-col items-center justify-center text-center my-auto py-6 xs:py-8">
             <div class="max-w-2xl w-full flex flex-col items-center">
                 <div class="inline-block px-3 py-1 rounded-full bg-rose-500/20 border border-rose-400/30 text-rose-300 text-[10px] xs:text-[11px] uppercase tracking-widest font-bold mb-3 xs:mb-4">
@@ -844,7 +833,6 @@
 
     </main>
 
-    <!-- FULLSCREEN SOULMATE SCANNER MODAL -->
     <div id="soulmate-modal" class="fixed inset-0 z-50 bg-[#080205]/95 backdrop-blur-2xl hidden flex-col items-center justify-between p-3 xs:p-4 sm:p-8 overflow-y-auto w-full h-full">
         <div class="w-full max-w-2xl flex justify-between items-center pt-2 px-2">
             <div class="flex items-center gap-2">
@@ -883,7 +871,6 @@
         </div>
     </div>
 
-    <!-- FULLSCREEN LOVE WHEEL MODAL -->
     <div id="wheel-modal" class="fixed inset-0 z-50 bg-[#080205]/95 backdrop-blur-2xl hidden flex-col items-center justify-between p-3 xs:p-4 sm:p-8 overflow-y-auto w-full h-full">
         <div class="w-full max-w-2xl flex justify-between items-center pt-2 px-2">
             <div class="flex items-center gap-2">
@@ -929,7 +916,6 @@
         </div>
     </div>
 
-    <!-- FULLSCREEN LOVE QUIZ MODAL -->
     <div id="quiz-modal" class="fixed inset-0 z-50 bg-[#080205]/95 backdrop-blur-2xl hidden flex-col items-center justify-between p-3 xs:p-4 sm:p-8 overflow-y-auto w-full h-full">
         <div class="w-full max-w-2xl flex justify-between items-center pt-2 px-2">
             <div class="flex items-center gap-2">
@@ -971,7 +957,6 @@
         </div>
     </div>
 
-    <!-- PIN CODE PADLOCK MODAL -->
     <div id="pin-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-lg hidden items-center justify-center p-3 xs:p-4 transition-all duration-300">
         <div id="pin-card" class="glass-panel p-5 xs:p-6 sm:p-8 rounded-3xl max-w-xs w-full flex flex-col items-center border border-pink-500/30 shadow-2xl relative text-center">
             <button onclick="closePinModal()" class="absolute top-2.5 right-2.5 text-slate-400 hover:text-white text-base p-2">
@@ -1024,7 +1009,6 @@
         </div>
     </div>
 
-    <!-- FULLSCREEN LOVE JAR MODAL -->
     <div id="lovejar-modal" class="fixed inset-0 z-50 bg-[#080205]/95 backdrop-blur-2xl hidden flex-col items-center justify-between p-3 xs:p-4 sm:p-8 overflow-y-auto w-full h-full">
         <div class="w-full max-w-2xl flex justify-between items-center pt-2 px-2">
             <div class="flex items-center gap-2">
@@ -1055,7 +1039,6 @@
         </div>
     </div>
 
-    <!-- AGE & BIRTHDAY SETTINGS MODAL -->
     <div id="age-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-3 xs:p-4">
         <div class="glass-panel p-5 xs:p-6 rounded-3xl max-w-md w-full relative border border-pink-400/40 shadow-2xl">
             <button onclick="closeAgeModal()" class="absolute top-2.5 right-2.5 text-slate-400 hover:text-white text-base xs:text-lg p-2"><i class="fa-solid fa-xmark"></i></button>
@@ -1070,7 +1053,6 @@
         </div>
     </div>
 
-    <!-- MEDIA EXPAND MODAL -->
     <div id="memory-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-3 xs:p-4">
         <div class="glass-panel p-4 xs:p-5 rounded-3xl max-w-lg w-full relative flex flex-col items-center border border-pink-400/40 shadow-2xl">
             <button onclick="closeMemoryModal()" class="absolute top-2.5 right-2.5 text-slate-400 hover:text-white text-base xs:text-lg p-2 z-10"><i class="fa-solid fa-xmark"></i></button>
@@ -1083,7 +1065,6 @@
         </div>
     </div>
 
-    <!-- ADD CUSTOM MEMORY MODAL -->
     <div id="add-memory-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-3 xs:p-4">
         <div class="glass-panel p-5 xs:p-6 rounded-3xl max-w-md w-full relative border border-pink-400/40 shadow-2xl">
             <button onclick="closeAddMemoryModal()" class="absolute top-2.5 right-2.5 text-slate-400 hover:text-white text-base xs:text-lg p-2"><i class="fa-solid fa-xmark"></i></button>
@@ -1112,7 +1093,6 @@
     </div>
 
     <script>
-        // GLOBAL SCOPE DECLARATIONS
         window.addTrailParticle = function(x, y) {};
 
         const APP_STATE = {
@@ -1262,7 +1242,7 @@
                 q: "What makes Aiman's smile so dangerous?",
                 options: [
                     "It has 10,000 watts of brightness 💡",
-                    "It instantly melts Awais's heart ❤️️",
+                    "It instantly melts Awais's heart ❤",
                     "It causes sudden happiness overloads 🥰",
                     "All of the above! 👑"
                 ],
@@ -1284,7 +1264,7 @@
                     "Our late-night chats 🌙",
                     "Hearing her genuine laugh 🎶",
                     "Celebrating her 16th Birthday today 🎂",
-                    "Every single second spent with her ❤️"
+                    "Every single second spent with her ❤️️"
                 ],
                 correct: 3
             }
@@ -1308,7 +1288,7 @@
                 }
             }
             if (APP_STATE.audioContext && APP_STATE.audioContext.state === 'suspended') {
-                APP_STATE.audioContext.resume();
+                APP_STATE.audioContext.resume().catch(() => {});
             }
         }
 
@@ -1333,11 +1313,14 @@
             const bgAudio = document.getElementById('bg-audio');
             if (bgAudio) {
                 bgAudio.volume = 0.5;
+                bgAudio.onerror = () => {
+                    console.warn('Background audio source not available or failed to load.');
+                };
                 const promise = bgAudio.play();
                 if (promise !== undefined) {
                     promise.catch(() => {
                         const unlockAudio = () => {
-                            bgAudio.play();
+                            bgAudio.play().catch(() => {});
                             document.removeEventListener('click', unlockAudio);
                             document.removeEventListener('touchstart', unlockAudio);
                         };
@@ -1622,8 +1605,14 @@
             if (mem.type === 'video') {
                 img.classList.add('hidden');
                 video.classList.remove('hidden');
+                video.onerror = () => {
+                    console.warn('Video source not found or unsupported format.');
+                };
                 video.src = mem.url;
-                video.play();
+                const playPromise = video.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch(() => {});
+                }
                 video.onended = () => closeMemoryModal();
             } else {
                 video.pause();
@@ -1645,7 +1634,7 @@
 
             const bgAudio = document.getElementById('bg-audio');
             if (bgAudio && APP_STATE.bgAudioWasPlaying) {
-                bgAudio.play();
+                bgAudio.play().catch(() => {});
             }
         }
 
