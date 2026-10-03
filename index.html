@@ -281,15 +281,15 @@
     </div>
 
     <header class="fixed top-0 left-0 right-0 z-50 p-2.5 xs:p-3 sm:p-4 flex justify-between items-center pointer-events-auto bg-gradient-to-b from-black/90 via-black/60 to-transparent backdrop-blur-md">
-        <div class="flex items-center space-x-2 cursor-pointer" onclick="navigateTo('index')">
-            <span class="w-7 h-7 xs:w-8 xs:h-8 rounded-full bg-pink-500/20 border border-pink-400/40 flex items-center justify-center text-pink-300 shadow-[0_0_12px_rgba(244,114,182,0.4)]">
-                <i class="fa-solid fa-heart text-[10px] xs:text-xs animate-pulse text-rose-400"></i>
+        <div class="flex items-center space-x-2 cursor-pointer mx-auto sm:mx-0" onclick="navigateTo('index')">
+            <span class="w-8 h-8 rounded-full bg-pink-500/20 border border-pink-400/40 flex items-center justify-center text-pink-300 shadow-[0_0_15px_rgba(244,114,182,0.5)]">
+                <i class="fa-solid fa-heart text-xs animate-pulse text-rose-400"></i>
             </span>
-            <div class="flex flex-col">
-                <span class="font-display text-pink-200 text-xs xs:text-sm sm:text-base font-bold tracking-wide truncate max-w-[110px] xs:max-w-[150px] sm:max-w-xs">
+            <div class="flex flex-col items-center sm:items-start">
+                <span class="font-display text-pink-200 text-xs xs:text-sm sm:text-base font-bold tracking-wide truncate max-w-[140px] xs:max-w-[180px] sm:max-w-xs text-center sm:text-left">
                     My Little World ❤️
                 </span>
-                <span id="chapter-badge" class="text-[8px] xs:text-[9px] font-mono text-amber-300/80 uppercase tracking-wider -mt-1 truncate max-w-[110px] sm:max-w-none">
+                <span id="chapter-badge" class="text-[8px] xs:text-[9px] font-mono text-amber-300/80 uppercase tracking-wider -mt-0.5 truncate max-w-[130px] sm:max-w-none text-center sm:text-left">
                     Chapter 1 • Entrance
                 </span>
             </div>
@@ -420,7 +420,7 @@
         <section id="chapter-teddy" class="chapter-page flex flex-col items-center justify-center text-center my-auto py-2 xs:py-4">
             <div class="w-full max-w-md flex flex-col items-center select-none px-2 xs:px-4">
                 
-                <div class="w-20 h-20 xs:w-24 xs:h-24 sm:w-28 sm:h-28 rounded-full bear-avatar-ring flex items-center justify-center mb-4 xs:mb-6 shadow-2xl relative">
+                <div class="w-20 h-20 xs:w-24 xs:h-24 sm:w-28 sm:h-28 rounded-full bear-avatar-ring flex items-center justify-center mx-auto mb-4 xs:mb-6 shadow-2xl relative">
                     <span class="text-4xl xs:text-5xl sm:text-6xl filter drop-shadow-[0_0_10px_rgba(255,200,150,0.5)]">🐻</span>
                 </div>
 
@@ -440,7 +440,7 @@
 
                 <div class="glass-panel p-3.5 xs:p-4 rounded-2xl w-full max-w-xs mb-6 xs:mb-8 border border-rose-500/40 text-center flex flex-col items-center justify-center relative shadow-xl">
                     <span class="text-[9px] xs:text-[10px] font-mono text-amber-300/80 uppercase tracking-widest mb-1">❤️ Awais's Live Heartbeat Sensor</span>
-                    <div id="heartbeat-btn" onmousedown="startHeartbeat()" onmouseup="stopHeartbeat()" ontouchstart="startHeartbeat()" ontouchend="stopHeartbeat()" class="w-12 h-12 xs:w-14 xs:h-14 rounded-full bg-gradient-to-tr from-rose-600 to-pink-500 flex items-center justify-center text-white text-xl xs:text-2xl my-2 cursor-pointer shadow-lg active:scale-95 transition">
+                    <div id="heartbeat-btn" onmousedown="startHeartbeat()" onmouseup="stopHeartbeat()" ontouchstart="startHeartbeat()" ontouchend="stopHeartbeat()" class="w-12 h-12 xs:w-14 xs:h-14 rounded-full bg-gradient-to-tr from-rose-600 to-pink-500 flex items-center justify-center text-white text-xl xs:text-2xl my-2 cursor-pointer shadow-lg active:scale-95 transition mx-auto">
                         <i class="fa-solid fa-heart animate-heartbeat"></i>
                     </div>
                     <p id="heartbeat-status" class="text-[11px] xs:text-xs font-serif text-pink-200 italic">Press & hold to feel my heart beating for you...</p>
@@ -585,7 +585,7 @@
 
                 <div id="envelope-container" class="cursor-pointer w-full max-w-md my-3 xs:my-4" onclick="toggleLetterEnvelope()">
                     <div class="glass-panel rounded-2xl border border-pink-300/40 p-6 xs:p-8 shadow-2xl relative overflow-hidden min-h-[200px] xs:min-h-[220px] flex flex-col items-center justify-center transition-all hover:scale-[1.02]">
-                        <div class="w-14 h-14 xs:w-16 xs:h-16 rounded-full bg-gradient-to-tr from-rose-600 to-amber-500 text-white flex items-center justify-center shadow-lg border-2 border-pink-300/50 mb-3">
+                        <div class="w-14 h-14 xs:w-16 xs:h-16 rounded-full bg-gradient-to-tr from-rose-600 to-amber-500 text-white flex items-center justify-center shadow-lg border-2 border-pink-300/50 mb-3 mx-auto">
                             <i class="fa-solid fa-envelope text-xl xs:text-2xl"></i>
                         </div>
                         <p class="font-serif italic text-pink-200 text-xs xs:text-sm">
@@ -731,8 +731,8 @@
                         <div id="reason-progress-bar" class="h-full bg-gradient-to-r from-pink-500 to-amber-400 w-[6%] transition-all duration-300"></div>
                     </div>
 
-                    <div id="reason-heart-btn" onclick="revealNextReason()" class="w-20 h-20 xs:w-24 xs:h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-tr from-rose-600 via-pink-500 to-amber-400 flex items-center justify-center text-white text-3xl xs:text-4xl sm:text-5xl cursor-pointer shadow-[0_0_35px_rgba(244,114,182,0.8)] active:scale-90 transition mb-5 xs:mb-6 select-none animate-heartbeat">
-                        ❤️️
+                    <div id="reason-heart-btn" onclick="revealNextReason()" class="w-20 h-20 xs:w-24 xs:h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-tr from-rose-600 via-pink-500 to-amber-400 flex items-center justify-center text-white text-3xl xs:text-4xl sm:text-5xl cursor-pointer shadow-[0_0_35px_rgba(244,114,182,0.8)] active:scale-90 transition mb-5 xs:mb-6 select-none animate-heartbeat mx-auto">
+                        ❤
                     </div>
 
                     <p id="reason-text-box" class="font-serif text-pink-100 text-xs xs:text-sm sm:text-lg italic min-h-[80px] xs:min-h-[90px] flex items-center justify-center px-2 xs:px-4 leading-relaxed">
@@ -804,7 +804,7 @@
                     </div>
 
                     <div id="finale-step-4" class="finale-step hidden flex-col items-center transition-all duration-700">
-                        <div class="w-24 h-24 xs:w-28 xs:h-28 sm:w-36 sm:h-36 rounded-full bg-gradient-to-tr from-rose-600 via-pink-500 to-amber-400 flex items-center justify-center text-white text-5xl xs:text-6xl my-3 xs:my-4 shadow-[0_0_50px_rgba(225,29,72,0.9)] animate-heartbeat">
+                        <div class="w-24 h-24 xs:w-28 xs:h-28 sm:w-36 sm:h-36 rounded-full bg-gradient-to-tr from-rose-600 via-pink-500 to-amber-400 flex items-center justify-center text-white text-5xl xs:text-6xl my-3 xs:my-4 shadow-[0_0_50px_rgba(225,29,72,0.9)] animate-heartbeat mx-auto">
                             ❤️
                         </div>
                         <h2 class="font-display text-2xl xs:text-3xl sm:text-5xl font-extrabold text-pink-100 pink-title-glow my-2 xs:my-3">
@@ -833,7 +833,6 @@
 
     </main>
 
-
     <!-- SOULMATE SCANNER VIEW -->
     <div id="soulmate-modal" class="fixed inset-0 z-50 bg-[#080205]/95 backdrop-blur-2xl hidden flex-col items-center justify-between p-3 xs:p-4 sm:p-8 overflow-y-auto w-full h-full">
         <div class="w-full max-w-2xl flex justify-between items-center pt-2 px-2">
@@ -850,7 +849,7 @@
             <h3 class="font-display text-xl xs:text-2xl sm:text-4xl text-pink-200 font-bold mb-1.5 xs:mb-2 pink-title-glow">Awais & Aiman's Soulmate Sync</h3>
             <p class="text-slate-300 text-[11px] xs:text-xs sm:text-sm font-serif italic mb-4 xs:mb-6">Touch and hold the biometrics scanner below to calibrate your romantic wavelengths ❤️</p>
 
-            <div class="relative w-48 h-48 xs:w-56 xs:h-56 sm:w-72 sm:h-72 max-w-[70vw] max-h-[70vw] rounded-full bg-slate-950 border-4 border-rose-500/50 flex items-center justify-center my-3 xs:my-4 shadow-[0_0_40px_rgba(244,114,182,0.3)] overflow-hidden cursor-pointer select-none active:scale-95 transition" onmousedown="startFingerprintScan()" onmouseup="stopFingerprintScan()" ontouchstart="startFingerprintScan()" ontouchend="stopFingerprintScan()">
+            <div class="relative w-48 h-48 xs:w-56 xs:h-56 sm:w-72 sm:h-72 max-w-[70vw] max-h-[70vw] rounded-full bg-slate-950 border-4 border-rose-500/50 flex items-center justify-center my-3 xs:my-4 shadow-[0_0_40px_rgba(244,114,182,0.3)] overflow-hidden cursor-pointer select-none active:scale-95 transition mx-auto" onmousedown="startFingerprintScan()" onmouseup="stopFingerprintScan()" ontouchstart="startFingerprintScan()" ontouchend="stopFingerprintScan()">
                 <div id="scanner-laser" class="absolute left-0 right-0 h-1.5 bg-gradient-to-r from-transparent via-rose-400 to-transparent shadow-[0_0_20px_#f43f5e] hidden"></div>
                 <div class="flex items-center gap-3 xs:gap-4 text-4xl xs:text-5xl sm:text-6xl text-rose-500/80 animate-pulse">
                     <i class="fa-solid fa-fingerprint"></i>
@@ -889,7 +888,7 @@
             <h3 class="font-display text-xl xs:text-2xl sm:text-4xl text-pink-200 font-bold mb-1.5 xs:mb-2 pink-title-glow">Wheel of Romantic Fate</h3>
             <p class="text-slate-300 text-[11px] xs:text-xs sm:text-sm font-serif italic mb-3 xs:mb-4">Spin the wheel to claim a special date night or privilege pass from Awais!</p>
 
-            <div class="relative w-60 h-60 xs:w-72 xs:h-72 sm:w-80 sm:h-80 max-w-[75vw] max-h-[75vw] my-2 xs:my-4 flex items-center justify-center select-none">
+            <div class="relative w-60 h-60 xs:w-72 xs:h-72 sm:w-80 sm:h-80 max-w-[75vw] max-h-[75vw] my-2 xs:my-4 flex items-center justify-center select-none mx-auto">
                 <div class="absolute -top-3 xs:-top-4 z-20 text-rose-500 text-2xl xs:text-3xl filter drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">▼</div>
                 <div id="wheel-disc" class="w-full h-full rounded-full border-4 border-amber-400/90 shadow-[0_0_30px_rgba(245,158,11,0.4)] overflow-hidden relative transition-transform duration-[4000ms] ease-out bg-gradient-to-tr from-rose-950 via-pink-900 to-amber-950 flex items-center justify-center">
                     <div class="absolute inset-0 rounded-full border-[8px] xs:border-[10px] border-slate-950/50"></div>
@@ -974,7 +973,7 @@
                 <span class="text-rose-400">💖</span>
             </div>
 
-            <div class="w-10 h-10 xs:w-12 xs:h-12 rounded-2xl bg-amber-500/20 border border-amber-400/40 flex items-center justify-center text-amber-300 text-xl xs:text-2xl mb-2.5 xs:mb-3 shadow-inner">
+            <div class="w-10 h-10 xs:w-12 xs:h-12 rounded-2xl bg-amber-500/20 border border-amber-400/40 flex items-center justify-center text-amber-300 text-xl xs:text-2xl mb-2.5 xs:mb-3 shadow-inner mx-auto">
                 <i id="pin-lock-icon" class="fa-solid fa-lock"></i>
             </div>
 
@@ -1312,6 +1311,12 @@
             } catch(e) {}
         }
 
+        function playChimeChord(frequencies = [523.25, 659.25, 783.99, 1046.50]) {
+            frequencies.forEach((f, index) => {
+                setTimeout(() => playSynthChime(f, 'sine', 0.5), index * 120);
+            });
+        }
+
         function startAudioAuto() {
             const bgAudio = document.getElementById('bg-audio');
             if (bgAudio) {
@@ -1614,8 +1619,8 @@
                 }
 
                 card.innerHTML = `${mediaHtml}
-                <h4 class="font-display text-pink-200 text-sm font-bold mt-2.5 mb-0.5 truncate">${mem.title}</h4>
-                <p class="text-slate-300 font-serif italic text-xs truncate">${mem.caption}</p>`;
+                <h4 class="font-display text-pink-200 text-sm font-bold mt-2.5 mb-0.5 truncate text-center">${mem.title}</h4>
+                <p class="text-slate-300 font-serif italic text-xs truncate text-center">${mem.caption}</p>`;
                 grid.appendChild(card);
             });
         }
@@ -1779,30 +1784,56 @@
 
         function sendKissToAwais() {
             initAudioContext();
-            playSynthChime(1046.50, 'sine', 0.8);
-            if (navigator.vibrate) navigator.vibrate([100, 50, 100, 50, 200]);
+            playChimeChord([523.25, 659.25, 783.99, 1046.50, 1318.51]);
+            if (navigator.vibrate) navigator.vibrate([100, 50, 100, 50, 200, 100, 300]);
 
-            for (let i = 0; i < 28; i++) {
+            // Flash overlay screen heartbeat
+            const overlay = document.createElement('div');
+            overlay.className = 'fixed inset-0 z-50 bg-rose-600/30 backdrop-blur-sm pointer-events-none transition-all duration-700 flex items-center justify-center';
+            document.body.appendChild(overlay);
+
+            // Centered Love Banner Announcement
+            const banner = document.createElement('div');
+            banner.className = 'glass-panel p-6 sm:p-8 rounded-3xl border-2 border-rose-400 text-center max-w-sm sm:max-w-md shadow-[0_0_80px_rgba(244,114,182,0.9)] animate-bounce mx-auto z-50 pointer-events-none';
+            banner.innerHTML = `
+                <div class="text-5xl sm:text-6xl mb-2 animate-pulse">💋 💖 💋</div>
+                <h3 class="font-display text-xl sm:text-3xl text-pink-100 font-extrabold pink-title-glow">KISS DELIVERED TO AWAIS!</h3>
+                <p class="font-serif italic text-amber-200 text-xs sm:text-sm mt-2">"Aiman sent 1,000,000 kisses! Awais's heart is exploding with happiness! ❤️"</p>
+            `;
+            overlay.appendChild(banner);
+
+            setTimeout(() => {
+                overlay.style.opacity = '0';
+                setTimeout(() => overlay.remove(), 700);
+            }, 2800);
+
+            // Flying Kiss Emojis & Petals Barrage
+            const emojis = ['💋', '💖', '🥰', '💕', '💌', '🌸', '✨', '👑', '🌹'];
+            for (let i = 0; i < 60; i++) {
                 setTimeout(() => {
-                    const emoji = ['💋', '💖', '😘', '💕', '💌'][Math.floor(Math.random() * 5)];
+                    const emoji = emojis[Math.floor(Math.random() * emojis.length)];
                     const el = document.createElement('div');
                     el.innerText = emoji;
                     el.style.position = 'fixed';
-                    el.style.left = `${Math.random() * 80 + 10}vw`;
-                    el.style.bottom = '10px';
-                    el.style.fontSize = `${Math.random() * 24 + 24}px`;
+                    el.style.left = `${Math.random() * 85 + 7.5}vw`;
+                    el.style.bottom = '-40px';
+                    el.style.fontSize = `${Math.random() * 28 + 24}px`;
                     el.style.zIndex = '9999';
                     el.style.pointerEvents = 'none';
-                    el.style.transition = 'all 2.5s cubic-bezier(0.25, 1, 0.5, 1)';
+                    el.style.filter = 'drop-shadow(0 0 12px rgba(244,114,182,0.8))';
+                    el.style.transition = 'all 3s cubic-bezier(0.15, 0.85, 0.35, 1.2)';
                     document.body.appendChild(el);
 
                     setTimeout(() => {
-                        el.style.transform = `translateY(-${Math.random() * 600 + 300}px) scale(1.5) rotate(${Math.random() * 60 - 30}deg)`;
+                        const targetY = -(Math.random() * 700 + 400);
+                        const targetX = (Math.random() - 0.5) * 200;
+                        const rotate = Math.random() * 360 - 180;
+                        el.style.transform = `translate(${targetX}px, ${targetY}px) scale(1.6) rotate(${rotate}deg)`;
                         el.style.opacity = '0';
                     }, 50);
 
-                    setTimeout(() => el.remove(), 2600);
-                }, i * 70);
+                    setTimeout(() => el.remove(), 3200);
+                }, i * 45);
             }
         }
 
@@ -2035,7 +2066,7 @@
 
             function animateCanvas() {
                 ctx.clearRect(0, 0, width, height);
-                particles.forEach((p, idx) => {
+                particles.forEach((p) => {
                     p.y -= p.speedY;
                     if (p.y < -10) p.y = height + 10;
 
