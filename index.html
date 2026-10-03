@@ -242,18 +242,6 @@
             box-shadow: 0 0 25px rgba(218, 165, 32, 0.35), 0 0 50px rgba(244, 114, 182, 0.2);
         }
 
-        .gold-shimmer {
-            background: linear-gradient(90deg, #e6c187 0%, #fff3d1 50%, #e6c187 100%);
-            background-size: 200% auto;
-            color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
-            animation: shine 3s linear infinite;
-        }
-        @keyframes shine {
-            to { background-position: 200% center; }
-        }
-
         .love-bubble {
             position: absolute;
             border-radius: 50%;
@@ -384,7 +372,6 @@
     <!-- FLOATING LOVE BUBBLE CONTAINER LAYER -->
     <div id="love-bubbles-layer" class="fixed inset-0 pointer-events-none z-40 overflow-hidden"></div>
     
-    <!-- MAIN CHAPTER CONTAINER -->
     <main class="relative flex-grow z-10 pt-14 xs:pt-16 sm:pt-20 pb-10 xs:pb-12 sm:pb-16 px-2.5 xs:px-4 sm:px-6 max-w-4xl mx-auto w-full flex flex-col justify-center min-h-[calc(100dvh-60px)]">
 
         <!-- CHAPTER 1: ENTRANCE -->
@@ -679,11 +666,11 @@
                 <h2 class="font-display text-xl xs:text-2xl sm:text-4xl text-pink-300 font-bold mb-1 pink-title-glow">Aiman's Polaroid & Video Gallery</h2>
                 <p class="text-slate-300 font-serif italic mb-4 xs:mb-6 text-center text-xs sm:text-sm">Click any photo or video clip to expand!</p>
 
-                <div class="mb-5 xs:mb-6">
+                <!-- <div class="mb-5 xs:mb-6">
                     <button onclick="openAddMemoryModal()" class="px-4 xs:px-5 py-2 xs:py-2.5 bg-slate-900/90 hover:bg-slate-800 border border-pink-400/40 rounded-full text-[11px] xs:text-xs font-semibold text-pink-300 transition shadow flex items-center gap-2">
                         <i class="fa-solid fa-plus-circle text-pink-400"></i> Add Custom Photo or Video Memory
                     </button>
-                </div>
+                </div> -->
 
                 <div id="polaroid-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 xs:gap-6 sm:gap-8 w-full px-1 xs:px-2"></div>
 
@@ -741,7 +728,7 @@
                     Chapter V • From My Heart
                 </div>
                 <h2 class="font-display text-xl xs:text-2xl sm:text-4xl text-pink-300 font-bold mb-1.5 xs:mb-2 pink-title-glow">Why I Love Aiman</h2>
-                <p class="text-slate-300 font-serif italic mb-5 xs:mb-6 text-xs sm:text-sm">Tap the glowing heart below to unlock each reason one by one ❤️️</p>
+                <p class="text-slate-300 font-serif italic mb-5 xs:mb-6 text-xs sm:text-sm">Tap the glowing heart below to unlock each reason one by one ❤</p>
 
                 <div class="glass-panel p-5 xs:p-6 sm:p-8 rounded-3xl w-full border border-rose-500/40 shadow-2xl flex flex-col items-center relative overflow-hidden">
                     <div class="w-full flex justify-between items-center text-[10px] xs:text-xs font-mono text-amber-300 mb-3 xs:mb-4">
@@ -1125,7 +1112,7 @@
     </div>
 
     <script>
-        // GLOBAL SCOPE DECLARATION FOR PARTICLE SYSTEM
+        // GLOBAL SCOPE DECLARATIONS
         window.addTrailParticle = function(x, y) {};
 
         const APP_STATE = {
@@ -1169,6 +1156,36 @@
                     caption: 'Your warmth and laugh are my ultimate comfort.'
                 },
                 {
+                    type: 'image',
+                    url: 'assets/images/photo4.jpg',
+                    title: 'Sweetest Moments 🌸',
+                    caption: 'Every glance from you feels like a soft warm hug.'
+                },
+                {
+                    type: 'image',
+                    url: 'assets/images/photo5.jpg',
+                    title: 'My Favorite View 💫',
+                    caption: 'Looking at you always reminds me how lucky I am.'
+                },
+                {
+                    type: 'image',
+                    url: 'assets/images/photo6.jpg',
+                    title: 'Precious Smile 💖',
+                    caption: 'A smile that brightens up even the stormiest days.'
+                },
+                {
+                    type: 'image',
+                    url: 'assets/images/photo7.jpg',
+                    title: 'Cherished Moments 🌟',
+                    caption: 'Holding onto every beautiful memory we create together.'
+                },
+                {
+                    type: 'image',
+                    url: 'assets/images/photo8.jpg',
+                    title: 'Endless Sunshine ☀️',
+                    caption: 'You bring light and warmth into every corner of my life.'
+                },
+                {
                     type: 'video',
                     url: 'assets/videos/video1.mp4',
                     title: 'Unforgettable Memory 🎥',
@@ -1191,235 +1208,221 @@
                     url: 'assets/videos/video4.mp4',
                     title: 'Forever Chapter 💖',
                     caption: 'Writing our story together, one memory at a time.'
+                },
+                {
+                    type: 'video',
+                    url: 'assets/videos/video5.mp4',
+                    title: 'Giggles & Joy 🎀',
+                    caption: 'Captured moments of pure joy and endless giggles.'
+                },
+                {
+                    type: 'video',
+                    url: 'assets/videos/video6.mp4',
+                    title: 'Starlit Memories ✨',
+                    caption: 'Little video clips that bring back the warmest feelings.'
+                },
+                {
+                    type: 'video',
+                    url: 'assets/videos/video7.mp4',
+                    title: 'Heartbeats & Smiles 💞',
+                    caption: 'A little glimpse of our beautiful journey together.'
                 }
             ]
         };
 
         const REASONS_LIST = [
-            "Your radiant smile that can light up my darkest days instantly. ✨",
-            "The way your eyes twinkle when you get excited about little things. 🌟",
-            "Your cute little moods that I find absolutely irresistible. 🎀",
-            "How deeply and genuinely you care about the people you love. ❤️",
-            "The warmth in your voice whenever we talk late into the night. 🌙",
-            "Your beautiful, kind, and pure heart. 💖",
-            "How you make ordinary moments feel like magical memories. 🌸",
-            "Your sweet laugh that is my absolute favorite sound in the universe. 🎶",
-            "How comfortable and safe I feel whenever I am with you. 🫂",
-            "Your adorable sense of humor and cute expressions. 😊",
-            "The way you always support and believe in me. 💫",
-            "How you make me want to be the best version of myself. 🌟",
-            "Your gentle touch and comforting presence. 🤲🏻",
-            "The way you remember the smallest details about us. 💌",
-            "That you are not just my love, but my best friend and safe haven. 👑",
-            "Because you are simply Aiman — perfect, precious, and irreplaceable in every way. ❤️"
+            "Your radiant smile that can light up my darkest days instantly.",
+            "The gentle way you speak and bring peace to my heart.",
+            "How cute and adorable you get over tiny sweet surprises.",
+            "Your warm laugh that feels like sweet music to my ears.",
+            "Your kind and caring heart that always thinks of others.",
+            "The way you make ordinary conversations feel so unforgettable.",
+            "Your unique little moods that make you so deeply special.",
+            "How your eyes shine when you talk about things you love.",
+            "The effortless comfort and warmth I feel when I'm with you.",
+            "Your soft strength and resilience through every day.",
+            "How you always bring out the best side of me.",
+            "The beautiful memories we've built together so far.",
+            "How you make my heart skip a beat without even trying.",
+            "Your cute sense of humor that makes me laugh out loud.",
+            "The way you inspire me to be a better person every day.",
+            "Simply because you are Aiman—my favorite person forever. ❤️"
         ];
 
-        const SECRET_WHISPERS = [
+        const WHISPER_QUOTES = [
             "\"I pinky promise to always keep your warm smile glowing.\"",
-            "\"You are the best decision my heart has ever made.\"",
-            "\"Whenever you need a comfort hug, I'm always right here.\"",
-            "\"My favorite sound in the whole world is your laugh.\"",
-            "\"You are not just a part of my story, you are my favorite chapter. ❤️\""
+            "\"No matter how many miles lie between us, my heart is right next to yours.\"",
+            "\"You are the quiet happiness I wished for on every falling star.\"",
+            "\"Making you happy is my favorite goal in life.\"",
+            "\"Every story has a favorite chapter... you are my whole book.\""
         ];
 
-        const LOVE_JAR_NOTES = [
-            "💌 \"You make my heart skip a beat every single day!\"",
-            "💌 \"I love all the cute little excitement moods you make!\"",
-            "💌 \"Thank you for being my safest and happiest place.\"",
-            "💌 \"Allah bless your heart with eternal joy and endless smiles. 🤲🏻\"",
-            "💌 \"No matter where life takes us, I choose you again and again.\"",
-            "💌 \"You deserve the whole world and all the happiness in it! ❤️\""
+        const QUIZ_QUESTIONS = [
+            {
+                q: "What makes Aiman's smile so dangerous?",
+                options: [
+                    "It has 10,000 watts of brightness 💡",
+                    "It instantly melts Awais's heart ❤️️",
+                    "It causes sudden happiness overloads 🥰",
+                    "All of the above! 👑"
+                ],
+                correct: 3
+            },
+            {
+                q: "Who is the absolute cutest person in Awais's world?",
+                options: [
+                    "Aiman 🌸",
+                    "Definitely Aiman 💕",
+                    "Aiman forever 👑",
+                    "All three options are Aiman! ✨"
+                ],
+                correct: 3
+            },
+            {
+                q: "What is Awais's top favorite memory with Aiman?",
+                options: [
+                    "Our late-night chats 🌙",
+                    "Hearing her genuine laugh 🎶",
+                    "Celebrating her 16th Birthday today 🎂",
+                    "Every single second spent with her ❤️"
+                ],
+                correct: 3
+            }
         ];
 
-        function playSoftNote(freq = 440) {
+        const JAR_NOTES = [
+            "\"You are my favorite thought before I fall asleep.\"",
+            "\"Aiman, your smile is my absolute favorite view in the world.\"",
+            "\"I pray Allah fills your 16th year with endless blessings & giggles!\"",
+            "\"You are loved more than words could ever explain.\"",
+            "\"I pinky promise to stand by you through thick and thin.\"",
+            "\"Thank you for coming into my life and making it so beautiful.\"",
+            "\"Sending you a giant warm virtual hug right now! 🤗\""
+        ];
+
+        function initAudioContext() {
+            if (!APP_STATE.audioContext) {
+                const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+                if (AudioContextClass) {
+                    APP_STATE.audioContext = new AudioContextClass();
+                }
+            }
+            if (APP_STATE.audioContext && APP_STATE.audioContext.state === 'suspended') {
+                APP_STATE.audioContext.resume();
+            }
+        }
+
+        function playSynthChime(freq = 523.25, type = 'sine', duration = 0.4) {
             try {
-                if (!APP_STATE.audioContext) {
-                    APP_STATE.audioContext = new (window.AudioContext || window.webkitAudioContext)();
-                }
-                if (APP_STATE.audioContext.state === 'suspended') {
-                    APP_STATE.audioContext.resume();
-                }
+                initAudioContext();
+                if (!APP_STATE.audioContext) return;
                 const osc = APP_STATE.audioContext.createOscillator();
                 const gain = APP_STATE.audioContext.createGain();
-                osc.type = 'sine';
-                osc.frequency.setValueAtTime(freq, APP_STATE.audioContext.currentTime);
-                gain.gain.setValueAtTime(0.08, APP_STATE.audioContext.currentTime);
-                gain.gain.exponentialRampToValueAtTime(0.0001, APP_STATE.audioContext.currentTime + 0.6);
+                osc.type = type;
+                osc.frequency.value = freq;
+                gain.gain.setValueAtTime(0.2, APP_STATE.audioContext.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, APP_STATE.audioContext.currentTime + duration);
                 osc.connect(gain);
                 gain.connect(APP_STATE.audioContext.destination);
                 osc.start();
-                osc.stop(APP_STATE.audioContext.currentTime + 0.6);
-            } catch (e) {}
+                osc.stop(APP_STATE.audioContext.currentTime + duration);
+            } catch(e) {}
         }
 
-        function playChord(freqArray = [523.25, 659.25, 783.99]) {
-            freqArray.forEach((f, idx) => {
-                setTimeout(() => playSoftNote(f), idx * 100);
-            });
-        }
-
-        let particles = [];
-        function initFloatingHeartsCanvas() {
-            const canvas = document.getElementById('bg-canvas');
-            if (!canvas) return;
-            const ctx = canvas.getContext('2d');
-
-            function resize() {
-                canvas.width = window.innerWidth;
-                canvas.height = window.innerHeight;
-            }
-            resize();
-            window.addEventListener('resize', resize);
-
-            class Particle {
-                constructor(x, y, isTrail = false) {
-                    this.x = x || Math.random() * canvas.width;
-                    this.y = y || (isTrail ? y : canvas.height + Math.random() * 50);
-                    this.size = Math.random() * 12 + 8;
-                    this.speedY = isTrail ? (Math.random() - 0.5) * 2 : -(Math.random() * 1.2 + 0.5);
-                    this.speedX = (Math.random() - 0.5) * 0.8;
-                    this.opacity = Math.random() * 0.5 + 0.3;
-                    this.color = `rgba(244, 114, 182, ${this.opacity})`;
-                    this.isTrail = isTrail;
-                    this.life = isTrail ? 60 : 1000;
-                }
-
-                update() {
-                    this.y += this.speedY;
-                    this.x += this.speedX;
-                    if (this.isTrail) {
-                        this.life--;
-                        this.opacity *= 0.96;
-                    } else if (this.y < -20) {
-                        this.y = canvas.height + 20;
-                        this.x = Math.random() * canvas.width;
-                    }
-                }
-
-                draw() {
-                    ctx.save();
-                    ctx.globalAlpha = this.opacity;
-                    ctx.fillStyle = this.color;
-                    ctx.font = `${this.size}px sans-serif`;
-                    ctx.fillText('💖', this.x, this.y);
-                    ctx.restore();
+        function startAudioAuto() {
+            const bgAudio = document.getElementById('bg-audio');
+            if (bgAudio) {
+                bgAudio.volume = 0.5;
+                const promise = bgAudio.play();
+                if (promise !== undefined) {
+                    promise.catch(() => {
+                        const unlockAudio = () => {
+                            bgAudio.play();
+                            document.removeEventListener('click', unlockAudio);
+                            document.removeEventListener('touchstart', unlockAudio);
+                        };
+                        document.addEventListener('click', unlockAudio);
+                        document.addEventListener('touchstart', unlockAudio);
+                    });
                 }
             }
-
-            for (let i = 0; i < 25; i++) {
-                particles.push(new Particle());
-            }
-
-            window.addTrailParticle = function(x, y) {
-                if (particles.length < 80) {
-                    particles.push(new Particle(x, y, true));
-                }
-            };
-
-            window.addEventListener('mousemove', (e) => {
-                if (Math.random() < 0.3) window.addTrailParticle(e.clientX, e.clientY);
-            });
-            window.addEventListener('touchmove', (e) => {
-                if (e.touches[0] && Math.random() < 0.3) {
-                    window.addTrailParticle(e.touches[0].clientX, e.touches[0].clientY);
-                }
-            });
-
-            function animate() {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                for (let i = particles.length - 1; i >= 0; i--) {
-                    particles[i].update();
-                    particles[i].draw();
-                    if (particles[i].isTrail && particles[i].life <= 0) {
-                        particles.splice(i, 1);
-                    }
-                }
-                requestAnimationFrame(animate);
-            }
-            animate();
         }
 
         function navigateTo(chapterId) {
-            playSoftNote(500);
             const chapters = document.querySelectorAll('.chapter-page');
             chapters.forEach(ch => ch.classList.remove('active'));
-
             const target = document.getElementById(`chapter-${chapterId}`);
             if (target) {
                 target.classList.add('active');
                 APP_STATE.currentChapter = chapterId;
-
-                const badge = document.getElementById('chapter-badge');
-                if (badge) {
-                    const titles = {
-                        index: 'Chapter 1 • Entrance',
-                        teddy: 'Chapter 1.5 • Dedication',
-                        birthday: 'Chapter 2 • Birthday Cake',
-                        letter: 'Chapter 3 • Love Letter',
-                        memories: 'Chapter 4 • Photo Gallery',
-                        story: 'Chapter 5 • Our Story',
-                        reasons: 'Chapter 6 • Why I Love You',
-                        future: 'Chapter 7 • Our Starlit Future',
-                        final: 'Chapter 8 • Forever Climax'
-                    };
-                    badge.textContent = titles[chapterId] || 'Chapter • Love Story';
-                }
+                updateChapterBadge(chapterId);
                 window.scrollTo({ top: 0, behavior: 'smooth' });
-
-                if (chapterId === 'future') {
-                    setTimeout(initStarlitCanvas, 100);
-                }
             }
+        }
+
+        function updateChapterBadge(chapterId) {
+            const badge = document.getElementById('chapter-badge');
+            if (!badge) return;
+            const titles = {
+                'index': 'Chapter 1 • Entrance',
+                'teddy': 'Dedication • For Aiman',
+                'birthday': 'Chapter II • 16th Birthday Cake',
+                'letter': 'Chapter III • Written Letter',
+                'memories': 'Chapter IV • Polaroid Gallery',
+                'story': 'Chapter V • Our Journey',
+                'reasons': 'Chapter VI • Why I Love You',
+                'future': 'Chapter VII • Starlit Future',
+                'final': 'Grand Finale • Eternal Love'
+            };
+            badge.innerText = titles[chapterId] || 'Surprise Edition';
         }
 
         function openHomeSealEnvelope() {
-            playChord([440, 554.37, 659.25]);
-            openPinModal();
-        }
-
-        function openPinModal() {
+            initAudioContext();
+            playSynthChime(659.25, 'triangle', 0.5);
             APP_STATE.pinInput = '';
             updatePinDots();
-            updateClock();
-            const modal = document.getElementById('pin-modal');
-            if (modal) {
-                modal.classList.remove('hidden');
-                modal.classList.add('flex');
-            }
+            document.getElementById('pin-modal').classList.remove('hidden');
+            document.getElementById('pin-modal').classList.add('flex');
+            updatePinClock();
         }
 
         function closePinModal() {
-            const modal = document.getElementById('pin-modal');
-            if (modal) {
-                modal.classList.add('hidden');
-                modal.classList.remove('flex');
-            }
+            document.getElementById('pin-modal').classList.add('hidden');
+            document.getElementById('pin-modal').classList.remove('flex');
+        }
+
+        function updatePinClock() {
+            const now = new Date();
+            const hrs = String(now.getHours()).padStart(2, '0');
+            const mins = String(now.getMinutes()).padStart(2, '0');
+            const clockEl = document.getElementById('pin-clock');
+            if (clockEl) clockEl.innerText = `${hrs}:${mins}`;
         }
 
         function pressPinDigit(digit) {
-            playSoftNote(600);
             if (APP_STATE.pinInput.length < 4) {
                 APP_STATE.pinInput += digit;
+                playSynthChime(400 + (APP_STATE.pinInput.length * 100), 'sine', 0.15);
                 updatePinDots();
-
                 if (APP_STATE.pinInput.length === 4) {
-                    setTimeout(verifyPinPasscode, 200);
+                    setTimeout(verifyPin, 200);
                 }
             }
         }
 
         function deletePinDigit() {
-            playSoftNote(350);
             if (APP_STATE.pinInput.length > 0) {
                 APP_STATE.pinInput = APP_STATE.pinInput.slice(0, -1);
+                playSynthChime(300, 'sine', 0.1);
                 updatePinDots();
             }
         }
 
         function updatePinDots() {
             const dots = document.querySelectorAll('.pin-dot');
-            dots.forEach((dot, idx) => {
-                if (idx < APP_STATE.pinInput.length) {
+            dots.forEach((dot, index) => {
+                if (index < APP_STATE.pinInput.length) {
                     dot.classList.add('bg-pink-400', 'border-pink-300');
                     dot.classList.remove('bg-transparent');
                 } else {
@@ -1429,772 +1432,607 @@
             });
         }
 
-        function verifyPinPasscode() {
-            const card = document.getElementById('pin-card');
+        function verifyPin() {
             if (APP_STATE.pinInput === APP_STATE.correctPin) {
-                playChord([523.25, 659.25, 783.99, 1046.50]);
+                playSynthChime(880, 'sine', 0.6);
                 closePinModal();
-                showCurtainStage();
+                showStageCurtains();
             } else {
-                playSoftNote(200);
+                playSynthChime(220, 'sawtooth', 0.4);
+                const card = document.getElementById('pin-card');
                 if (card) {
                     card.classList.add('animate-shake');
-                    setTimeout(() => card.classList.remove('animate-shake'), 450);
+                    setTimeout(() => card.classList.remove('animate-shake'), 400);
                 }
                 APP_STATE.pinInput = '';
                 updatePinDots();
             }
         }
 
-        function updateClock() {
-            const clock = document.getElementById('pin-clock');
-            if (clock) {
-                const now = new Date();
-                const h = String(now.getHours()).padStart(2, '0');
-                const m = String(now.getMinutes()).padStart(2, '0');
-                clock.textContent = `${h}:${m}`;
-            }
-        }
-
-        function showCurtainStage() {
-            const stage = document.getElementById('curtain-stage');
-            if (stage) {
-                stage.classList.remove('hidden', 'open');
-            }
+        function showStageCurtains() {
+            const curtain = document.getElementById('curtain-stage');
+            curtain.classList.remove('hidden');
+            curtain.classList.remove('open');
         }
 
         function openCurtainsAndGoToTeddy() {
-            playChord([440, 554.37, 659.25, 880]);
-            const stage = document.getElementById('curtain-stage');
-            if (stage) {
-                stage.classList.add('open');
-                setTimeout(() => {
-                    stage.classList.add('hidden');
-                    navigateTo('teddy');
-                }, 1300);
-            }
-        }
-
-        function startHeartbeat() {
-            playSoftNote(300);
-            const status = document.getElementById('heartbeat-status');
-            if (status) status.innerHTML = "<span class='text-rose-400 font-bold'>❤️ Awais's heart is beating at 116 BPM for Aiman...</span>";
-            if (navigator.vibrate) navigator.vibrate([100, 50, 100, 500]);
-        }
-
-        function stopHeartbeat() {
-            const status = document.getElementById('heartbeat-status');
-            if (status) status.textContent = "Press & hold to feel my heart beating for you...";
-        }
-
-        function updateLiveAgeMetrics() {
-            const now = new Date();
-            const diffMs = now - APP_STATE.birthDate;
-
-            const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
-            const years = Math.floor(days / 365.25);
-            const hours = Math.floor(diffMs / (1000 * 60 * 60));
-            const minutes = Math.floor(diffMs / (1000 * 60));
-
-            const yElem = document.getElementById('stat-years');
-            const dElem = document.getElementById('stat-days');
-            const hElem = document.getElementById('stat-hours');
-            const mElem = document.getElementById('stat-minutes');
-
-            if (yElem) yElem.textContent = years;
-            if (dElem) dElem.textContent = days.toLocaleString();
-            if (hElem) hElem.textContent = hours.toLocaleString();
-            if (mElem) mElem.textContent = minutes.toLocaleString();
+            playSynthChime(783.99, 'triangle', 0.8);
+            const curtain = document.getElementById('curtain-stage');
+            curtain.classList.add('open');
+            setTimeout(() => {
+                curtain.classList.add('hidden');
+                navigateTo('teddy');
+            }, 1300);
         }
 
         function blowOutAllCandles() {
-            playSoftNote(800);
-            ['flame-left', 'flame-num1', 'flame-num2', 'flame-right'].forEach(id => {
-                const fl = document.getElementById(id);
-                if (fl) fl.classList.add('hidden');
+            playSynthChime(1046.50, 'sine', 0.8);
+            const flames = ['flame-left', 'flame-num1', 'flame-num2', 'flame-right'];
+            const smokes = ['smoke-left', 'smoke-num1', 'smoke-num2', 'smoke-right'];
+            
+            flames.forEach(f => {
+                const el = document.getElementById(f);
+                if (el) el.classList.add('hidden');
             });
-            ['smoke-left', 'smoke-num1', 'smoke-num2', 'smoke-right'].forEach(id => {
-                const sm = document.getElementById(id);
-                if (sm) sm.classList.remove('hidden');
+            smokes.forEach(s => {
+                const el = document.getElementById(s);
+                if (el) el.classList.remove('hidden');
             });
 
             const continueBox = document.getElementById('candles-blown-continue-box');
             if (continueBox) continueBox.classList.remove('hidden');
 
-            playChord([523.25, 659.25, 783.99, 1046.50]);
-            triggerFireworks();
+            const inst = document.getElementById('blow-bottom-instruction');
+            if (inst) inst.innerText = '✨ Wish blown! Happy 16th Birthday Aiman!';
         }
 
         function startMicrophoneSensor() {
-            if (APP_STATE.isMicListening) return;
+            if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+                blowOutAllCandles();
+                return;
+            }
 
             navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
+                initAudioContext();
                 APP_STATE.micStream = stream;
-                if (!APP_STATE.audioContext) {
-                    APP_STATE.audioContext = new (window.AudioContext || window.webkitAudioContext)();
-                }
-                const micSource = APP_STATE.audioContext.createMediaStreamSource(stream);
                 APP_STATE.micAnalyser = APP_STATE.audioContext.createAnalyser();
+                const source = APP_STATE.audioContext.createMediaStreamSource(stream);
+                source.connect(APP_STATE.micAnalyser);
                 APP_STATE.micAnalyser.fftSize = 256;
-                micSource.connect(APP_STATE.micAnalyser);
-
                 APP_STATE.isMicListening = true;
-                const micText = document.getElementById('mic-btn-text');
-                const container = document.getElementById('mic-level-container');
-                if (micText) micText.textContent = 'Listening for your breath...';
-                if (container) container.classList.remove('hidden');
 
-                listenForBlowPuff();
+                const micBar = document.getElementById('mic-level-container');
+                if (micBar) micBar.classList.remove('hidden');
+
+                const btnText = document.getElementById('mic-btn-text');
+                if (btnText) btnText.innerText = 'Listening... Blow now! 🌬️';
+
+                listenToMicLevel();
             }).catch(() => {
-                const micText = document.getElementById('mic-btn-text');
-                if (micText) micText.textContent = 'Tap candles to blow out! 🎂';
+                blowOutAllCandles();
             });
         }
 
-        function listenForBlowPuff() {
+        function listenToMicLevel() {
             if (!APP_STATE.isMicListening || !APP_STATE.micAnalyser) return;
             const dataArray = new Uint8Array(APP_STATE.micAnalyser.frequencyBinCount);
             APP_STATE.micAnalyser.getByteFrequencyData(dataArray);
 
             let sum = 0;
-            for (let i = 0; i < dataArray.length; i++) {
-                sum += dataArray[i];
-            }
+            for (let i = 0; i < dataArray.length; i++) sum += dataArray[i];
             const average = sum / dataArray.length;
 
             const bar = document.getElementById('mic-level-bar');
-            if (bar) bar.style.width = Math.min(100, average * 2) + '%';
+            if (bar) bar.style.width = `${Math.min(100, average * 2)}%`;
 
             if (average > 45) {
-                blowOutAllCandles();
                 APP_STATE.isMicListening = false;
                 if (APP_STATE.micStream) {
-                    APP_STATE.micStream.getTracks().forEach(t => t.stop());
+                    APP_STATE.micStream.getTracks().forEach(track => track.stop());
                 }
-                return;
+                blowOutAllCandles();
+            } else {
+                requestAnimationFrame(listenToMicLevel);
             }
-            requestAnimationFrame(listenForBlowPuff);
         }
 
-        function toggleLetterEnvelope() {
-            playChord([440, 554.37, 659.25]);
-            const env = document.getElementById('envelope-container');
-            const letter = document.getElementById('letter-content');
-            if (env) env.classList.add('hidden');
-            if (letter) letter.classList.remove('hidden');
+        function startHeartbeat() {
+            initAudioContext();
+            if (navigator.vibrate) navigator.vibrate([100, 50, 100]);
+            playSynthChime(150, 'sine', 0.2);
+            const status = document.getElementById('heartbeat-status');
+            if (status) status.innerText = "❤️ Awais's heart is beating purely for Aiman (116 BPM)...";
         }
 
-        function nextWhisperQuote() {
-            playSoftNote(600);
-            APP_STATE.whisperIndex = (APP_STATE.whisperIndex + 1) % SECRET_WHISPERS.length;
-            const qBox = document.getElementById('whisper-quote');
-            if (qBox) qBox.textContent = SECRET_WHISPERS[APP_STATE.whisperIndex];
+        function stopHeartbeat() {
+            const status = document.getElementById('heartbeat-status');
+            if (status) status.innerText = "Press & hold to feel my heart beating for you...";
         }
 
-        function renderPolaroidGallery() {
+        function updateAgeCounters() {
+            const now = new Date();
+            const diff = now - APP_STATE.birthDate;
+
+            const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor(diff / (1000 * 60));
+
+            const yrEl = document.getElementById('stat-years');
+            const dyEl = document.getElementById('stat-days');
+            const hrEl = document.getElementById('stat-hours');
+            const mnEl = document.getElementById('stat-minutes');
+
+            if (yrEl) yrEl.innerText = years.toLocaleString();
+            if (dyEl) dyEl.innerText = days.toLocaleString();
+            if (hrEl) hrEl.innerText = hours.toLocaleString();
+            if (mnEl) mnEl.innerText = minutes.toLocaleString();
+        }
+
+        function renderGallery() {
             const grid = document.getElementById('polaroid-grid');
             if (!grid) return;
             grid.innerHTML = '';
 
-            APP_STATE.memories.forEach((mem, idx) => {
+            APP_STATE.memories.forEach((mem, index) => {
                 const card = document.createElement('div');
-                card.className = "bg-slate-900 border border-pink-400/30 rounded-2xl p-3 xs:p-3.5 shadow-xl cursor-pointer hover:scale-[1.02] transition flex flex-col items-center select-none";
-                card.onclick = () => openMemoryModal(idx);
+                card.className = 'glass-panel p-3 rounded-2xl border border-pink-400/30 shadow-lg cursor-pointer transform hover:-translate-y-1 transition';
+                card.onclick = () => openMemoryModal(index);
 
-                const mediaWrapper = document.createElement('div');
-                mediaWrapper.className = "w-full h-40 xs:h-48 sm:h-56 rounded-xl bg-slate-950 overflow-hidden flex items-center justify-center relative border border-pink-500/20 mb-2.5 xs:mb-3";
-
+                let mediaHtml = '';
                 if (mem.type === 'video') {
-                    mediaWrapper.innerHTML = `
-                        <video src="${mem.url}" class="max-w-full max-h-full object-contain pointer-events-none"></video>
-                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-pink-300 text-2xl xs:text-3xl">
-                            <i class="fa-solid fa-circle-play"></i>
-                        </div>
-                    `;
+                    mediaHtml = `<div class="w-full h-48 sm:h-56 rounded-xl overflow-hidden bg-slate-950 flex items-center justify-center relative">
+                        <video src="${mem.url}" class="w-full h-full object-contain pointer-events-none"></video>
+                        <div class="absolute inset-0 bg-black/30 flex items-center justify-center"><i class="fa-solid fa-circle-play text-pink-300 text-3xl"></i></div>
+                    </div>`;
                 } else {
-                    mediaWrapper.innerHTML = `
-                        <img src="${mem.url}" alt="${mem.title}" class="max-w-full max-h-full object-contain" onerror="this.src='https://placehold.co/400x400/1e0610/fce7f3?text=Aiman+Photo'">
-                    `;
+                    mediaHtml = `<div class="w-full h-48 sm:h-56 rounded-xl overflow-hidden bg-slate-950 flex items-center justify-center">
+                        <img src="${mem.url}" alt="${mem.title}" class="w-full h-full object-contain" onerror="this.src='https://placehold.co/400x400/2a0918/fcddec?text=Aiman+Memory'">
+                    </div>`;
                 }
 
-                card.appendChild(mediaWrapper);
-                card.innerHTML += `
-                    <h3 class="font-display text-xs xs:text-sm font-bold text-pink-200 mb-0.5 xs:mb-1">${mem.title}</h3>
-                    <p class="text-[10px] xs:text-[11px] font-serif text-slate-300 italic text-center line-clamp-2">${mem.caption}</p>
-                `;
+                card.innerHTML = `${mediaHtml}
+                <h4 class="font-display text-pink-200 text-sm font-bold mt-2.5 mb-0.5 truncate">${mem.title}</h4>
+                <p class="text-slate-300 font-serif italic text-xs truncate">${mem.caption}</p>`;
                 grid.appendChild(card);
             });
         }
 
-        function openMemoryModal(idx) {
-            playSoftNote(600);
-            const mem = APP_STATE.memories[idx];
+        function openMemoryModal(index) {
+            const mem = APP_STATE.memories[index];
             if (!mem) return;
+
+            const bgAudio = document.getElementById('bg-audio');
+            if (bgAudio && !bgAudio.paused) {
+                APP_STATE.bgAudioWasPlaying = true;
+                bgAudio.pause();
+            } else {
+                APP_STATE.bgAudioWasPlaying = false;
+            }
 
             const modal = document.getElementById('memory-modal');
             const img = document.getElementById('modal-img');
             const video = document.getElementById('modal-video');
-            const bgAudio = document.getElementById('bg-audio');
             const title = document.getElementById('modal-title');
             const caption = document.getElementById('modal-caption');
 
-            if (title) title.textContent = mem.title;
-            if (caption) caption.textContent = mem.caption;
+            title.innerText = mem.title;
+            caption.innerText = mem.caption;
 
             if (mem.type === 'video') {
-                if (img) img.classList.add('hidden');
-                if (video) {
-                    video.src = mem.url;
-                    video.classList.remove('hidden');
-                    if (bgAudio && !bgAudio.paused) {
-                        APP_STATE.bgAudioWasPlaying = true;
-                        bgAudio.pause();
-                    }
-                    video.play().catch(() => {});
-                }
+                img.classList.add('hidden');
+                video.classList.remove('hidden');
+                video.src = mem.url;
+                video.play();
+                video.onended = () => closeMemoryModal();
             } else {
-                if (video) {
-                    video.pause();
-                    video.classList.add('hidden');
-                }
-                if (img) {
-                    img.src = mem.url;
-                    img.classList.remove('hidden');
-                }
-                if (bgAudio && bgAudio.paused && APP_STATE.bgAudioWasPlaying !== false) {
-                    bgAudio.play().catch(() => {});
-                }
+                video.pause();
+                video.classList.add('hidden');
+                img.classList.remove('hidden');
+                img.src = mem.url;
             }
 
-            if (modal) {
-                modal.classList.remove('hidden');
-                modal.classList.add('flex');
-            }
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
         }
 
         function closeMemoryModal() {
             const modal = document.getElementById('memory-modal');
             const video = document.getElementById('modal-video');
-            const bgAudio = document.getElementById('bg-audio');
+            if (video) video.pause();
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
 
-            if (video) {
-                video.pause();
-            }
-            if (bgAudio && APP_STATE.bgAudioWasPlaying !== false) {
-                bgAudio.play().catch(() => {});
-            }
-            if (modal) {
-                modal.classList.add('hidden');
-                modal.classList.remove('flex');
+            const bgAudio = document.getElementById('bg-audio');
+            if (bgAudio && APP_STATE.bgAudioWasPlaying) {
+                bgAudio.play();
             }
         }
 
         function openAddMemoryModal() {
-            const modal = document.getElementById('add-memory-modal');
-            if (modal) { modal.classList.remove('hidden'); modal.classList.add('flex'); }
+            document.getElementById('add-memory-modal').classList.remove('hidden');
+            document.getElementById('add-memory-modal').classList.add('flex');
         }
+
         function closeAddMemoryModal() {
-            const modal = document.getElementById('add-memory-modal');
-            if (modal) { modal.classList.add('hidden'); modal.classList.remove('flex'); }
+            document.getElementById('add-memory-modal').classList.add('hidden');
+            document.getElementById('add-memory-modal').classList.remove('flex');
         }
 
         function saveNewMemory() {
-            const title = document.getElementById('input-memory-title').value || 'New Memory ❤️';
+            const title = document.getElementById('input-memory-title').value || 'Special Moment ✨';
             const type = document.getElementById('input-memory-type').value;
-            const urlInput = document.getElementById('input-memory-url').value;
-            const caption = document.getElementById('input-memory-caption').value || 'A special moment together.';
             const fileInput = document.getElementById('input-memory-file');
+            const urlInput = document.getElementById('input-memory-url').value;
+            const caption = document.getElementById('input-memory-caption').value || 'A lovely memory with you.';
 
-            if (fileInput && fileInput.files && fileInput.files[0]) {
-                const file = fileInput.files[0];
-                const objectUrl = URL.createObjectURL(file);
-                const fileType = file.type.startsWith('video') ? 'video' : 'image';
-                APP_STATE.memories.unshift({ type: fileType, url: objectUrl, title, caption });
-            } else if (urlInput) {
-                APP_STATE.memories.unshift({ type, url: urlInput, title, caption });
-            } else {
-                return;
+            let finalUrl = urlInput;
+            if (fileInput.files && fileInput.files[0]) {
+                finalUrl = URL.createObjectURL(fileInput.files[0]);
             }
+            if (!finalUrl) finalUrl = 'https://placehold.co/400x400/2a0918/fcddec?text=Memory';
 
-            renderPolaroidGallery();
+            APP_STATE.memories.unshift({ type, url: finalUrl, title, caption });
+            renderGallery();
             closeAddMemoryModal();
-            playChord([523.25, 659.25, 783.99]);
+        }
+
+        function toggleLetterEnvelope() {
+            initAudioContext();
+            playSynthChime(523.25, 'sine', 0.4);
+            const env = document.getElementById('envelope-container');
+            const content = document.getElementById('letter-content');
+            if (env && content) {
+                env.classList.add('hidden');
+                content.classList.remove('hidden');
+            }
+        }
+
+        function nextWhisperQuote() {
+            APP_STATE.whisperIndex = (APP_STATE.whisperIndex + 1) % WHISPER_QUOTES.length;
+            const qEl = document.getElementById('whisper-quote');
+            if (qEl) qEl.innerText = WHISPER_QUOTES[APP_STATE.whisperIndex];
+            playSynthChime(600, 'sine', 0.2);
         }
 
         function revealNextReason() {
-            playSoftNote(600);
+            initAudioContext();
+            playSynthChime(700 + (APP_STATE.reasonIndex * 20), 'triangle', 0.3);
             APP_STATE.reasonIndex = (APP_STATE.reasonIndex + 1) % REASONS_LIST.length;
+            
+            const numEl = document.getElementById('reason-current-num');
+            const textEl = document.getElementById('reason-text-box');
+            const percentEl = document.getElementById('reason-progress-percent');
+            const barEl = document.getElementById('reason-progress-bar');
 
-            const currentNum = document.getElementById('reason-current-num');
-            const textElem = document.getElementById('reason-text-box');
-            const percentElem = document.getElementById('reason-progress-percent');
-            const barElem = document.getElementById('reason-progress-bar');
+            const curr = APP_STATE.reasonIndex + 1;
+            const pct = Math.round((curr / REASONS_LIST.length) * 100);
 
-            const pct = Math.round(((APP_STATE.reasonIndex + 1) / REASONS_LIST.length) * 100);
-
-            if (currentNum) currentNum.textContent = APP_STATE.reasonIndex + 1;
-            if (textElem) textElem.textContent = REASONS_LIST[APP_STATE.reasonIndex];
-            if (percentElem) percentElem.textContent = `${pct}%`;
-            if (barElem) barElem.style.width = `${pct}%`;
-
-            if (navigator.vibrate) navigator.vibrate(40);
-
-            if (APP_STATE.reasonIndex === REASONS_LIST.length - 1) {
-                playChord([523.25, 659.25, 783.99, 1046.50]);
-                triggerFireworks();
-            }
+            if (numEl) numEl.innerText = curr;
+            if (textEl) textEl.innerText = `"${REASONS_LIST[APP_STATE.reasonIndex]}"`;
+            if (percentEl) percentEl.innerText = `${pct}%`;
+            if (barEl) barEl.style.width = `${pct}%`;
         }
 
-        let starPoints = [];
-        function initStarlitCanvas() {
+        function drawStarConstellation(event) {
             const canvas = document.getElementById('starlit-canvas');
             if (!canvas) return;
-            const ctx = canvas.getContext('2d');
             const rect = canvas.getBoundingClientRect();
-            canvas.width = rect.width;
-            canvas.height = rect.height;
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
 
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-            for (let i = 0; i < 60; i++) {
-                ctx.fillStyle = 'rgba(255, 255, 255, ' + (Math.random() * 0.8 + 0.2) + ')';
-                ctx.beginPath();
-                ctx.arc(Math.random() * canvas.width, Math.random() * canvas.height, Math.random() * 1.8 + 0.5, 0, Math.PI * 2);
-                ctx.fill();
-            }
-        }
-
-        function drawStarConstellation(e) {
-            const canvas = document.getElementById('starlit-canvas');
-            if (!canvas) return;
             const ctx = canvas.getContext('2d');
-            const rect = canvas.getBoundingClientRect();
-
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-
-            playSoftNote(800 + Math.random() * 400);
-
-            ctx.save();
-            ctx.shadowBlur = 15;
-            ctx.shadowColor = '#fef08a';
-            ctx.fillStyle = '#ffffff';
+            ctx.fillStyle = '#fde047';
+            ctx.shadowColor = '#fde047';
+            ctx.shadowBlur = 12;
             ctx.beginPath();
             ctx.arc(x, y, 4, 0, Math.PI * 2);
             ctx.fill();
-            ctx.restore();
 
-            starPoints.push({ x, y });
-
-            if (starPoints.length > 1) {
-                const prev = starPoints[starPoints.length - 2];
-                ctx.strokeStyle = 'rgba(251, 191, 36, 0.6)';
-                ctx.lineWidth = 1.5;
-                ctx.setLineDash([4, 4]);
-                ctx.beginPath();
-                ctx.moveTo(prev.x, prev.y);
-                ctx.lineTo(x, y);
-                ctx.stroke();
-            }
+            playSynthChime(800 + Math.random() * 400, 'sine', 0.3);
+            window.addTrailParticle(event.clientX, event.clientY);
         }
 
         function nextFinaleStep() {
-            playSoftNote(600);
+            playSynthChime(600 + (APP_STATE.finaleStep * 150), 'sine', 0.4);
+            const currentStep = document.getElementById(`finale-step-${APP_STATE.finaleStep}`);
+            if (currentStep) currentStep.classList.add('hidden');
+
             APP_STATE.finaleStep++;
-
-            const step1 = document.getElementById('finale-step-1');
-            const step2 = document.getElementById('finale-step-2');
-            const step3 = document.getElementById('finale-step-3');
-            const step4 = document.getElementById('finale-step-4');
-            const btn = document.getElementById('btn-next-finale-step');
-
-            if (APP_STATE.finaleStep === 2) {
-                if (step1) step1.classList.add('hidden');
-                if (step2) step2.classList.remove('hidden');
-            } else if (APP_STATE.finaleStep === 3) {
-                if (step2) step2.classList.add('hidden');
-                if (step3) step3.classList.remove('hidden');
-            } else if (APP_STATE.finaleStep >= 4) {
-                if (step3) step3.classList.add('hidden');
-                if (step4) step4.classList.remove('hidden', 'flex');
-                if (step4) step4.classList.add('flex');
-                if (btn) btn.classList.add('hidden');
-
-                playChord([523.25, 659.25, 783.99, 1046.50]);
-                triggerFireworks();
-            }
-        }
-
-        function openLoveJarModal() {
-            const modal = document.getElementById('lovejar-modal');
-            if (modal) { modal.classList.remove('hidden'); modal.classList.add('flex'); }
-        }
-        function closeLoveJarModal() {
-            const modal = document.getElementById('lovejar-modal');
-            if (modal) { modal.classList.add('hidden'); modal.classList.remove('flex'); }
-        }
-        function pullLoveJarNote() {
-            playSoftNote(700);
-            const noteBox = document.getElementById('jar-note-display');
-            const randomNote = LOVE_JAR_NOTES[Math.floor(Math.random() * LOVE_JAR_NOTES.length)];
-            if (noteBox) noteBox.textContent = randomNote;
-        }
-
-        function openAgeModal() {
-            const modal = document.getElementById('age-modal');
-            if (modal) { modal.classList.remove('hidden'); modal.classList.add('flex'); }
-        }
-        function closeAgeModal() {
-            const modal = document.getElementById('age-modal');
-            if (modal) { modal.classList.add('hidden'); modal.classList.remove('flex'); }
-        }
-        function saveAgeSettings() {
-            const input = document.getElementById('input-birthdate');
-            if (input && input.value) {
-                APP_STATE.birthDate = new Date(input.value);
-                updateLiveAgeMetrics();
-            }
-            closeAgeModal();
-            playChord([523.25, 659.25, 783.99]);
-        }
-
-        function openSoulmateModal() {
-            const modal = document.getElementById('soulmate-modal');
-            if (modal) { modal.classList.remove('hidden'); modal.classList.add('flex'); }
-        }
-        function closeSoulmateModal() {
-            stopFingerprintScan();
-            const modal = document.getElementById('soulmate-modal');
-            if (modal) { modal.classList.add('hidden'); modal.classList.remove('flex'); }
-        }
-        function startFingerprintScan() {
-            playSoftNote(440);
-            const laser = document.getElementById('scanner-laser');
-            const pBar = document.getElementById('scanner-progress-bar');
-            const fill = document.getElementById('scanner-fill');
-            const status = document.getElementById('scanner-status');
-
-            if (laser) laser.classList.remove('hidden');
-            if (pBar) pBar.classList.remove('hidden');
-
-            APP_STATE.scanProgress = 0;
-            if (fill) fill.style.width = '0%';
-            if (status) status.textContent = "Scanning heartbeat frequency & soul compatibility...";
-
-            if (APP_STATE.scanTimer) clearInterval(APP_STATE.scanTimer);
-            APP_STATE.scanTimer = setInterval(() => {
-                APP_STATE.scanProgress += 5;
-                if (fill) fill.style.width = APP_STATE.scanProgress + '%';
-                playSoftNote(400 + APP_STATE.scanProgress * 5);
-
-                if (navigator.vibrate) navigator.vibrate(30);
-
-                if (APP_STATE.scanProgress >= 100) {
-                    clearInterval(APP_STATE.scanTimer);
-                    if (status) status.innerHTML = "<span class='text-emerald-300 font-bold text-xs xs:text-sm'>1000% PERFECT MATCH! Eternal Soulmates Identified ❤</span>";
-                    playChord([523.25, 659.25, 783.99, 1046.50]);
-                    triggerFireworks();
-                }
-            }, 100);
-        }
-        function stopFingerprintScan() {
-            if (APP_STATE.scanTimer) clearInterval(APP_STATE.scanTimer);
-            const laser = document.getElementById('scanner-laser');
-            if (laser) laser.classList.add('hidden');
-        }
-
-        function openLoveWheelModal() {
-            const modal = document.getElementById('wheel-modal');
-            if (modal) { modal.classList.remove('hidden'); modal.classList.add('flex'); }
-        }
-        function closeLoveWheelModal() {
-            const modal = document.getElementById('wheel-modal');
-            if (modal) { modal.classList.add('hidden'); modal.classList.remove('flex'); }
-        }
-        function spinLoveWheel() {
-            if (APP_STATE.wheelSpinning) return;
-            APP_STATE.wheelSpinning = true;
-
-            const WHEEL_COUPONS = [
-                "🍦 Unlimited Late-Night Ice Cream Date!",
-                "💆 30-Minute Massage & Hugs Pass!",
-                "👑 Queen for a Whole Day (Awais obeys all rules)!",
-                "🎬 You Choose the Next Movie Night!",
-                "🎁 Mystery Surprise Shopping Gift!",
-                "🍕 Favorite Takeaway Feast on Awais!"
-            ];
-
-            const disc = document.getElementById('wheel-disc');
-            const resultElem = document.getElementById('wheel-result');
-            const btn = document.getElementById('btn-spin-wheel');
-
-            if (btn) btn.disabled = true;
-            if (resultElem) resultElem.textContent = "Spinning the wheel of destiny...";
-
-            const randomDeg = 1440 + Math.floor(Math.random() * 360);
-            if (disc) disc.style.transform = `rotate(${randomDeg}deg)`;
-
-            let soundInterval = setInterval(() => {
-                playSoftNote(500 + Math.random() * 300);
-            }, 150);
-
-            setTimeout(() => {
-                clearInterval(soundInterval);
-                APP_STATE.wheelSpinning = false;
-                if (btn) btn.disabled = false;
-
-                const wonPrize = WHEEL_COUPONS[Math.floor(Math.random() * WHEEL_COUPONS.length)];
-                if (resultElem) {
-                    resultElem.innerHTML = `<span class="gold-shimmer font-bold text-xs xs:text-sm">🎉 YOU WON: ${wonPrize}</span>`;
-                }
-                playChord([523.25, 659.25, 783.99, 1046.50]);
-                triggerFireworks();
-            }, 4000);
-        }
-
-        function openLoveQuizModal() {
-            APP_STATE.quizIndex = 0;
-            APP_STATE.quizScore = 0;
-            renderQuizQuestion();
-            const modal = document.getElementById('quiz-modal');
-            if (modal) { modal.classList.remove('hidden'); modal.classList.add('flex'); }
-        }
-        function closeLoveQuizModal() {
-            const modal = document.getElementById('quiz-modal');
-            if (modal) { modal.classList.add('hidden'); modal.classList.remove('flex'); }
-        }
-
-        function renderQuizQuestion() {
-            const QUIZ_QUESTIONS = [
-                {
-                    q: "What is Awais's absolute favorite thing about Aiman?",
-                    options: [
-                        "Her radiant smile & cute laugh",
-                        "Her kind and caring heart",
-                        "The cute little excitement moods she makes",
-                        "All of the above (x1000) ❤️"
-                    ],
-                    correct: 3,
-                    comment: "Correct! Every single thing about you is my favorite! ❤️"
-                },
-                {
-                    q: "How many days has the world been better since Aiman was born?",
-                    options: [
-                        "Just a few days",
-                        "5,843 glorious days!",
-                        "A couple of months",
-                        "Since yesterday"
-                    ],
-                    correct: 1,
-                    comment: "Spot on! 5,843 days of continuous sunshine! ✨"
-                },
-                {
-                    q: "What is Awais's forever promise to Aiman on her 16th birthday?",
-                    options: [
-                        "To always keep her smile glowing",
-                        "To support her through good and hard days",
-                        "To keep choosing her again and again",
-                        "All of these forever and ever! 💖"
-                    ],
-                    correct: 3,
-                    comment: "Bingo! You unlocked the Soulmate Certificate! 📜"
-                }
-            ];
-
-            const stepBox = document.getElementById('quiz-card-step');
-            const certBox = document.getElementById('quiz-certificate-step');
-            if (stepBox) stepBox.classList.remove('hidden');
-            if (certBox) certBox.classList.add('hidden');
-
-            const qObj = QUIZ_QUESTIONS[APP_STATE.quizIndex];
-            const title = document.getElementById('quiz-question-title');
-            const optionsBox = document.getElementById('quiz-options-box');
-            const feedback = document.getElementById('quiz-feedback-text');
-
-            if (title) title.textContent = `Q${APP_STATE.quizIndex + 1}: ${qObj.q}`;
-            if (feedback) feedback.textContent = "";
-
-            if (optionsBox) {
-                optionsBox.innerHTML = "";
-                qObj.options.forEach((optText, idx) => {
-                    const btn = document.createElement('button');
-                    btn.className = "w-full py-2.5 px-3.5 bg-slate-900/90 hover:bg-slate-800 border border-pink-500/30 rounded-xl text-xs font-semibold text-pink-100 text-left transition active:scale-98 shadow";
-                    btn.textContent = optText;
-                    btn.onclick = () => {
-                        if (feedback) feedback.textContent = qObj.comment;
-                        playSoftNote(600);
-                        setTimeout(() => {
-                            APP_STATE.quizIndex++;
-                            if (APP_STATE.quizIndex < QUIZ_QUESTIONS.length) {
-                                renderQuizQuestion();
-                            } else {
-                                if (stepBox) stepBox.classList.add('hidden');
-                                if (certBox) certBox.classList.remove('hidden');
-                                playChord([523.25, 659.25, 783.99, 1046.50]);
-                                triggerFireworks();
-                            }
-                        }, 1200);
-                    };
-                    optionsBox.appendChild(btn);
-                });
-            }
-        }
-
-        function toggleLoveBubbles() {
-            APP_STATE.bubblesActive = !APP_STATE.bubblesActive;
-            const container = document.getElementById('love-bubbles-layer');
-
-            if (APP_STATE.bubblesActive) {
-                if (container) container.style.pointerEvents = 'auto';
-                if (APP_STATE.bubbleTimer) clearInterval(APP_STATE.bubbleTimer);
-                APP_STATE.bubbleTimer = setInterval(spawnSingleLoveBubble, 1200);
-                for (let i = 0; i < 5; i++) spawnSingleLoveBubble();
-                showToast("🫧 Love Bubbles activated! Tap to pop them!");
-            } else {
-                if (container) {
-                    container.innerHTML = '';
-                    container.style.pointerEvents = 'none';
-                }
-                if (APP_STATE.bubbleTimer) clearInterval(APP_STATE.bubbleTimer);
-                showToast("🫧 Love Bubbles turned off!");
-            }
-        }
-
-        function spawnSingleLoveBubble() {
-            const container = document.getElementById('love-bubbles-layer');
-            if (!container || !APP_STATE.bubblesActive) return;
-
-            const bubble = document.createElement('div');
-            bubble.className = 'love-bubble';
-            const size = Math.random() * 25 + 40;
-            const startX = Math.random() * (window.innerWidth - 70) + 15;
-
-            bubble.style.width = `${size}px`;
-            bubble.style.height = `${size}px`;
-            bubble.style.left = `${startX}px`;
-            bubble.style.bottom = `-80px`;
-            bubble.innerHTML = ['💖', '💋', '🌟', '💕', '✨'][Math.floor(Math.random() * 5)];
-
-            bubble.onclick = (e) => {
-                e.stopPropagation();
-                playSoftNote(900 + Math.random() * 200);
-                if (window.addTrailParticle) window.addTrailParticle(e.clientX, e.clientY);
-                bubble.style.transform = 'scale(1.5)';
-                bubble.style.opacity = '0';
-                setTimeout(() => bubble.remove(), 200);
-            };
-
-            container.appendChild(bubble);
-
-            let pos = -80;
-            const speed = Math.random() * 1.5 + 1;
-            const anim = setInterval(() => {
-                if (!APP_STATE.bubblesActive || pos > window.innerHeight + 100) {
-                    clearInterval(anim);
-                    bubble.remove();
-                    return;
-                }
-                pos += speed;
-                bubble.style.bottom = pos + 'px';
-            }, 20);
-        }
-
-        function toggleMobileExtrasMenu() {
-            playSoftNote(500);
-            const modal = document.getElementById('mobile-extras-modal');
-            if (modal) {
-                if (modal.classList.contains('hidden')) {
-                    modal.classList.remove('hidden');
-                    modal.classList.add('flex');
-                } else {
-                    modal.classList.add('hidden');
-                    modal.classList.remove('flex');
+            const nextStep = document.getElementById(`finale-step-${APP_STATE.finaleStep}`);
+            if (nextStep) {
+                nextStep.classList.remove('hidden');
+                if (APP_STATE.finaleStep === 4) {
+                    const btn = document.getElementById('btn-next-finale-step');
+                    if (btn) btn.classList.add('hidden');
                 }
             }
         }
 
         function sendKissToAwais() {
-            playChord([523.25, 659.25, 783.99, 1046.50]);
+            initAudioContext();
+            playSynthChime(1046.50, 'sine', 0.8);
             if (navigator.vibrate) navigator.vibrate([100, 50, 100, 50, 200]);
 
             for (let i = 0; i < 28; i++) {
                 setTimeout(() => {
-                    const kiss = document.createElement('div');
-                    kiss.className = "fixed z-50 pointer-events-none text-2xl xs:text-3xl sm:text-4xl transition-all duration-1000 ease-out";
-                    kiss.textContent = ['💋', '💖', '😘', '💕', '💌'][Math.floor(Math.random() * 5)];
-                    kiss.style.left = (window.innerWidth / 2 + (Math.random() - 0.5) * 180) + 'px';
-                    kiss.style.bottom = '100px';
-                    document.body.appendChild(kiss);
+                    const emoji = ['💋', '💖', '😘', '💕', '💌'][Math.floor(Math.random() * 5)];
+                    const el = document.createElement('div');
+                    el.innerText = emoji;
+                    el.style.position = 'fixed';
+                    el.style.left = `${Math.random() * 80 + 10}vw`;
+                    el.style.bottom = '10px';
+                    el.style.fontSize = `${Math.random() * 24 + 24}px`;
+                    el.style.zIndex = '9999';
+                    el.style.pointerEvents = 'none';
+                    el.style.transition = 'all 2.5s cubic-bezier(0.25, 1, 0.5, 1)';
+                    document.body.appendChild(el);
 
-                    requestAnimationFrame(() => {
-                        kiss.style.transform = `translate(${(Math.random() - 0.5) * 260}px, -${Math.random() * 450 + 180}px) scale(1.5) rotate(${Math.random() * 360}deg)`;
-                        kiss.style.opacity = '0';
-                    });
+                    setTimeout(() => {
+                        el.style.transform = `translateY(-${Math.random() * 600 + 300}px) scale(1.5) rotate(${Math.random() * 60 - 30}deg)`;
+                        el.style.opacity = '0';
+                    }, 50);
 
-                    setTimeout(() => kiss.remove(), 1200);
-                }, i * 40);
-            }
-            showToast("💋 Kiss delivered to Awais! His heart is glowing ❤️");
-        }
-
-        function triggerFireworks() {
-            for (let i = 0; i < 20; i++) {
-                setTimeout(() => {
-                    if (window.addTrailParticle) {
-                        window.addTrailParticle(
-                            Math.random() * window.innerWidth,
-                            Math.random() * window.innerHeight * 0.6
-                        );
-                    }
-                }, i * 50);
+                    setTimeout(() => el.remove(), 2600);
+                }, i * 70);
             }
         }
 
-        function showToast(msg) {
-            let toast = document.getElementById('app-toast');
-            if (!toast) {
-                toast = document.createElement('div');
-                toast.id = 'app-toast';
-                toast.className = 'fixed top-14 xs:top-16 sm:top-20 left-1/2 -translate-x-1/2 z-50 glass-panel px-4 xs:px-6 py-2.5 xs:py-3 rounded-full border border-rose-400/60 text-pink-100 font-display text-xs sm:text-sm shadow-[0_0_35px_rgba(244,114,182,0.7)] flex items-center gap-2 pointer-events-none transition-all duration-500 opacity-0 transform -translate-y-6 max-w-[90vw] text-center';
-                document.body.appendChild(toast);
+        function openSoulmateModal() {
+            document.getElementById('soulmate-modal').classList.remove('hidden');
+            document.getElementById('soulmate-modal').classList.add('flex');
+        }
+        function closeSoulmateModal() {
+            document.getElementById('soulmate-modal').classList.add('hidden');
+            document.getElementById('soulmate-modal').classList.remove('flex');
+        }
+
+        function startFingerprintScan() {
+            initAudioContext();
+            const laser = document.getElementById('scanner-laser');
+            const bar = document.getElementById('scanner-progress-bar');
+            const status = document.getElementById('scanner-status');
+            if (laser) laser.classList.remove('hidden');
+            if (bar) bar.classList.remove('hidden');
+            if (status) status.innerText = "Analyzing romantic compatibility...";
+
+            APP_STATE.scanProgress = 0;
+            APP_STATE.scanTimer = setInterval(() => {
+                APP_STATE.scanProgress += 5;
+                const fill = document.getElementById('scanner-fill');
+                if (fill) fill.style.width = `${APP_STATE.scanProgress}%`;
+                playSynthChime(300 + (APP_STATE.scanProgress * 5), 'sine', 0.1);
+
+                if (APP_STATE.scanProgress >= 100) {
+                    clearInterval(APP_STATE.scanTimer);
+                    if (status) status.innerText = "✨ 1000% PERFECT ETERNAL SOULMATES! ❤️";
+                    playSynthChime(880, 'sine', 0.8);
+                }
+            }, 100);
+        }
+
+        function stopFingerprintScan() {
+            if (APP_STATE.scanProgress < 100) {
+                clearInterval(APP_STATE.scanTimer);
+                const laser = document.getElementById('scanner-laser');
+                const status = document.getElementById('scanner-status');
+                if (laser) laser.classList.add('hidden');
+                if (status) status.innerText = "Hold until 100% complete!";
             }
-            toast.innerHTML = `<span class="gold-shimmer font-bold">${msg}</span>`;
-            toast.classList.remove('opacity-0', '-translate-y-6');
-            toast.classList.add('opacity-100', 'translate-y-0');
+        }
+
+        function openLoveWheelModal() {
+            document.getElementById('wheel-modal').classList.remove('hidden');
+            document.getElementById('wheel-modal').classList.add('flex');
+        }
+        function closeLoveWheelModal() {
+            document.getElementById('wheel-modal').classList.add('hidden');
+            document.getElementById('wheel-modal').classList.remove('flex');
+        }
+
+        function spinLoveWheel() {
+            if (APP_STATE.wheelSpinning) return;
+            APP_STATE.wheelSpinning = true;
+            initAudioContext();
+
+            const disc = document.getElementById('wheel-disc');
+            const result = document.getElementById('wheel-result');
+            const randomDeg = 1440 + Math.floor(Math.random() * 360);
+
+            if (disc) disc.style.transform = `rotate(${randomDeg}deg)`;
+            playSynthChime(600, 'triangle', 0.5);
 
             setTimeout(() => {
-                toast.classList.remove('opacity-100', 'translate-y-0');
-                toast.classList.add('opacity-0', '-translate-y-6');
-            }, 3000);
+                APP_STATE.wheelSpinning = false;
+                const prizes = ["🍦 Ice Cream Pass", "💆 Warm Hugs Pass", "👑 Queen For A Day", "🎬 Movie Pick Night"];
+                const prize = prizes[Math.floor(Math.random() * prizes.length)];
+                if (result) result.innerText = `🎉 You won: ${prize}!`;
+                playSynthChime(880, 'sine', 0.8);
+            }, 4000);
+        }
+
+        function openLoveQuizModal() {
+            APP_STATE.quizIndex = 0;
+            renderQuizQuestion();
+            document.getElementById('quiz-modal').classList.remove('hidden');
+            document.getElementById('quiz-modal').classList.add('flex');
+        }
+        function closeLoveQuizModal() {
+            document.getElementById('quiz-modal').classList.add('hidden');
+            document.getElementById('quiz-modal').classList.remove('flex');
+        }
+
+        function renderQuizQuestion() {
+            const q = QUIZ_QUESTIONS[APP_STATE.quizIndex];
+            const title = document.getElementById('quiz-question-title');
+            const optionsBox = document.getElementById('quiz-options-box');
+            const cardStep = document.getElementById('quiz-card-step');
+            const certStep = document.getElementById('quiz-certificate-step');
+
+            if (APP_STATE.quizIndex >= QUIZ_QUESTIONS.length) {
+                if (cardStep) cardStep.classList.add('hidden');
+                if (certStep) certStep.classList.remove('hidden');
+                return;
+            }
+
+            if (cardStep) cardStep.classList.remove('hidden');
+            if (certStep) certStep.classList.add('hidden');
+
+            if (title) title.innerText = q.q;
+            if (optionsBox) {
+                optionsBox.innerHTML = '';
+                q.options.forEach((opt, idx) => {
+                    const btn = document.createElement('button');
+                    btn.className = "w-full py-2.5 px-4 bg-slate-900/90 hover:bg-slate-800 border border-pink-500/30 rounded-xl text-pink-100 text-xs xs:text-sm font-semibold transition active:scale-95";
+                    btn.innerText = opt;
+                    btn.onclick = () => answerQuiz(idx);
+                    optionsBox.appendChild(btn);
+                });
+            }
+        }
+
+        function answerQuiz(idx) {
+            initAudioContext();
+            playSynthChime(700, 'sine', 0.3);
+            APP_STATE.quizIndex++;
+            renderQuizQuestion();
+        }
+
+        function toggleLoveBubbles() {
+            APP_STATE.bubblesActive = !APP_STATE.bubblesActive;
+            const layer = document.getElementById('love-bubbles-layer');
+            if (APP_STATE.bubblesActive) {
+                APP_STATE.bubbleTimer = setInterval(spawnSingleLoveBubble, 1200);
+            } else {
+                clearInterval(APP_STATE.bubbleTimer);
+                if (layer) layer.innerHTML = '';
+            }
+        }
+
+        function spawnSingleLoveBubble() {
+            const layer = document.getElementById('love-bubbles-layer');
+            if (!layer) return;
+            const bubble = document.createElement('div');
+            bubble.className = 'love-bubble w-12 h-12 text-xl';
+            bubble.style.left = `${Math.random() * 80 + 10}vw`;
+            bubble.style.bottom = '-60px';
+            bubble.innerText = ['💖', '💋', '🌸', '✨', '🎀'][Math.floor(Math.random() * 5)];
+            bubble.onclick = () => {
+                playSynthChime(900, 'sine', 0.2);
+                bubble.remove();
+            };
+            layer.appendChild(bubble);
+            setTimeout(() => bubble.remove(), 7000);
+        }
+
+        function openLoveJarModal() {
+            document.getElementById('lovejar-modal').classList.remove('hidden');
+            document.getElementById('lovejar-modal').classList.add('flex');
+        }
+        function closeLoveJarModal() {
+            document.getElementById('lovejar-modal').classList.add('hidden');
+            document.getElementById('lovejar-modal').classList.remove('flex');
+        }
+
+        function pullLoveJarNote() {
+            initAudioContext();
+            playSynthChime(750, 'sine', 0.3);
+            const note = JAR_NOTES[Math.floor(Math.random() * JAR_NOTES.length)];
+            const display = document.getElementById('jar-note-display');
+            if (display) display.innerText = note;
+        }
+
+        function toggleMobileExtrasMenu() {
+            const modal = document.getElementById('mobile-extras-modal');
+            if (modal.classList.contains('hidden')) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            } else {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+        }
+
+        function openAgeModal() {
+            document.getElementById('age-modal').classList.remove('hidden');
+            document.getElementById('age-modal').classList.add('flex');
+        }
+        function closeAgeModal() {
+            document.getElementById('age-modal').classList.add('hidden');
+            document.getElementById('age-modal').classList.remove('flex');
+        }
+
+        function saveAgeSettings() {
+            const val = document.getElementById('input-birthdate').value;
+            if (val) {
+                const parts = val.split('-');
+                APP_STATE.birthDate = new Date(parts[0], parts[1] - 1, parts[2]);
+                updateAgeCounters();
+            }
+            closeAgeModal();
+        }
+
+        function initFloatingHeartsCanvas() {
+            const canvas = document.getElementById('bg-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            let width = canvas.width = window.innerWidth;
+            let height = canvas.height = window.innerHeight;
+
+            window.addEventListener('resize', () => {
+                width = canvas.width = window.innerWidth;
+                height = canvas.height = window.innerHeight;
+            });
+
+            const particles = [];
+            for (let i = 0; i < 25; i++) {
+                particles.push({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    size: Math.random() * 3 + 1,
+                    speedY: Math.random() * 0.6 + 0.2,
+                    opacity: Math.random() * 0.5 + 0.2
+                });
+            }
+
+            window.addTrailParticle = function(x, y) {
+                particles.push({
+                    x: x,
+                    y: y,
+                    size: Math.random() * 4 + 2,
+                    speedY: Math.random() * 1 + 0.5,
+                    opacity: 0.9
+                });
+            };
+
+            function animateCanvas() {
+                ctx.clearRect(0, 0, width, height);
+                particles.forEach((p, idx) => {
+                    p.y -= p.speedY;
+                    if (p.y < -10) p.y = height + 10;
+
+                    ctx.fillStyle = `rgba(244, 114, 182, ${p.opacity})`;
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                    ctx.fill();
+                });
+                requestAnimationFrame(animateCanvas);
+            }
+            animateCanvas();
         }
 
         window.onload = function() {
             initFloatingHeartsCanvas();
-            updateLiveAgeMetrics();
-            renderPolaroidGallery();
-            setInterval(updateLiveAgeMetrics, 1000);
-            setInterval(updateClock, 10000);
+            renderGallery();
+            setInterval(updateAgeCounters, 1000);
+            updateAgeCounters();
+            startAudioAuto();
 
-            const videoElem = document.getElementById('modal-video');
-            if (videoElem) {
-                videoElem.addEventListener('ended', function() {
-                    const bgAudio = document.getElementById('bg-audio');
-                    if (bgAudio && APP_STATE.bgAudioWasPlaying !== false) {
-                        bgAudio.play().catch(() => {});
-                    }
-                });
+            const starlit = document.getElementById('starlit-canvas');
+            if (starlit) {
+                starlit.width = starlit.parentElement.clientWidth;
+                starlit.height = starlit.parentElement.clientHeight;
             }
-
-            const unlockAudio = () => {
-                const audio = document.getElementById('bg-audio');
-                if (audio) {
-                    audio.play().catch(() => {});
-                }
-                window.removeEventListener('click', unlockAudio);
-                window.removeEventListener('touchstart', unlockAudio);
-            };
-            window.addEventListener('click', unlockAudio);
-            window.addEventListener('touchstart', unlockAudio);
         };
     </script>
 </body>
