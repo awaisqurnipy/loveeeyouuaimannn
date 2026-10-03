@@ -1,0 +1,2201 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>A surprise awaits you... 🌟 | Aiman's 16th Birthday</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'xs': '375px',
+                    'sm': '640px',
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1280px',
+                },
+                extend: {
+                    colors: {
+                        homebg: '#12040b',
+                        pinktext: '#fcddec',
+                        goldtext: '#e6c187',
+                        bottomtext: '#e8b792',
+                        envelopebg: '#f3c1cb',
+                        envelopestrap: '#d4a18d',
+                        sealbronze: '#d9977e',
+                        velvet: '#080205',
+                        burgundy: '#5c1322',
+                        darkburgundy: '#3d0a14'
+                    },
+                    fontFamily: {
+                        display: ['Fredoka', 'Quicksand', 'Nunito', 'sans-serif'],
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        hand: ['Dancing Script', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Quicksand:wght@600;700&family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            min-height: 100dvh;
+            overflow-x: hidden;
+            background: radial-gradient(circle at 50% 35%, #2a0918 0%, #12040a 55%, #080205 100%);
+            touch-action: manipulation;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .home-title-pink {
+            color: #fce7f3;
+            font-family: 'Fredoka', 'Quicksand', sans-serif;
+            text-shadow: 0 0 16px rgba(252, 221, 236, 0.6), 0 0 30px rgba(244, 114, 182, 0.35);
+        }
+
+        .home-sub-gold {
+            color: #e6c187;
+            font-family: 'Quicksand', 'Fredoka', sans-serif;
+            text-shadow: 0 0 10px rgba(230, 193, 135, 0.4);
+        }
+
+        .home-tap-seal {
+            color: #e8b792;
+            font-family: 'Fredoka', 'Quicksand', sans-serif;
+            text-shadow: 0 0 8px rgba(232, 183, 146, 0.3);
+        }
+
+        .pink-title-glow {
+            color: #fce7f3;
+            font-family: 'Fredoka', 'Quicksand', sans-serif;
+            text-shadow: 0 0 18px rgba(244, 114, 182, 0.8), 0 0 32px rgba(225, 29, 72, 0.6);
+        }
+
+        .pink-stat-number {
+            color: #fce7f3;
+            font-family: 'Fredoka', sans-serif;
+            text-shadow: 0 0 16px rgba(244, 114, 182, 0.8), 0 0 30px rgba(225, 29, 72, 0.5);
+        }
+
+        .gold-stat-label {
+            color: #e6c187;
+            letter-spacing: 0.15em;
+        }
+
+        .pearl-seal {
+            background: radial-gradient(circle at 35% 35%, #fce7f3 0%, #e8a58c 35%, #b26048 75%, #632616 100%);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.6), inset 0 2px 4px rgba(255,255,255,0.7), 0 0 20px rgba(232, 165, 140, 0.5);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .pearl-seal:hover, .pearl-seal:active {
+            transform: scale(1.12);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.7), inset 0 2px 6px rgba(255,255,255,0.9), 0 0 30px rgba(244, 114, 182, 0.8);
+        }
+
+        .envelope-body {
+            background: linear-gradient(135deg, #f7cb3a 0%, #f4b4be 40%, #e89ba9 100%);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.65), 0 0 30px rgba(244, 114, 182, 0.25);
+        }
+
+        .flame {
+            background: radial-gradient(ellipse at bottom, #fef08a 0%, #f97316 65%, transparent 100%);
+            border-radius: 50% 50% 20% 20%;
+            box-shadow: 0 0 12px #fde047, 0 0 22px #f97316, 0 0 35px #ef4444;
+            animation: flicker 0.12s infinite alternate ease-in-out;
+            transform-origin: center bottom;
+        }
+        @keyframes flicker {
+            0% { transform: scale(1) rotate(-2deg); opacity: 0.95; }
+            100% { transform: scale(1.18) rotate(2deg); opacity: 1; }
+        }
+
+        .smoke {
+            width: 8px;
+            height: 24px;
+            background: rgba(220, 220, 220, 0.5);
+            border-radius: 50%;
+            filter: blur(4px);
+            animation: riseSmoke 1.6s forwards ease-out;
+        }
+        @keyframes riseSmoke {
+            0% { opacity: 0.9; transform: translateY(0) scale(1); }
+            100% { opacity: 0; transform: translateY(-45px) scale(3); }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-8px); }
+            40%, 80% { transform: translateX(8px); }
+        }
+        .animate-shake {
+            animation: shake 0.4s ease-in-out;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(244, 114, 182, 0.7); }
+            15% { transform: scale(1.15); box-shadow: 0 0 25px 10px rgba(244, 114, 182, 0.9); }
+            30% { transform: scale(1); box-shadow: 0 0 0 0 rgba(244, 114, 182, 0.7); }
+            45% { transform: scale(1.22); box-shadow: 0 0 35px 15px rgba(225, 29, 72, 0.9); }
+            60% { transform: scale(1); box-shadow: 0 0 0 0 rgba(244, 114, 182, 0.7); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(244, 114, 182, 0.7); }
+        }
+        .animate-heartbeat {
+            animation: heartbeat 1.1s infinite ease-in-out;
+        }
+
+        .chapter-page {
+            transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+            opacity: 0;
+            pointer-events: none;
+            position: absolute;
+            inset: 0;
+            overflow-y: auto;
+            visibility: hidden;
+            transform: translateY(12px);
+        }
+        .chapter-page.active {
+            opacity: 1;
+            pointer-events: auto;
+            position: relative;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .glass-panel {
+            background: rgba(22, 5, 15, 0.88);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(244, 114, 182, 0.25);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75);
+        }
+
+        .curtain-container {
+            position: fixed;
+            inset: 0;
+            z-index: 60;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: #0b0104;
+        }
+
+        .curtain-panel {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 50%;
+            background: repeating-linear-gradient(
+                90deg,
+                #40020b,
+                #6e0517 12px,
+                #9e0c25 24px,
+                #570311 36px,
+                #2d0107 48px
+            );
+            box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.85);
+            transition: transform 1.3s cubic-bezier(0.77, 0, 0.175, 1);
+            will-change: transform;
+        }
+
+        .curtain-left {
+            left: 0;
+            border-right: 3px solid rgba(0, 0, 0, 0.7);
+        }
+
+        .curtain-right {
+            right: 0;
+            border-left: 3px solid rgba(0, 0, 0, 0.7);
+        }
+
+        .curtain-container.open .curtain-left {
+            transform: translateX(-100%);
+        }
+
+        .curtain-container.open .curtain-right {
+            transform: translateX(100%);
+        }
+
+        .btn-open-curtain {
+            background: linear-gradient(180deg, #2e050f 0%, #170106 100%);
+            border: 1.5px solid rgba(244, 114, 182, 0.45);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.9), inset 0 1px 3px rgba(255, 255, 255, 0.25);
+            transition: all 0.25s ease-out;
+        }
+        .btn-open-curtain:hover, .btn-open-curtain:active {
+            transform: scale(1.06);
+            border-color: rgba(244, 114, 182, 0.8);
+            box-shadow: 0 15px 40px rgba(225, 29, 72, 0.4), inset 0 1px 4px rgba(255, 255, 255, 0.4);
+        }
+
+        .bear-avatar-ring {
+            background: radial-gradient(circle at 35% 35%, #1e0610 0%, #0d0207 100%);
+            border: 2.5px solid #b88e4c;
+            box-shadow: 0 0 25px rgba(218, 165, 32, 0.35), 0 0 50px rgba(244, 114, 182, 0.2);
+        }
+
+        .gold-shimmer {
+            background: linear-gradient(90deg, #e6c187 0%, #fff3d1 50%, #e6c187 100%);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: shine 3s linear infinite;
+        }
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+
+        .love-bubble {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, rgba(252, 231, 243, 0.8), rgba(244, 114, 182, 0.3) 60%, rgba(225, 29, 72, 0.1) 100%);
+            box-shadow: inset 0 0 10px rgba(255,255,255,0.6), 0 4px 15px rgba(244, 114, 182, 0.4);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease, opacity 0.3s ease;
+            animation: floatBubble 6s infinite ease-in-out;
+        }
+        @keyframes floatBubble {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-18px) scale(1.05); }
+        }
+
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: rgba(18, 4, 11, 0.8); }
+        ::-webkit-scrollbar-thumb { background: rgba(244, 114, 182, 0.4); border-radius: 9999px; }
+        ::-webkit-scrollbar-thumb:hover { background: rgba(244, 114, 182, 0.7); }
+    </style>
+</head>
+<body class="text-slate-100 font-sans h-full min-h-screen overflow-x-hidden selection:bg-rose-500 selection:text-white flex flex-col justify-between relative">
+
+    <canvas id="bg-canvas" class="fixed inset-0 w-full h-full pointer-events-none z-0"></canvas>
+
+    <!-- STAGE CURTAIN MODAL -->
+    <div id="curtain-stage" class="curtain-container hidden">
+        <div class="curtain-panel curtain-left"></div>
+        <div class="curtain-panel curtain-right"></div>
+        
+        <button id="btn-open-stage" onclick="openCurtainsAndGoToTeddy()" class="btn-open-curtain relative z-10 px-7 xs:px-9 py-3 xs:py-3.5 rounded-full flex items-center justify-center gap-2.5 xs:gap-3 text-white font-display text-base xs:text-lg font-bold tracking-wide cursor-pointer select-none">
+            <span class="text-lg xs:text-xl animate-pulse">💖</span>
+            <span>Open</span>
+        </button>
+    </div>
+
+    <!-- HEADER NAVIGATION -->
+    <header class="fixed top-0 left-0 right-0 z-50 p-2.5 xs:p-3 sm:p-4 flex justify-between items-center pointer-events-auto bg-gradient-to-b from-black/90 via-black/60 to-transparent backdrop-blur-md">
+        <div class="flex items-center space-x-2 cursor-pointer" onclick="navigateTo('index')">
+            <span class="w-7 h-7 xs:w-8 xs:h-8 rounded-full bg-pink-500/20 border border-pink-400/40 flex items-center justify-center text-pink-300 shadow-[0_0_12px_rgba(244,114,182,0.4)]">
+                <i class="fa-solid fa-heart text-[10px] xs:text-xs animate-pulse text-rose-400"></i>
+            </span>
+            <div class="flex flex-col">
+                <span class="font-display text-pink-200 text-xs xs:text-sm sm:text-base font-bold tracking-wide truncate max-w-[110px] xs:max-w-[150px] sm:max-w-xs">
+                    My Little World ❤️
+                </span>
+                <span id="chapter-badge" class="text-[8px] xs:text-[9px] font-mono text-amber-300/80 uppercase tracking-wider -mt-1 truncate max-w-[110px] sm:max-w-none">
+                    Chapter 1 • Entrance
+                </span>
+            </div>
+        </div>
+
+        <!-- Desktop Navigation Bar -->
+        <div class="hidden lg:flex items-center space-x-2">
+            <button onclick="openLoveWheelModal()" class="text-amber-300 hover:text-amber-100 bg-slate-900/80 border border-amber-500/40 rounded-full px-3 py-1.5 text-xs font-semibold flex items-center gap-1.5 shadow-lg hover:scale-105 transition" title="Spin Romantic Wheel">
+                <span class="text-sm">🎡</span> <span>Love Wheel</span>
+            </button>
+            <button onclick="openSoulmateModal()" class="text-rose-300 hover:text-rose-100 bg-slate-900/80 border border-rose-500/40 rounded-full px-3 py-1.5 text-xs font-semibold flex items-center gap-1.5 shadow-lg hover:scale-105 transition" title="Soulmate Scanner">
+                <span class="text-sm">🧬</span> <span>Scanner</span>
+            </button>
+            <button onclick="openLoveQuizModal()" class="text-pink-300 hover:text-pink-100 bg-slate-900/80 border border-pink-500/40 rounded-full px-3 py-1.5 text-xs font-semibold flex items-center gap-1.5 shadow-lg hover:scale-105 transition" title="Love Quiz">
+                <span class="text-sm">🧩</span> <span>Quiz</span>
+            </button>
+            <button onclick="toggleLoveBubbles()" class="text-cyan-300 hover:text-cyan-100 bg-slate-900/80 border border-cyan-500/40 rounded-full px-3 py-1.5 text-xs font-semibold flex items-center gap-1.5 shadow-lg hover:scale-105 transition" title="Pop Love Bubbles">
+                <span class="text-sm">🫧</span> <span>Bubbles</span>
+            </button>
+            <button onclick="openLoveJarModal()" class="text-pink-300 hover:text-pink-100 bg-slate-900/80 border border-pink-500/30 rounded-full px-3 py-1.5 text-xs font-semibold flex items-center gap-1.5 shadow hover:scale-105 transition" title="Open Love Notes Jar">
+                <span class="text-sm">🫙</span> <span>Love Jar</span>
+            </button>
+            <button onclick="openAgeModal()" class="text-amber-300 hover:text-amber-200 bg-slate-900/80 border border-amber-500/30 rounded-full p-2 text-xs font-semibold shadow hover:scale-105 transition" title="Settings">
+                <i class="fa-solid fa-pen-to-square"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Header Button -->
+        <div class="flex lg:hidden items-center space-x-1.5">
+            <button onclick="toggleMobileExtrasMenu()" class="text-pink-100 bg-gradient-to-r from-rose-900/90 via-pink-900/90 to-amber-900/90 border border-pink-400/50 rounded-full px-3 xs:px-3.5 py-1 xs:py-1.5 text-[11px] xs:text-xs font-bold flex items-center gap-1 xs:gap-1.5 shadow-[0_0_15px_rgba(244,114,182,0.3)] active:scale-95 transition">
+                <span class="text-xs xs:text-sm animate-pulse">✨</span>
+                <span>Extras</span>
+                <i class="fa-solid fa-chevron-down text-[9px] text-pink-300 ml-0.5"></i>
+            </button>
+        </div>
+        <audio id="bg-audio" src="assets/audio/song.mp3" loop></audio>
+    </header>
+
+    <!-- MOBILE EXTRAS MENU POPUP SHEET -->
+    <div id="mobile-extras-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden flex-col justify-end sm:justify-center items-center p-2.5 xs:p-4 transition-all duration-300">
+        <div class="glass-panel w-full max-w-sm rounded-3xl p-4 xs:p-5 border border-pink-400/40 shadow-2xl relative text-center max-h-[90dvh] overflow-y-auto">
+            <button onclick="toggleMobileExtrasMenu()" class="absolute top-2.5 right-2.5 text-slate-400 hover:text-white text-base p-2">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="text-[10px] font-mono text-amber-300 uppercase tracking-widest mb-1 flex items-center justify-center gap-1">
+                <span>✨ Romantic Menu ✨</span>
+            </div>
+            <h3 class="font-display text-base xs:text-lg text-pink-200 font-bold mb-3 xs:mb-4">Surprises & Mini-Games</h3>
+
+            <div class="grid grid-cols-2 gap-2 xs:gap-2.5 mb-2">
+                <button onclick="toggleMobileExtrasMenu(); openLoveWheelModal();" class="p-3 xs:p-3.5 bg-slate-900/90 hover:bg-slate-800 border border-amber-500/40 rounded-2xl flex flex-col items-center gap-1 text-amber-200 transition active:scale-95 shadow">
+                    <span class="text-xl xs:text-2xl">🎡</span>
+                    <span class="text-[11px] xs:text-xs font-bold">Love Wheel</span>
+                </button>
+                <button onclick="toggleMobileExtrasMenu(); openSoulmateModal();" class="p-3 xs:p-3.5 bg-slate-900/90 hover:bg-slate-800 border border-rose-500/40 rounded-2xl flex flex-col items-center gap-1 text-rose-200 transition active:scale-95 shadow">
+                    <span class="text-xl xs:text-2xl">🧬</span>
+                    <span class="text-[11px] xs:text-xs font-bold">Scanner</span>
+                </button>
+                <button onclick="toggleMobileExtrasMenu(); openLoveQuizModal();" class="p-3 xs:p-3.5 bg-slate-900/90 hover:bg-slate-800 border border-pink-500/40 rounded-2xl flex flex-col items-center gap-1 text-pink-200 transition active:scale-95 shadow">
+                    <span class="text-xl xs:text-2xl">🧩</span>
+                    <span class="text-[11px] xs:text-xs font-bold">Love Quiz</span>
+                </button>
+                <button onclick="toggleMobileExtrasMenu(); toggleLoveBubbles();" class="p-3 xs:p-3.5 bg-slate-900/90 hover:bg-slate-800 border border-cyan-500/40 rounded-2xl flex flex-col items-center gap-1 text-cyan-200 transition active:scale-95 shadow">
+                    <span class="text-xl xs:text-2xl">🫧</span>
+                    <span class="text-[11px] xs:text-xs font-bold">Bubbles</span>
+                </button>
+                <button onclick="toggleMobileExtrasMenu(); openLoveJarModal();" class="p-3 xs:p-3.5 bg-slate-900/90 hover:bg-slate-800 border border-pink-500/30 rounded-2xl flex flex-col items-center gap-1 text-pink-200 transition active:scale-95 shadow">
+                    <span class="text-xl xs:text-2xl">🫙</span>
+                    <span class="text-[11px] xs:text-xs font-bold">Love Jar</span>
+                </button>
+                <button onclick="toggleMobileExtrasMenu(); openAgeModal();" class="p-3 xs:p-3.5 bg-slate-900/90 hover:bg-slate-800 border border-amber-500/30 rounded-2xl flex flex-col items-center gap-1 text-amber-300 transition active:scale-95 shadow">
+                    <span class="text-xl xs:text-2xl">⚙️</span>
+                    <span class="text-[11px] xs:text-xs font-bold">Settings</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING LOVE BUBBLE CONTAINER LAYER -->
+    <div id="love-bubbles-layer" class="fixed inset-0 pointer-events-none z-40 overflow-hidden"></div>
+    
+    <!-- MAIN CHAPTER CONTAINER -->
+    <main class="relative flex-grow z-10 pt-14 xs:pt-16 sm:pt-20 pb-10 xs:pb-12 sm:pb-16 px-2.5 xs:px-4 sm:px-6 max-w-4xl mx-auto w-full flex flex-col justify-center min-h-[calc(100dvh-60px)]">
+
+        <!-- CHAPTER 1: ENTRANCE -->
+        <section id="chapter-index" class="chapter-page active flex flex-col items-center justify-center text-center my-auto py-2 xs:py-4">
+            <div class="w-full max-w-md flex flex-col items-center select-none">
+                
+                <h1 class="font-display text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold mb-1 tracking-tight home-title-pink leading-tight">
+                    A surprise awaits
+                </h1>
+                <h1 class="font-display text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 xs:mb-4 tracking-tight home-title-pink leading-tight flex items-center justify-center gap-1.5 xs:gap-2">
+                    you... <span class="text-2xl xs:text-3xl sm:text-4xl drop-shadow-[0_0_12px_rgba(253,224,71,0.9)] animate-pulse">🌟</span>
+                </h1>
+
+                <div class="home-sub-gold text-xs xs:text-sm sm:text-base font-semibold mb-6 xs:mb-8 tracking-wide flex flex-col items-center justify-center space-y-0.5">
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-amber-300 text-xs">✨</span>
+                        <span>Something special, just for</span>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <span>you</span>
+                        <span class="text-amber-300 text-xs">✨</span>
+                    </div>
+                </div>
+
+                <div class="relative w-60 xs:w-72 sm:w-80 h-36 xs:h-44 sm:h-48 my-1 xs:my-2 cursor-pointer group" onclick="openHomeSealEnvelope()" title="Tap seal to open envelope">
+                    <div class="w-full h-full rounded-2xl envelope-body relative overflow-hidden border border-pink-300/40 flex flex-col items-center justify-between p-2">
+                        <div class="absolute inset-0 pointer-events-none">
+                            <svg class="w-full h-full" viewBox="0 0 320 192" fill="none">
+                                <path d="M 0 0 L 160 110 L 320 0 Z" fill="rgba(255, 230, 238, 0.45)" />
+                                <path d="M 0 192 L 160 100 L 320 192" stroke="rgba(212, 140, 158, 0.35)" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-5 xs:w-6 sm:w-7 bg-gradient-to-b from-[#dfa08a] via-[#c6836c] to-[#a35e49] shadow-md z-10 border-x border-pink-200/30"></div>
+                        <button id="home-seal-btn" class="pearl-seal w-11 h-11 xs:w-13 xs:h-13 sm:w-14 sm:h-14 rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 flex items-center justify-center focus:outline-none">
+                            <div class="w-3.5 h-3.5 rounded-full bg-white/40 blur-[1px] -mt-2.5 -ml-2.5"></div>
+                        </button>
+                    </div>
+                    <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-3/4 h-8 bg-rose-600/30 blur-xl rounded-full pointer-events-none"></div>
+                </div>
+
+                <div class="home-tap-seal text-xs xs:text-sm sm:text-base font-semibold mt-6 xs:mt-8 flex items-center justify-center gap-2 cursor-pointer" onclick="openHomeSealEnvelope()">
+                    <span>Tap the seal to open</span>
+                    <span class="text-sm xs:text-base">✉️</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CHAPTER 1.5: TEDDY BEAR DEDICATION -->
+        <section id="chapter-teddy" class="chapter-page flex flex-col items-center justify-center text-center my-auto py-2 xs:py-4">
+            <div class="w-full max-w-md flex flex-col items-center select-none px-2 xs:px-4">
+                
+                <div class="w-20 h-20 xs:w-24 xs:h-24 sm:w-28 sm:h-28 rounded-full bear-avatar-ring flex items-center justify-center mb-4 xs:mb-6 shadow-2xl relative">
+                    <span class="text-4xl xs:text-5xl sm:text-6xl filter drop-shadow-[0_0_10px_rgba(255,200,150,0.5)]">🐻</span>
+                </div>
+
+                <h1 class="font-display text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold mb-1 xs:mb-2 tracking-tight home-title-pink leading-tight">
+                    For the Girl
+                </h1>
+                <h1 class="font-display text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold mb-1 xs:mb-2 tracking-tight home-title-pink leading-tight">
+                    Who Has My
+                </h1>
+                <h1 class="font-display text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 xs:mb-6 tracking-tight home-title-pink leading-tight flex items-center justify-center gap-1.5 xs:gap-2">
+                    Heart <span class="text-2xl xs:text-3xl sm:text-4xl text-rose-500 drop-shadow-[0_0_12px_rgba(225,29,72,0.8)]">🎀</span>
+                </h1>
+
+                <p class="home-sub-gold text-xs xs:text-sm sm:text-base font-medium mb-6 xs:mb-8 max-w-xs leading-relaxed">
+                    A little surprise made with all my love just for you.
+                </p>
+
+                <div class="glass-panel p-3.5 xs:p-4 rounded-2xl w-full max-w-xs mb-6 xs:mb-8 border border-rose-500/40 text-center flex flex-col items-center justify-center relative shadow-xl">
+                    <span class="text-[9px] xs:text-[10px] font-mono text-amber-300/80 uppercase tracking-widest mb-1">❤️ Awais's Live Heartbeat Sensor</span>
+                    <div id="heartbeat-btn" onmousedown="startHeartbeat()" onmouseup="stopHeartbeat()" ontouchstart="startHeartbeat()" ontouchend="stopHeartbeat()" class="w-12 h-12 xs:w-14 xs:h-14 rounded-full bg-gradient-to-tr from-rose-600 to-pink-500 flex items-center justify-center text-white text-xl xs:text-2xl my-2 cursor-pointer shadow-lg active:scale-95 transition">
+                        <i class="fa-solid fa-heart animate-heartbeat"></i>
+                    </div>
+                    <p id="heartbeat-status" class="text-[11px] xs:text-xs font-serif text-pink-200 italic">Press & hold to feel my heart beating for you...</p>
+                </div>
+
+                <button onclick="navigateTo('birthday')" class="w-full max-w-xs py-3 xs:py-3.5 bg-[#1a0812] hover:bg-[#280c1d] border-2 border-[#b88e4c] rounded-full text-pink-100 font-display text-base xs:text-lg font-bold transition-all shadow-[0_0_20px_rgba(184,142,76,0.3)] hover:scale-105 active:scale-95 flex items-center justify-center gap-2">
+                    <span>Continue</span>
+                    <span class="text-amber-300 text-base xs:text-lg">✨</span>
+                </button>
+
+            </div>
+        </section>
+
+        <!-- CHAPTER 2: BIRTHDAY CAKE & LIVE METRICS -->
+        <section id="chapter-birthday" class="chapter-page flex flex-col items-center justify-center text-center my-auto py-2 xs:py-4">
+            <div class="w-full max-w-2xl flex flex-col items-center">
+                
+                <h1 class="font-display text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-extrabold mb-1 tracking-wide pink-title-glow flex items-center justify-center gap-2">
+                    Happy Birthday <br class="sm:hidden" /> Aiman 🎂
+                </h1>
+                
+                <p class="font-serif text-amber-200/90 text-[11px] xs:text-xs sm:text-sm font-semibold mb-4 xs:mb-6 flex items-center justify-center gap-1.5 tracking-wide">
+                    The World Has Been Better Since <i class="fa-solid fa-heart text-rose-500 text-[10px] xs:text-xs"></i>
+                </p>
+
+                <div class="w-full max-w-xl my-1 xs:my-2 px-1">
+                    <div class="grid grid-cols-2 gap-y-4 xs:gap-y-5 gap-x-3 sm:gap-x-8 text-center">
+                        <div>
+                            <div id="stat-years" class="text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-extrabold pink-stat-number leading-none">16</div>
+                            <div class="text-[9px] xs:text-[10px] sm:text-xs font-bold font-mono gold-stat-label mt-1">YEARS</div>
+                        </div>
+                        <div>
+                            <div id="stat-days" class="text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-extrabold pink-stat-number leading-none">5,843</div>
+                            <div class="text-[9px] xs:text-[10px] sm:text-xs font-bold font-mono gold-stat-label mt-1">DAYS</div>
+                        </div>
+                        <div>
+                            <div id="stat-hours" class="text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-extrabold pink-stat-number leading-none">140,251</div>
+                            <div class="text-[9px] xs:text-[10px] sm:text-xs font-bold font-mono gold-stat-label mt-1">HOURS</div>
+                        </div>
+                        <div>
+                            <div id="stat-minutes" class="text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-extrabold pink-stat-number leading-none">8,415,060</div>
+                            <div class="text-[9px] xs:text-[10px] sm:text-xs font-bold font-mono gold-stat-label mt-1">MINUTES</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative my-4 xs:my-6 py-2 flex flex-col items-center cursor-pointer select-none" onclick="blowOutAllCandles()" title="Tap cake to blow out candles">
+                    <div class="flex justify-center items-end gap-2.5 xs:gap-3 sm:gap-4 mb-0.5 z-20">
+                        <div class="candle relative">
+                            <div id="flame-left" class="flame w-3 h-4.5 xs:w-3.5 xs:h-5 absolute -top-4.5 xs:-top-5 left-1/2 -translate-x-1/2"></div>
+                            <div id="smoke-left" class="smoke absolute -top-8 left-1/2 -translate-x-1/2 hidden"></div>
+                            <div class="w-2.5 xs:w-3 h-8 xs:h-10 bg-gradient-to-b from-rose-200 via-rose-500 to-rose-900 rounded-t-sm shadow-md border-x border-pink-400/30"></div>
+                        </div>
+
+                        <div class="candle relative">
+                            <div id="flame-num1" class="flame w-3.5 h-5.5 xs:w-4 xs:h-6 absolute -top-5.5 xs:-top-6 left-1/2 -translate-x-1/2"></div>
+                            <div id="smoke-num1" class="smoke absolute -top-10 left-1/2 -translate-x-1/2 hidden"></div>
+                            <div id="candle-digit-1" class="w-7.5 h-10 xs:w-9 xs:h-12 bg-gradient-to-b from-pink-100 via-pink-200 to-rose-300 rounded-xl xs:rounded-2xl shadow-lg border-2 border-white/90 flex items-center justify-center text-rose-950 font-extrabold text-xl xs:text-2xl font-display">
+                                1
+                            </div>
+                        </div>
+
+                        <div class="candle relative">
+                            <div id="flame-num2" class="flame w-3.5 h-5.5 xs:w-4 xs:h-6 absolute -top-5.5 xs:-top-6 left-1/2 -translate-x-1/2"></div>
+                            <div id="smoke-num2" class="smoke absolute -top-10 left-1/2 -translate-x-1/2 hidden"></div>
+                            <div id="candle-digit-2" class="w-7.5 h-10 xs:w-9 xs:h-12 bg-gradient-to-b from-pink-100 via-pink-200 to-rose-300 rounded-xl xs:rounded-2xl shadow-lg border-2 border-white/90 flex items-center justify-center text-rose-950 font-extrabold text-xl xs:text-2xl font-display">
+                                6
+                            </div>
+                        </div>
+
+                        <div class="candle relative">
+                            <div id="flame-right" class="flame w-3 h-4.5 xs:w-3.5 xs:h-5 absolute -top-4.5 xs:-top-5 left-1/2 -translate-x-1/2"></div>
+                            <div id="smoke-right" class="smoke absolute -top-8 left-1/2 -translate-x-1/2 hidden"></div>
+                            <div class="w-2.5 xs:w-3 h-8 xs:h-10 bg-gradient-to-b from-rose-200 via-rose-500 to-rose-900 rounded-t-sm shadow-md border-x border-pink-400/30"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-40 xs:w-48 sm:w-56 h-12 xs:h-14 sm:h-16 bg-gradient-to-r from-[#5c1322] via-[#7d1c31] to-[#5c1322] rounded-t-2xl border-b-2 border-rose-900/60 relative shadow-inner flex items-center justify-center">
+                        <div class="w-full h-2 bg-rose-200/20 absolute top-0 rounded-t-2xl"></div>
+                        <div class="flex space-x-3 xs:space-x-4">
+                            <span class="w-2 h-2 xs:w-2.5 xs:h-2.5 rounded-full bg-pink-100 shadow"></span>
+                            <span class="w-2 h-2 xs:w-2.5 xs:h-2.5 rounded-full bg-pink-100 shadow"></span>
+                            <span class="w-2 h-2 xs:w-2.5 xs:h-2.5 rounded-full bg-pink-100 shadow"></span>
+                        </div>
+                    </div>
+
+                    <div class="w-52 xs:w-60 sm:w-72 h-14 xs:h-16 sm:h-20 bg-gradient-to-r from-[#3d0a14] via-[#5c1322] to-[#3d0a14] rounded-t-xl border-b-4 border-black/80 relative shadow-2xl flex items-center justify-center">
+                        <div class="w-11/12 h-2 bg-pink-200/20 absolute top-2 rounded-full"></div>
+                        <div class="flex space-x-4 xs:space-x-6">
+                            <span class="w-2.5 h-2.5 xs:w-3 xs:h-3 rounded-full bg-pink-100 shadow-md"></span>
+                            <span class="w-2.5 h-2.5 xs:w-3 xs:h-3 rounded-full bg-pink-100 shadow-md"></span>
+                            <span class="w-2.5 h-2.5 xs:w-3 xs:h-3 rounded-full bg-pink-100 shadow-md"></span>
+                            <span class="w-2.5 h-2.5 xs:w-3 xs:h-3 rounded-full bg-pink-100 shadow-md"></span>
+                        </div>
+                    </div>
+
+                    <div class="w-64 xs:w-72 sm:w-80 h-4 xs:h-5 bg-gradient-to-r from-slate-300 via-slate-100 to-slate-300 rounded-full shadow-2xl border-t border-slate-200"></div>
+                </div>
+
+                <p class="text-[11px] xs:text-xs sm:text-sm text-amber-200/90 font-medium mb-3 flex items-center gap-1.5">
+                    Tap the cake to blow the candles 🎂
+                </p>
+
+                <div class="flex flex-wrap items-center justify-center gap-2">
+                    <button id="btn-mic-blow" onclick="startMicrophoneSensor()" class="px-4 xs:px-5 py-2 xs:py-2.5 bg-slate-900/90 hover:bg-slate-800 border border-pink-500/40 rounded-full text-[11px] xs:text-xs sm:text-sm font-semibold text-pink-200 transition shadow-lg flex items-center gap-1.5 xs:gap-2 hover:scale-105 active:scale-95">
+                        <i id="mic-btn-icon" class="fa-solid fa-microphone text-pink-400"></i>
+                        <span id="mic-btn-text">🎤 Blow with your breath</span>
+                    </button>
+
+                    <button onclick="blowOutAllCandles()" class="px-3.5 xs:px-4 py-2 xs:py-2.5 bg-slate-900/80 hover:bg-slate-800 border border-amber-500/40 rounded-full text-[11px] xs:text-xs font-semibold text-amber-300 transition shadow-lg flex items-center gap-1.5 hover:scale-105 active:scale-95" title="Skip microphone and blow out candles instantly">
+                        <span>Skip / Blow Candles</span> <i class="fa-solid fa-wand-magic-sparkles text-amber-300"></i>
+                    </button>
+                </div>
+
+                <div id="mic-level-container" class="w-40 xs:w-48 h-1.5 bg-slate-800 rounded-full mt-2 hidden overflow-hidden">
+                    <div id="mic-level-bar" class="h-full bg-gradient-to-r from-pink-500 to-amber-400 w-0 transition-all duration-75"></div>
+                </div>
+
+                <p id="blow-bottom-instruction" class="text-[10px] xs:text-[11px] sm:text-xs text-amber-300/80 font-medium mt-2.5 xs:mt-3 italic flex items-center gap-1">
+                    Blow out the candles to continue ✨
+                </p>
+
+                <div id="candles-blown-continue-box" class="hidden glass-panel p-4 xs:p-5 rounded-2xl max-w-md w-full border border-pink-400/50 mt-4">
+                    <p class="font-display text-pink-200 text-base xs:text-lg font-bold mb-1 pink-title-glow">
+                        🎉 Happy 16th Birthday Aiman!
+                    </p>
+                    <p class="text-slate-300 text-xs font-serif italic mb-4">
+                        May all your dreams come true. Let us continue into your romantic birthday surprise...
+                    </p>
+                    <button onclick="navigateTo('letter')" class="w-full py-2.5 xs:py-3 bg-gradient-to-r from-pink-400 via-rose-500 to-amber-400 text-slate-950 font-extrabold rounded-full transition shadow-xl flex items-center justify-center gap-2 text-xs xs:text-sm font-display hover:scale-105">
+                        Read My Letter ❤️ <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CHAPTER 3: LOVE LETTER -->
+        <section id="chapter-letter" class="chapter-page flex flex-col items-center justify-center text-center my-auto py-4 xs:py-6">
+            <div class="max-w-2xl w-full flex flex-col items-center">
+                <div class="inline-block px-3 py-1 rounded-full bg-pink-500/20 border border-pink-400/30 text-pink-300 text-[10px] xs:text-[11px] uppercase tracking-widest font-bold mb-3 xs:mb-4">
+                    Chapter II • Written For Aiman
+                </div>
+
+                <div id="envelope-container" class="cursor-pointer w-full max-w-md my-3 xs:my-4" onclick="toggleLetterEnvelope()">
+                    <div class="glass-panel rounded-2xl border border-pink-300/40 p-6 xs:p-8 shadow-2xl relative overflow-hidden min-h-[200px] xs:min-h-[220px] flex flex-col items-center justify-center transition-all hover:scale-[1.02]">
+                        <div class="w-14 h-14 xs:w-16 xs:h-16 rounded-full bg-gradient-to-tr from-rose-600 to-amber-500 text-white flex items-center justify-center shadow-lg border-2 border-pink-300/50 mb-3">
+                            <i class="fa-solid fa-envelope text-xl xs:text-2xl"></i>
+                        </div>
+                        <p class="font-serif italic text-pink-200 text-xs xs:text-sm">
+                            Click to open your birthday love letter...
+                        </p>
+                    </div>
+                </div>
+
+                <div id="letter-content" class="hidden glass-panel p-5 xs:p-6 sm:p-10 rounded-3xl w-full text-left border border-pink-300/30 relative shadow-2xl mt-2">
+                    <div class="flex justify-between items-center border-b border-pink-500/20 pb-3 xs:pb-4 mb-4 xs:mb-6">
+                        <span class="font-hand text-xl xs:text-2xl sm:text-3xl text-pink-300">My Love, ❤️</span>
+                        <span class="text-[10px] xs:text-[11px] text-pink-400/70 font-mono">16th Birthday Edition</span>
+                    </div>
+
+                    <div class="font-serif text-slate-200 text-xs xs:text-sm sm:text-base leading-relaxed space-y-3 xs:space-y-4">
+                        <p>
+                            Happy Birthday to the person who has become such a beautiful part of my life. Today is your special day, but honestly, I feel lucky every day that I have you.
+                        </p>
+                        <p>
+                            I don't think I can ever fully explain how much you mean to me. You have brought so many smiles into my life, made ordinary moments feel special, and given me memories that I never want to forget. Even the smallest conversations with you can make my whole day better.
+                        </p>
+                        <p>
+                            I love the way you care, the way you smile, the way you get happy over little things, and even your cute little moods. I love all the little things that make you you. ❤️
+                        </p>
+                        <p>
+                            On your birthday, I just want you to know that you are deeply loved, appreciated, and precious to me. I pray that Allah fills your life with happiness, protects your heart, gives you everything you've been wishing for, and keeps that beautiful smile on your face always. 🤲🏻
+                        </p>
+                        <p>
+                            There will be good days and difficult days, but whatever comes, I want to keep making memories with you. I want to be there for your happiest moments, support you through your hardest ones, and keep choosing you again and again.
+                        </p>
+                        <p>
+                            And maybe one day, we'll look back at these days and smile at how our story started. Until then, let's keep writing it—one beautiful memory at a time. ❤️
+                        </p>
+                        <p class="font-semibold text-pink-200 pt-2">
+                            Happy Birthday, my love.<br>
+                            You are not just a part of my story.<br>
+                            You are my favorite chapter. ❤️
+                        </p>
+                    </div>
+
+                    <div class="mt-6 xs:mt-8 pt-3 xs:pt-4 border-t border-pink-500/20 text-right font-hand text-xl xs:text-2xl sm:text-3xl text-rose-300">
+                        With all my love,<br>
+                        <span class="text-amber-200 font-bold">Your Awais 💗</span>
+                    </div>
+                </div>
+
+                <div class="w-full max-w-md mt-5 xs:mt-6 glass-panel p-3.5 xs:p-4 rounded-2xl border border-pink-500/30 text-center">
+                    <p class="text-[10px] xs:text-xs font-mono text-amber-300 mb-2 uppercase tracking-wider">✨ Secret Whisper from Awais ✨</p>
+                    <p id="whisper-quote" class="font-serif text-pink-100 text-xs sm:text-sm italic min-h-[40px] flex items-center justify-center">
+                        "I pinky promise to always keep your warm smile glowing."
+                    </p>
+                    <button onclick="nextWhisperQuote()" class="mt-2 px-3.5 xs:px-4 py-1.5 bg-rose-900/60 hover:bg-rose-800/80 text-pink-200 rounded-full text-[10px] xs:text-[11px] font-semibold transition border border-rose-400/30">
+                        Unfold Next Promise <i class="fa-solid fa-sparkles ml-1"></i>
+                    </button>
+                </div>
+
+                <div class="mt-6 xs:mt-8">
+                    <button onclick="navigateTo('memories')" class="px-6 xs:px-7 py-2.5 xs:py-3 bg-gradient-to-r from-pink-400 to-amber-400 text-slate-950 rounded-full text-xs sm:text-sm font-bold font-display transition shadow-lg flex items-center gap-2 hover:scale-105">
+                        Explore Our Memories <i class="fa-solid fa-images text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 4: PHOTO & VIDEO GALLERY -->
+        <section id="chapter-memories" class="chapter-page flex flex-col items-center my-auto py-4 xs:py-6">
+            <div class="max-w-5xl w-full flex flex-col items-center">
+                <div class="inline-block px-3 py-1 rounded-full bg-pink-500/20 border border-pink-400/30 text-pink-300 text-[10px] xs:text-[11px] uppercase tracking-widest font-bold mb-2">
+                    Chapter III • Timeless Moments
+                </div>
+                
+                <h2 class="font-display text-xl xs:text-2xl sm:text-4xl text-pink-300 font-bold mb-1 pink-title-glow">Aiman's Polaroid & Video Gallery</h2>
+                <p class="text-slate-300 font-serif italic mb-4 xs:mb-6 text-center text-xs sm:text-sm">Click any photo or video clip to expand!</p>
+
+                <div class="mb-5 xs:mb-6">
+                    <button onclick="openAddMemoryModal()" class="px-4 xs:px-5 py-2 xs:py-2.5 bg-slate-900/90 hover:bg-slate-800 border border-pink-400/40 rounded-full text-[11px] xs:text-xs font-semibold text-pink-300 transition shadow flex items-center gap-2">
+                        <i class="fa-solid fa-plus-circle text-pink-400"></i> Add Custom Photo or Video Memory
+                    </button>
+                </div>
+
+                <div id="polaroid-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 xs:gap-6 sm:gap-8 w-full px-1 xs:px-2"></div>
+
+                <div class="mt-8 xs:mt-10">
+                    <button onclick="navigateTo('story')" class="px-6 xs:px-7 py-2.5 xs:py-3 bg-gradient-to-r from-pink-400 to-amber-400 text-slate-950 rounded-full text-xs sm:text-sm font-bold font-display transition shadow-lg flex items-center gap-2 hover:scale-105">
+                        Our Story Timeline <i class="fa-solid fa-timeline text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 5: OUR STORY TIMELINE -->
+        <section id="chapter-story" class="chapter-page flex flex-col items-center my-auto py-4 xs:py-6">
+            <div class="max-w-3xl w-full flex flex-col items-center">
+                <div class="inline-block px-3 py-1 rounded-full bg-pink-500/20 border border-pink-400/30 text-pink-300 text-[10px] xs:text-[11px] uppercase tracking-widest font-bold mb-2">
+                    Chapter IV • Our Journey
+                </div>
+                <h2 class="font-display text-xl xs:text-2xl sm:text-4xl text-pink-300 font-bold mb-5 xs:mb-6 pink-title-glow">The Story of Us</h2>
+
+                <div class="relative w-full border-l-2 border-pink-500/40 space-y-6 xs:space-y-8 pl-5 xs:pl-6">
+                    <div class="relative">
+                        <div class="absolute -left-[27px] xs:-left-[31px] top-1 w-3.5 h-3.5 xs:w-4 xs:h-4 rounded-full bg-pink-400 border-2 border-slate-900"></div>
+                        <h3 class="font-display text-base xs:text-lg font-bold text-white">When We First Connected</h3>
+                        <p class="text-slate-300 text-xs sm:text-sm mt-1">A quiet moment that began our beautiful adventure together.</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-[27px] xs:-left-[31px] top-1 w-3.5 h-3.5 xs:w-4 xs:h-4 rounded-full bg-pink-400 border-2 border-slate-900"></div>
+                        <h3 class="font-display text-base xs:text-lg font-bold text-white">Endless Late Night Chats</h3>
+                        <p class="text-slate-300 text-xs sm:text-sm mt-1">Hours flew like minutes as we shared our favorite secrets and laughed endlessly.</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-[27px] xs:-left-[31px] top-1 w-3.5 h-3.5 xs:w-4 xs:h-4 rounded-full bg-amber-400 border-2 border-slate-900"></div>
+                        <h3 class="font-display text-base xs:text-lg font-bold text-amber-200">Aiman's 16th Birthday Today 🎂</h3>
+                        <p class="text-slate-300 text-xs sm:text-sm mt-1">Celebrating 16 incredible years of your life, light, and warmth.</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-[27px] xs:-left-[31px] top-1 w-3.5 h-3.5 xs:w-4 xs:h-4 rounded-full bg-rose-500 border-2 border-slate-900"></div>
+                        <h3 class="font-display text-base xs:text-lg font-bold text-rose-300">Our Future Together</h3>
+                        <p class="text-slate-300 text-xs sm:text-sm mt-1">A lifetime of new chapters, happiness, and shared dreams ahead.</p>
+                    </div>
+                </div>
+
+                <div class="mt-8 xs:mt-10">
+                    <button onclick="navigateTo('reasons')" class="px-6 xs:px-7 py-2.5 xs:py-3 bg-gradient-to-r from-pink-400 to-amber-400 text-slate-950 rounded-full text-xs sm:text-sm font-bold font-display transition shadow-lg flex items-center gap-2 hover:scale-105">
+                        Why I Love Aiman <i class="fa-solid fa-heart text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 6: WHY I LOVE AIMAN -->
+        <section id="chapter-reasons" class="chapter-page flex flex-col items-center justify-center my-auto py-4 xs:py-6">
+            <div class="max-w-xl w-full flex flex-col items-center text-center">
+                <div class="inline-block px-3 py-1 rounded-full bg-pink-500/20 border border-pink-400/30 text-pink-300 text-[10px] xs:text-[11px] uppercase tracking-widest font-bold mb-2">
+                    Chapter V • From My Heart
+                </div>
+                <h2 class="font-display text-xl xs:text-2xl sm:text-4xl text-pink-300 font-bold mb-1.5 xs:mb-2 pink-title-glow">Why I Love Aiman</h2>
+                <p class="text-slate-300 font-serif italic mb-5 xs:mb-6 text-xs sm:text-sm">Tap the glowing heart below to unlock each reason one by one ❤️️</p>
+
+                <div class="glass-panel p-5 xs:p-6 sm:p-8 rounded-3xl w-full border border-rose-500/40 shadow-2xl flex flex-col items-center relative overflow-hidden">
+                    <div class="w-full flex justify-between items-center text-[10px] xs:text-xs font-mono text-amber-300 mb-3 xs:mb-4">
+                        <span>Reason <span id="reason-current-num">1</span> of 16</span>
+                        <span id="reason-progress-percent">6%</span>
+                    </div>
+
+                    <div class="w-full h-2 bg-slate-950 rounded-full overflow-hidden mb-6 xs:mb-8 border border-pink-500/30">
+                        <div id="reason-progress-bar" class="h-full bg-gradient-to-r from-pink-500 to-amber-400 w-[6%] transition-all duration-300"></div>
+                    </div>
+
+                    <div id="reason-heart-btn" onclick="revealNextReason()" class="w-20 h-20 xs:w-24 xs:h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-tr from-rose-600 via-pink-500 to-amber-400 flex items-center justify-center text-white text-3xl xs:text-4xl sm:text-5xl cursor-pointer shadow-[0_0_35px_rgba(244,114,182,0.8)] active:scale-90 transition mb-5 xs:mb-6 select-none animate-heartbeat">
+                        ❤️
+                    </div>
+
+                    <p id="reason-text-box" class="font-serif text-pink-100 text-xs xs:text-sm sm:text-lg italic min-h-[80px] xs:min-h-[90px] flex items-center justify-center px-2 xs:px-4 leading-relaxed">
+                        "Your radiant smile that can light up my darkest days instantly."
+                    </p>
+                </div>
+
+                <div class="mt-6 xs:mt-8">
+                    <button onclick="navigateTo('future')" class="px-6 xs:px-7 py-2.5 xs:py-3 bg-gradient-to-r from-pink-400 to-amber-400 text-slate-950 rounded-full text-xs sm:text-sm font-bold font-display transition shadow-lg flex items-center gap-2 hover:scale-105">
+                        Our Starlit Future <i class="fa-solid fa-star text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 7: STARLIT FUTURE -->
+        <section id="chapter-future" class="chapter-page flex flex-col items-center my-auto py-4 xs:py-6">
+            <div class="max-w-3xl w-full flex flex-col items-center text-center">
+                <div class="inline-block px-3 py-1 rounded-full bg-pink-500/20 border border-pink-400/30 text-pink-300 text-[10px] xs:text-[11px] uppercase tracking-widest font-bold mb-2">
+                    Chapter VI • Constellations of Tomorrow
+                </div>
+                <h2 class="font-display text-xl xs:text-2xl sm:text-4xl text-amber-200 font-bold mb-1.5 xs:mb-2 pink-title-glow">Our Starlit Future</h2>
+                <p class="text-slate-300 font-serif italic mb-4 xs:mb-6 text-xs sm:text-sm">Tap anywhere on the night sky canvas to draw glowing star constellations ✨</p>
+
+                <div class="relative w-full h-60 xs:h-72 sm:h-96 rounded-3xl overflow-hidden border-2 border-amber-400/40 shadow-[0_0_40px_rgba(251,191,36,0.2)] bg-slate-950 my-2 cursor-crosshair" onclick="drawStarConstellation(event)">
+                    <canvas id="starlit-canvas" class="w-full h-full"></canvas>
+                    <div class="absolute bottom-2.5 left-1/2 -translate-x-1/2 text-[10px] xs:text-[11px] font-mono text-amber-300/80 bg-slate-950/80 px-2.5 xs:px-3 py-0.5 xs:py-1 rounded-full border border-amber-400/30">
+                        ✨ Tap sky to connect stars
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 xs:gap-4 w-full mt-4 xs:mt-6">
+                    <div class="glass-panel p-3.5 xs:p-4 rounded-2xl border border-amber-400/30 text-left">
+                        <div class="text-amber-300 text-[10px] xs:text-xs font-mono mb-1">✈️ Wish 1</div>
+                        <h4 class="font-display text-xs xs:text-sm font-bold text-white mb-1">Exploring the World</h4>
+                        <p class="text-slate-300 text-[11px] xs:text-xs font-serif italic">Traveling together and creating memories in every corner of the world.</p>
+                    </div>
+                    <div class="glass-panel p-3.5 xs:p-4 rounded-2xl border border-amber-400/30 text-left">
+                        <div class="text-amber-300 text-[10px] xs:text-xs font-mono mb-1">🌅 Wish 2</div>
+                        <h4 class="font-display text-xs xs:text-sm font-bold text-white mb-1">Quiet Sunsets</h4>
+                        <p class="text-slate-300 text-[11px] xs:text-xs font-serif italic">Watching quiet evening skies and counting stars side-by-side forever.</p>
+                    </div>
+                </div>
+
+                <div class="mt-6 xs:mt-8">
+                    <button onclick="navigateTo('final')" class="px-7 xs:px-8 py-3 xs:py-3.5 bg-gradient-to-r from-rose-500 via-pink-500 to-amber-400 text-slate-950 font-extrabold rounded-full text-xs sm:text-sm font-display transition shadow-[0_0_30px_rgba(244,114,182,0.6)] hover:scale-105">
+                        The Final Surprise <i class="fa-solid fa-crown text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 8: GRAND FINALE -->
+        <section id="chapter-final" class="chapter-page flex flex-col items-center justify-center text-center my-auto py-6 xs:py-8">
+            <div class="max-w-2xl w-full flex flex-col items-center">
+                <div class="inline-block px-3 py-1 rounded-full bg-rose-500/20 border border-rose-400/30 text-rose-300 text-[10px] xs:text-[11px] uppercase tracking-widest font-bold mb-3 xs:mb-4">
+                    Grand Finale • Forever Chapter
+                </div>
+
+                <div class="glass-panel p-6 xs:p-8 sm:p-12 rounded-3xl w-full border-2 border-rose-500/60 shadow-[0_0_60px_rgba(225,29,72,0.4)] flex flex-col items-center relative overflow-hidden">
+                    <div id="finale-step-1" class="finale-step font-serif text-pink-200 text-sm xs:text-base sm:text-xl italic mb-6 leading-relaxed transition-all duration-700">
+                        "Aiman, before we conclude this surprise..."
+                    </div>
+
+                    <div id="finale-step-2" class="finale-step hidden font-serif text-pink-200 text-sm xs:text-base sm:text-xl italic mb-6 leading-relaxed transition-all duration-700">
+                        "I want you to know that bringing a smile to your face means everything in the world to me."
+                    </div>
+
+                    <div id="finale-step-3" class="finale-step hidden font-serif text-pink-200 text-sm xs:text-base sm:text-xl italic mb-6 leading-relaxed transition-all duration-700">
+                        "You came into my life and turned every ordinary day into something extraordinary."
+                    </div>
+
+                    <div id="finale-step-4" class="finale-step hidden flex-col items-center transition-all duration-700">
+                        <div class="w-24 h-24 xs:w-28 xs:h-28 sm:w-36 sm:h-36 rounded-full bg-gradient-to-tr from-rose-600 via-pink-500 to-amber-400 flex items-center justify-center text-white text-5xl xs:text-6xl my-3 xs:my-4 shadow-[0_0_50px_rgba(225,29,72,0.9)] animate-heartbeat">
+                            ❤️
+                        </div>
+                        <h2 class="font-display text-2xl xs:text-3xl sm:text-5xl font-extrabold text-pink-100 pink-title-glow my-2 xs:my-3">
+                            I Love You Forever, Aiman
+                        </h2>
+                        <p class="text-amber-200 font-hand text-xl xs:text-2xl sm:text-3xl my-2">
+                            Happy 16th Birthday, My Princess 👑
+                        </p>
+                    </div>
+
+                    <button id="btn-next-finale-step" onclick="nextFinaleStep()" class="mt-4 px-7 xs:px-8 py-2.5 xs:py-3 bg-gradient-to-r from-rose-500 to-pink-500 text-white font-bold text-xs sm:text-sm rounded-full shadow-lg hover:scale-105 transition">
+                        Next Message <i class="fa-solid fa-heart ml-1"></i>
+                    </button>
+                </div>
+
+                <div class="mt-6 xs:mt-8 flex flex-col sm:flex-row gap-3 xs:gap-4 items-center w-full max-w-sm justify-center">
+                    <button onclick="sendKissToAwais()" class="w-full sm:w-auto px-7 xs:px-8 py-3 xs:py-3.5 bg-gradient-to-r from-rose-500 via-pink-500 to-amber-400 text-slate-950 font-extrabold rounded-full text-xs sm:text-sm font-display transition shadow-[0_0_30px_rgba(244,114,182,0.6)] hover:scale-105 active:scale-95 flex items-center justify-center gap-2">
+                        <span>Send a Kiss Back to Awais</span> <span class="text-base xs:text-lg">💋</span>
+                    </button>
+                    <button onclick="navigateTo('index')" class="w-full sm:w-auto px-5 xs:px-6 py-3 xs:py-3.5 bg-slate-900 border border-pink-500/40 text-pink-200 rounded-full text-xs font-semibold hover:bg-slate-800 transition">
+                        Replay Surprise 🔄
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FULLSCREEN SOULMATE SCANNER MODAL -->
+    <div id="soulmate-modal" class="fixed inset-0 z-50 bg-[#080205]/95 backdrop-blur-2xl hidden flex-col items-center justify-between p-3 xs:p-4 sm:p-8 overflow-y-auto w-full h-full">
+        <div class="w-full max-w-2xl flex justify-between items-center pt-2 px-2">
+            <div class="flex items-center gap-2">
+                <span class="text-xl xs:text-2xl">🧬</span>
+                <span class="text-amber-300 text-[10px] xs:text-xs sm:text-sm font-mono uppercase tracking-widest font-bold">Biometric Compatibility Scanner</span>
+            </div>
+            <button onclick="closeSoulmateModal()" class="w-9 h-9 xs:w-10 xs:h-10 rounded-full bg-rose-950/80 border border-rose-500/50 text-rose-200 hover:text-white flex items-center justify-center text-base xs:text-lg shadow-lg active:scale-95 transition">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="glass-panel my-auto p-5 xs:p-6 sm:p-10 rounded-3xl max-w-xl w-full border border-rose-500/50 shadow-[0_0_50px_rgba(225,29,72,0.3)] flex flex-col items-center text-center max-h-[90dvh] overflow-y-auto">
+            <h3 class="font-display text-xl xs:text-2xl sm:text-4xl text-pink-200 font-bold mb-1.5 xs:mb-2 pink-title-glow">Awais & Aiman's Soulmate Sync</h3>
+            <p class="text-slate-300 text-[11px] xs:text-xs sm:text-sm font-serif italic mb-4 xs:mb-6">Touch and hold the biometrics scanner below to calibrate your romantic wavelengths ❤️</p>
+
+            <div class="relative w-48 h-48 xs:w-56 xs:h-56 sm:w-72 sm:h-72 max-w-[70vw] max-h-[70vw] rounded-full bg-slate-950 border-4 border-rose-500/50 flex items-center justify-center my-3 xs:my-4 shadow-[0_0_40px_rgba(244,114,182,0.3)] overflow-hidden cursor-pointer select-none active:scale-95 transition" onmousedown="startFingerprintScan()" onmouseup="stopFingerprintScan()" ontouchstart="startFingerprintScan()" ontouchend="stopFingerprintScan()">
+                <div id="scanner-laser" class="absolute left-0 right-0 h-1.5 bg-gradient-to-r from-transparent via-rose-400 to-transparent shadow-[0_0_20px_#f43f5e] hidden"></div>
+                <div class="flex items-center gap-3 xs:gap-4 text-4xl xs:text-5xl sm:text-6xl text-rose-500/80 animate-pulse">
+                    <i class="fa-solid fa-fingerprint"></i>
+                    <i class="fa-solid fa-heart text-2xl xs:text-3xl sm:text-4xl text-pink-400"></i>
+                    <i class="fa-solid fa-fingerprint"></i>
+                </div>
+            </div>
+
+            <p id="scanner-status" class="text-xs xs:text-sm sm:text-base font-serif italic text-pink-200 mt-3 xs:mt-4 min-h-[44px] xs:min-h-[48px] flex items-center justify-center px-2 xs:px-4">
+                Press & hold the scanner with your thumb to analyze your love wavelength...
+            </p>
+
+            <div id="scanner-progress-bar" class="w-full h-2.5 xs:h-3 bg-slate-950 rounded-full mt-3 xs:mt-4 overflow-hidden border border-rose-500/40 hidden shadow-inner">
+                <div id="scanner-fill" class="h-full bg-gradient-to-r from-pink-500 via-rose-500 to-amber-400 w-0 transition-all duration-75"></div>
+            </div>
+        </div>
+
+        <div class="pb-2 text-center text-[10px] xs:text-xs text-rose-300/60 font-mono">
+            Aiman's 16th Birthday • Soulmate Biometrics
+        </div>
+    </div>
+
+    <!-- FULLSCREEN LOVE WHEEL MODAL -->
+    <div id="wheel-modal" class="fixed inset-0 z-50 bg-[#080205]/95 backdrop-blur-2xl hidden flex-col items-center justify-between p-3 xs:p-4 sm:p-8 overflow-y-auto w-full h-full">
+        <div class="w-full max-w-2xl flex justify-between items-center pt-2 px-2">
+            <div class="flex items-center gap-2">
+                <span class="text-xl xs:text-2xl">🎡</span>
+                <span class="text-amber-300 text-[10px] xs:text-xs sm:text-sm font-mono uppercase tracking-widest font-bold">Awais's Redeemable Coupons</span>
+            </div>
+            <button onclick="closeLoveWheelModal()" class="w-9 h-9 xs:w-10 xs:h-10 rounded-full bg-amber-950/80 border border-amber-500/50 text-amber-200 hover:text-white flex items-center justify-center text-base xs:text-lg shadow-lg active:scale-95 transition">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="glass-panel my-auto p-5 xs:p-6 sm:p-10 rounded-3xl max-w-xl w-full border border-amber-400/50 shadow-[0_0_50px_rgba(251,191,36,0.25)] flex flex-col items-center text-center max-h-[90dvh] overflow-y-auto">
+            <h3 class="font-display text-xl xs:text-2xl sm:text-4xl text-pink-200 font-bold mb-1.5 xs:mb-2 pink-title-glow">Wheel of Romantic Fate</h3>
+            <p class="text-slate-300 text-[11px] xs:text-xs sm:text-sm font-serif italic mb-3 xs:mb-4">Spin the wheel to claim a special date night or privilege pass from Awais!</p>
+
+            <div class="relative w-60 h-60 xs:w-72 xs:h-72 sm:w-80 sm:h-80 max-w-[75vw] max-h-[75vw] my-2 xs:my-4 flex items-center justify-center select-none">
+                <div class="absolute -top-3 xs:-top-4 z-20 text-rose-500 text-2xl xs:text-3xl filter drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">▼</div>
+                <div id="wheel-disc" class="w-full h-full rounded-full border-4 border-amber-400/90 shadow-[0_0_30px_rgba(245,158,11,0.4)] overflow-hidden relative transition-transform duration-[4000ms] ease-out bg-gradient-to-tr from-rose-950 via-pink-900 to-amber-950 flex items-center justify-center">
+                    <div class="absolute inset-0 rounded-full border-[8px] xs:border-[10px] border-slate-950/50"></div>
+                    <div class="absolute inset-0 flex items-center justify-center text-[10px] xs:text-xs sm:text-sm font-bold text-amber-100 font-display">
+                        <span class="absolute top-4 xs:top-5">🍦 Ice Cream Pass</span>
+                        <span class="absolute right-3 xs:right-4">💆 Hugs Pass</span>
+                        <span class="absolute bottom-4 xs:bottom-5">👑 Queen for Day</span>
+                        <span class="absolute left-3 xs:left-4">🎬 Movie Choice</span>
+                    </div>
+                    <div class="w-12 h-12 xs:w-16 xs:h-16 rounded-full bg-slate-950 border-2 border-amber-400 z-10 flex items-center justify-center text-amber-300 font-bold text-base xs:text-xl shadow-2xl">
+                        💖
+                    </div>
+                </div>
+            </div>
+
+            <p id="wheel-result" class="text-xs xs:text-sm sm:text-base font-serif italic text-amber-200 mt-3 xs:mt-4 min-h-[36px] xs:min-h-[40px] flex items-center justify-center px-2">
+                Spin the wheel to win a special surprise coupon from Awais!
+            </p>
+
+            <button id="btn-spin-wheel" onclick="spinLoveWheel()" class="w-full max-w-sm py-3 xs:py-4 bg-gradient-to-r from-amber-400 via-rose-500 to-pink-500 text-slate-950 font-extrabold rounded-full text-xs xs:text-sm font-display shadow-[0_0_25px_rgba(244,114,182,0.5)] hover:scale-105 active:scale-95 transition mt-2">
+                SPIN THE WHEEL 🎡
+            </button>
+        </div>
+
+        <div class="pb-2 text-center text-[10px] xs:text-xs text-amber-300/60 font-mono">
+            Aiman's 16th Birthday • Redeemable Coupons
+        </div>
+    </div>
+
+    <!-- FULLSCREEN LOVE QUIZ MODAL -->
+    <div id="quiz-modal" class="fixed inset-0 z-50 bg-[#080205]/95 backdrop-blur-2xl hidden flex-col items-center justify-between p-3 xs:p-4 sm:p-8 overflow-y-auto w-full h-full">
+        <div class="w-full max-w-2xl flex justify-between items-center pt-2 px-2">
+            <div class="flex items-center gap-2">
+                <span class="text-xl xs:text-2xl">🧩</span>
+                <span class="text-pink-300 text-[10px] xs:text-xs sm:text-sm font-mono uppercase tracking-widest font-bold">Romantic Trivia & Certificate</span>
+            </div>
+            <button onclick="closeLoveQuizModal()" class="w-9 h-9 xs:w-10 xs:h-10 rounded-full bg-pink-950/80 border border-pink-500/50 text-pink-200 hover:text-white flex items-center justify-center text-base xs:text-lg shadow-lg active:scale-95 transition">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div id="quiz-card-step" class="glass-panel my-auto p-5 xs:p-6 sm:p-10 rounded-3xl max-w-xl w-full border border-pink-400/50 shadow-[0_0_50px_rgba(244,114,182,0.3)] flex flex-col items-center text-center max-h-[90dvh] overflow-y-auto">
+            <div class="text-pink-300 text-[10px] xs:text-xs font-mono uppercase tracking-widest mb-1">🧩 Romantic Trivia</div>
+            <h3 id="quiz-question-title" class="font-display text-lg xs:text-xl sm:text-3xl text-pink-100 font-bold mb-4 xs:mb-6">Question 1</h3>
+
+            <div id="quiz-options-box" class="space-y-2.5 xs:space-y-3 w-full mb-4 xs:mb-6"></div>
+
+            <p id="quiz-feedback-text" class="text-xs xs:text-sm font-serif italic text-amber-200 min-h-[32px] xs:min-h-[36px] flex items-center justify-center px-2"></p>
+        </div>
+
+        <div id="quiz-certificate-step" class="hidden glass-panel my-auto p-5 xs:p-6 sm:p-10 rounded-3xl max-w-xl w-full border-2 border-amber-400/70 shadow-[0_0_60px_rgba(251,191,36,0.35)] flex-col items-center text-center max-h-[90dvh] overflow-y-auto">
+            <div class="w-full p-5 xs:p-6 sm:p-8 bg-gradient-to-b from-[#2a0918] to-[#12040b] border-2 border-amber-400/80 rounded-2xl shadow-2xl relative text-center">
+                <div class="text-3xl xs:text-4xl mb-2">📜</div>
+                <div class="font-mono text-[10px] xs:text-xs text-amber-300 uppercase tracking-widest">Official Certificate of Destiny</div>
+                <h2 class="font-display text-xl xs:text-2xl sm:text-4xl text-pink-200 font-bold my-2 pink-title-glow">ETERNAL SOULMATES</h2>
+                <p class="text-xs xs:text-sm sm:text-base font-serif text-slate-200 italic mb-4 xs:mb-6 leading-relaxed">This certifies that Aiman & Awais possess 100% perfect romantic harmony, infinite love, and endless happiness together.</p>
+                <div class="text-[10px] xs:text-xs font-mono text-amber-300/90 border-t border-amber-400/40 pt-3 flex justify-between items-center">
+                    <span>Issued: Oct 4, 2026</span>
+                    <span class="font-bold text-xs xs:text-sm">Signed: Your Awais 💗</span>
+                </div>
+            </div>
+            <button onclick="closeLoveQuizModal()" class="mt-5 xs:mt-6 px-7 xs:px-8 py-2.5 xs:py-3 bg-gradient-to-r from-pink-400 to-amber-400 text-slate-950 font-bold text-xs xs:text-sm rounded-full shadow-lg hover:scale-105 transition">
+                Keep in My Heart ❤️
+            </button>
+        </div>
+
+        <div class="pb-2 text-center text-[10px] xs:text-xs text-pink-300/60 font-mono">
+            Aiman's 16th Birthday • Soulmate Certificate
+        </div>
+    </div>
+
+    <!-- PIN CODE PADLOCK MODAL -->
+    <div id="pin-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-lg hidden items-center justify-center p-3 xs:p-4 transition-all duration-300">
+        <div id="pin-card" class="glass-panel p-5 xs:p-6 sm:p-8 rounded-3xl max-w-xs w-full flex flex-col items-center border border-pink-500/30 shadow-2xl relative text-center">
+            <button onclick="closePinModal()" class="absolute top-2.5 right-2.5 text-slate-400 hover:text-white text-base p-2">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div id="pin-clock" class="font-display text-3xl xs:text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-0.5">
+                21:10
+            </div>
+            <div class="text-[11px] xs:text-xs font-medium text-pink-300/80 mb-4 xs:mb-5 flex items-center justify-center gap-1">
+                <span>Birthday Surprise</span>
+                <span class="text-rose-400">💖</span>
+            </div>
+
+            <div class="w-10 h-10 xs:w-12 xs:h-12 rounded-2xl bg-amber-500/20 border border-amber-400/40 flex items-center justify-center text-amber-300 text-xl xs:text-2xl mb-2.5 xs:mb-3 shadow-inner">
+                <i id="pin-lock-icon" class="fa-solid fa-lock"></i>
+            </div>
+
+            <p id="pin-prompt" class="text-[11px] xs:text-xs font-semibold text-amber-200/90 mb-3 xs:mb-4 flex items-center justify-center gap-1">
+                <span>Enter the secret code</span>
+                <span class="text-rose-400 text-xs">💕</span>
+            </p>
+
+            <div id="pin-dots" class="flex justify-center gap-2.5 xs:gap-3.5 mb-5 xs:mb-6">
+                <span class="pin-dot w-3.5 h-3.5 xs:w-4 xs:h-4 rounded-full border-2 border-pink-400/60 bg-transparent transition-all"></span>
+                <span class="pin-dot w-3.5 h-3.5 xs:w-4 xs:h-4 rounded-full border-2 border-pink-400/60 bg-transparent transition-all"></span>
+                <span class="pin-dot w-3.5 h-3.5 xs:w-4 xs:h-4 rounded-full border-2 border-pink-400/60 bg-transparent transition-all"></span>
+                <span class="pin-dot w-3.5 h-3.5 xs:w-4 xs:h-4 rounded-full border-2 border-pink-400/60 bg-transparent transition-all"></span>
+            </div>
+
+            <div class="grid grid-cols-3 gap-2.5 xs:gap-3.5 w-full max-w-[200px] xs:max-w-[210px] my-1">
+                <button onclick="pressPinDigit('1')" class="w-12 h-12 xs:w-14 xs:h-14 rounded-full bg-slate-900/90 hover:bg-slate-800 border border-pink-500/30 text-white font-display text-lg xs:text-xl font-bold flex items-center justify-center active:scale-90 transition shadow">1</button>
+                <button onclick="pressPinDigit('2')" class="w-12 h-12 xs:w-14 xs:h-14 rounded-full bg-slate-900/90 hover:bg-slate-800 border border-pink-500/30 text-white font-display text-lg xs:text-xl font-bold flex items-center justify-center active:scale-90 transition shadow">2</button>
+                <button onclick="pressPinDigit('3')" class="w-12 h-12 xs:w-14 xs:h-14 rounded-full bg-slate-900/90 hover:bg-slate-800 border border-pink-500/30 text-white font-display text-lg xs:text-xl font-bold flex items-center justify-center active:scale-90 transition shadow">3</button>
+                
+                <button onclick="pressPinDigit('4')" class="w-12 h-12 xs:w-14 xs:h-14 rounded-full bg-slate-900/90 hover:bg-slate-800 border border-pink-500/30 text-white font-display text-lg xs:text-xl font-bold flex items-center justify-center active:scale-90 transition shadow">4</button>
+                <button onclick="pressPinDigit('5')" class="w-12 h-12 xs:w-14 xs:h-14 rounded-full bg-slate-900/90 hover:bg-slate-800 border border-pink-500/30 text-white font-display text-lg xs:text-xl font-bold flex items-center justify-center active:scale-90 transition shadow">5</button>
+                <button onclick="pressPinDigit('6')" class="w-12 h-12 xs:w-14 xs:h-14 rounded-full bg-slate-900/90 hover:bg-slate-800 border border-pink-500/30 text-white font-display text-lg xs:text-xl font-bold flex items-center justify-center active:scale-90 transition shadow">6</button>
+
+                <button onclick="pressPinDigit('7')" class="w-12 h-12 xs:w-14 xs:h-14 rounded-full bg-slate-900/90 hover:bg-slate-800 border border-pink-500/30 text-white font-display text-lg xs:text-xl font-bold flex items-center justify-center active:scale-90 transition shadow">7</button>
+                <button onclick="pressPinDigit('8')" class="w-12 h-12 xs:w-14 xs:h-14 rounded-full bg-slate-900/90 hover:bg-slate-800 border border-pink-500/30 text-white font-display text-lg xs:text-xl font-bold flex items-center justify-center active:scale-90 transition shadow">8</button>
+                <button onclick="pressPinDigit('9')" class="w-12 h-12 xs:w-14 xs:h-14 rounded-full bg-slate-900/90 hover:bg-slate-800 border border-pink-500/30 text-white font-display text-lg xs:text-xl font-bold flex items-center justify-center active:scale-90 transition shadow">9</button>
+
+                <div class="w-12 h-12 xs:w-14 xs:h-14"></div>
+                <button onclick="pressPinDigit('0')" class="w-12 h-12 xs:w-14 xs:h-14 rounded-full bg-slate-900/90 hover:bg-slate-800 border border-pink-500/30 text-white font-display text-lg xs:text-xl font-bold flex items-center justify-center active:scale-90 transition shadow">0</button>
+                <button onclick="deletePinDigit()" class="w-12 h-12 xs:w-14 xs:h-14 rounded-full bg-slate-900/90 hover:bg-slate-800 border border-pink-500/30 text-pink-300 font-display text-base xs:text-lg font-bold flex items-center justify-center active:scale-90 transition shadow" title="Delete digit">
+                    <i class="fa-solid fa-delete-left"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FULLSCREEN LOVE JAR MODAL -->
+    <div id="lovejar-modal" class="fixed inset-0 z-50 bg-[#080205]/95 backdrop-blur-2xl hidden flex-col items-center justify-between p-3 xs:p-4 sm:p-8 overflow-y-auto w-full h-full">
+        <div class="w-full max-w-2xl flex justify-between items-center pt-2 px-2">
+            <div class="flex items-center gap-2">
+                <span class="text-xl xs:text-2xl">🫙</span>
+                <span class="text-pink-300 text-[10px] xs:text-xs sm:text-sm font-mono uppercase tracking-widest font-bold">Awais's Jar of Love Notes</span>
+            </div>
+            <button onclick="closeLoveJarModal()" class="w-9 h-9 xs:w-10 xs:h-10 rounded-full bg-pink-950/80 border border-pink-500/50 text-pink-200 hover:text-white flex items-center justify-center text-base xs:text-lg shadow-lg active:scale-95 transition">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="glass-panel my-auto p-5 xs:p-6 sm:p-10 rounded-3xl max-w-xl w-full border border-pink-400/50 shadow-[0_0_50px_rgba(244,114,182,0.3)] flex flex-col items-center text-center max-h-[90dvh] overflow-y-auto">
+            <div class="text-5xl xs:text-6xl sm:text-7xl mb-2 xs:mb-3 animate-bounce">🫙</div>
+            <h3 class="font-display text-xl xs:text-2xl sm:text-4xl text-pink-300 font-bold mb-1.5 xs:mb-2 pink-title-glow">Awais's Jar of Love Notes</h3>
+            <p class="text-[11px] xs:text-xs sm:text-sm text-amber-200/90 font-serif italic mb-4 xs:mb-6">Pull a glowing folded heart note from the jar whenever you need a smile!</p>
+            
+            <div id="jar-note-display" class="w-full bg-slate-950/90 border border-pink-500/40 rounded-2xl p-5 xs:p-6 sm:p-8 min-h-[100px] xs:min-h-[120px] flex items-center justify-center text-pink-100 text-xs xs:text-sm sm:text-lg font-serif italic shadow-inner mb-4 xs:mb-6 leading-relaxed">
+                "Click the button below to pick a note..."
+            </div>
+
+            <button onclick="pullLoveJarNote()" class="w-full max-w-sm py-3 xs:py-3.5 bg-gradient-to-r from-pink-400 to-rose-500 text-slate-950 font-bold rounded-2xl text-xs xs:text-sm font-display shadow-lg hover:scale-105 active:scale-95 transition">
+                Pick a Note 💌
+            </button>
+        </div>
+
+        <div class="pb-2 text-center text-[10px] xs:text-xs text-pink-300/60 font-mono">
+            Aiman's 16th Birthday • Secret Love Notes
+        </div>
+    </div>
+
+    <!-- AGE & BIRTHDAY SETTINGS MODAL -->
+    <div id="age-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-3 xs:p-4">
+        <div class="glass-panel p-5 xs:p-6 rounded-3xl max-w-md w-full relative border border-pink-400/40 shadow-2xl">
+            <button onclick="closeAgeModal()" class="absolute top-2.5 right-2.5 text-slate-400 hover:text-white text-base xs:text-lg p-2"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="font-display text-lg xs:text-xl text-pink-300 font-bold mb-3">Birthday Settings</h3>
+            <div class="space-y-3.5 xs:space-y-4">
+                <div>
+                    <label class="block text-[10px] xs:text-[11px] font-mono text-pink-200 mb-1">Aiman's Birth Date</label>
+                    <input type="date" id="input-birthdate" value="2010-10-04" class="w-full bg-slate-900 border border-pink-500/30 rounded-xl px-3.5 py-2 text-pink-100 text-xs focus:outline-none">
+                </div>
+                <button onclick="saveAgeSettings()" class="w-full py-2.5 bg-gradient-to-r from-pink-400 to-amber-500 text-slate-950 font-bold rounded-xl text-xs font-display">Update Stats ✨</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MEDIA EXPAND MODAL -->
+    <div id="memory-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-3 xs:p-4">
+        <div class="glass-panel p-4 xs:p-5 rounded-3xl max-w-lg w-full relative flex flex-col items-center border border-pink-400/40 shadow-2xl">
+            <button onclick="closeMemoryModal()" class="absolute top-2.5 right-2.5 text-slate-400 hover:text-white text-base xs:text-lg p-2 z-10"><i class="fa-solid fa-xmark"></i></button>
+            <div id="modal-media-container" class="w-full h-60 xs:h-72 sm:h-96 rounded-2xl overflow-hidden mb-3 xs:mb-4 bg-slate-950 flex items-center justify-center relative border border-pink-500/20">
+                <img id="modal-img" src="" alt="Memory" class="max-w-full max-h-full object-contain hidden">
+                <video id="modal-video" controls autoplay loop playsinline class="max-w-full max-h-full object-contain hidden"></video>
+            </div>
+            <h3 id="modal-title" class="font-display text-lg xs:text-xl text-pink-300 font-bold mb-1">Title</h3>
+            <p id="modal-caption" class="text-slate-300 font-serif italic text-center text-xs">Caption...</p>
+        </div>
+    </div>
+
+    <!-- ADD CUSTOM MEMORY MODAL -->
+    <div id="add-memory-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-3 xs:p-4">
+        <div class="glass-panel p-5 xs:p-6 rounded-3xl max-w-md w-full relative border border-pink-400/40 shadow-2xl">
+            <button onclick="closeAddMemoryModal()" class="absolute top-2.5 right-2.5 text-slate-400 hover:text-white text-base xs:text-lg p-2"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="font-display text-lg xs:text-xl text-pink-300 font-bold mb-3 xs:mb-4">Add Memory (Photo or Video)</h3>
+            <div class="space-y-3 xs:space-y-4">
+                <input type="text" id="input-memory-title" placeholder="Title..." class="w-full bg-slate-900 border border-pink-500/30 rounded-xl px-3.5 py-2 text-white text-xs">
+                
+                <div>
+                    <label class="block text-[10px] xs:text-[11px] text-pink-300 font-mono mb-1">Select Media Type:</label>
+                    <select id="input-memory-type" class="w-full bg-slate-900 border border-pink-500/30 rounded-xl px-3.5 py-2 text-white text-xs">
+                        <option value="image">Photo 📷</option>
+                        <option value="video">Video Clip 🎥</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-[10px] xs:text-[11px] text-pink-300 font-mono mb-1">Upload Local File (Image or MP4 Video):</label>
+                    <input type="file" id="input-memory-file" accept="image/*,video/*" class="w-full bg-slate-900 border border-pink-500/30 rounded-xl px-3.5 py-2 text-slate-300 text-xs">
+                </div>
+
+                <input type="text" id="input-memory-url" placeholder="Or Media URL..." class="w-full bg-slate-900 border border-pink-500/30 rounded-xl px-3.5 py-2 text-white text-xs">
+                <textarea id="input-memory-caption" rows="2" placeholder="Caption..." class="w-full bg-slate-900 border border-pink-500/30 rounded-xl px-3.5 py-2 text-white text-xs"></textarea>
+                <button onclick="saveNewMemory()" class="w-full py-2.5 bg-gradient-to-r from-pink-400 to-amber-500 text-slate-950 font-bold rounded-xl text-xs">Save Memory ❤️</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // GLOBAL SCOPE DECLARATION FOR PARTICLE SYSTEM
+        window.addTrailParticle = function(x, y) {};
+
+        const APP_STATE = {
+            birthDate: new Date(2010, 9, 4), // October 4, 2010
+            currentChapter: 'index',
+            pinInput: '',
+            correctPin: '6596',
+            audioContext: null,
+            micStream: null,
+            micAnalyser: null,
+            isMicListening: false,
+            whisperIndex: 0,
+            scanProgress: 0,
+            scanTimer: null,
+            wheelSpinning: false,
+            quizIndex: 0,
+            quizScore: 0,
+            bubblesActive: false,
+            bubbleTimer: null,
+            heartbeatTimer: null,
+            reasonIndex: 0,
+            finaleStep: 1,
+            bgAudioWasPlaying: true,
+            memories: [
+                {
+                    type: 'image',
+                    url: 'assets/images/photo1.jpg',
+                    title: 'Your Radiant Smile ✨',
+                    caption: 'The smile that lights up my entire world every single day.'
+                },
+                {
+                    type: 'image',
+                    url: 'assets/images/photo2.jpg',
+                    title: 'Favorite Moments ❤️',
+                    caption: 'Every second spent talking with you becomes a cherished core memory.'
+                },
+                {
+                    type: 'image',
+                    url: 'assets/images/photo3.jpg',
+                    title: 'Pure Happiness 🌸',
+                    caption: 'Your warmth and laugh are my ultimate comfort.'
+                },
+                {
+                    type: 'video',
+                    url: 'assets/videos/video1.mp4',
+                    title: 'Unforgettable Memory 🎥',
+                    caption: 'A cute little video clip captured forever in my heart.'
+                },
+                {
+                    type: 'video',
+                    url: 'assets/videos/video2.mp4',
+                    title: 'Sweet Laughs 🌟',
+                    caption: 'Listening to your cute moods and happy moments on replay.'
+                },
+                {
+                    type: 'video',
+                    url: 'assets/videos/video3.mp4',
+                    title: 'Pure Magic ✨',
+                    caption: 'A special moment that brings a smile to my face every time.'
+                },
+                {
+                    type: 'video',
+                    url: 'assets/videos/video4.mp4',
+                    title: 'Forever Chapter 💖',
+                    caption: 'Writing our story together, one memory at a time.'
+                }
+            ]
+        };
+
+        const REASONS_LIST = [
+            "Your radiant smile that can light up my darkest days instantly. ✨",
+            "The way your eyes twinkle when you get excited about little things. 🌟",
+            "Your cute little moods that I find absolutely irresistible. 🎀",
+            "How deeply and genuinely you care about the people you love. ❤️",
+            "The warmth in your voice whenever we talk late into the night. 🌙",
+            "Your beautiful, kind, and pure heart. 💖",
+            "How you make ordinary moments feel like magical memories. 🌸",
+            "Your sweet laugh that is my absolute favorite sound in the universe. 🎶",
+            "How comfortable and safe I feel whenever I am with you. 🫂",
+            "Your adorable sense of humor and cute expressions. 😊",
+            "The way you always support and believe in me. 💫",
+            "How you make me want to be the best version of myself. 🌟",
+            "Your gentle touch and comforting presence. 🤲🏻",
+            "The way you remember the smallest details about us. 💌",
+            "That you are not just my love, but my best friend and safe haven. 👑",
+            "Because you are simply Aiman — perfect, precious, and irreplaceable in every way. ❤️"
+        ];
+
+        const SECRET_WHISPERS = [
+            "\"I pinky promise to always keep your warm smile glowing.\"",
+            "\"You are the best decision my heart has ever made.\"",
+            "\"Whenever you need a comfort hug, I'm always right here.\"",
+            "\"My favorite sound in the whole world is your laugh.\"",
+            "\"You are not just a part of my story, you are my favorite chapter. ❤️\""
+        ];
+
+        const LOVE_JAR_NOTES = [
+            "💌 \"You make my heart skip a beat every single day!\"",
+            "💌 \"I love all the cute little excitement moods you make!\"",
+            "💌 \"Thank you for being my safest and happiest place.\"",
+            "💌 \"Allah bless your heart with eternal joy and endless smiles. 🤲🏻\"",
+            "💌 \"No matter where life takes us, I choose you again and again.\"",
+            "💌 \"You deserve the whole world and all the happiness in it! ❤️\""
+        ];
+
+        function playSoftNote(freq = 440) {
+            try {
+                if (!APP_STATE.audioContext) {
+                    APP_STATE.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                }
+                if (APP_STATE.audioContext.state === 'suspended') {
+                    APP_STATE.audioContext.resume();
+                }
+                const osc = APP_STATE.audioContext.createOscillator();
+                const gain = APP_STATE.audioContext.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(freq, APP_STATE.audioContext.currentTime);
+                gain.gain.setValueAtTime(0.08, APP_STATE.audioContext.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.0001, APP_STATE.audioContext.currentTime + 0.6);
+                osc.connect(gain);
+                gain.connect(APP_STATE.audioContext.destination);
+                osc.start();
+                osc.stop(APP_STATE.audioContext.currentTime + 0.6);
+            } catch (e) {}
+        }
+
+        function playChord(freqArray = [523.25, 659.25, 783.99]) {
+            freqArray.forEach((f, idx) => {
+                setTimeout(() => playSoftNote(f), idx * 100);
+            });
+        }
+
+        let particles = [];
+        function initFloatingHeartsCanvas() {
+            const canvas = document.getElementById('bg-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+
+            function resize() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            resize();
+            window.addEventListener('resize', resize);
+
+            class Particle {
+                constructor(x, y, isTrail = false) {
+                    this.x = x || Math.random() * canvas.width;
+                    this.y = y || (isTrail ? y : canvas.height + Math.random() * 50);
+                    this.size = Math.random() * 12 + 8;
+                    this.speedY = isTrail ? (Math.random() - 0.5) * 2 : -(Math.random() * 1.2 + 0.5);
+                    this.speedX = (Math.random() - 0.5) * 0.8;
+                    this.opacity = Math.random() * 0.5 + 0.3;
+                    this.color = `rgba(244, 114, 182, ${this.opacity})`;
+                    this.isTrail = isTrail;
+                    this.life = isTrail ? 60 : 1000;
+                }
+
+                update() {
+                    this.y += this.speedY;
+                    this.x += this.speedX;
+                    if (this.isTrail) {
+                        this.life--;
+                        this.opacity *= 0.96;
+                    } else if (this.y < -20) {
+                        this.y = canvas.height + 20;
+                        this.x = Math.random() * canvas.width;
+                    }
+                }
+
+                draw() {
+                    ctx.save();
+                    ctx.globalAlpha = this.opacity;
+                    ctx.fillStyle = this.color;
+                    ctx.font = `${this.size}px sans-serif`;
+                    ctx.fillText('💖', this.x, this.y);
+                    ctx.restore();
+                }
+            }
+
+            for (let i = 0; i < 25; i++) {
+                particles.push(new Particle());
+            }
+
+            window.addTrailParticle = function(x, y) {
+                if (particles.length < 80) {
+                    particles.push(new Particle(x, y, true));
+                }
+            };
+
+            window.addEventListener('mousemove', (e) => {
+                if (Math.random() < 0.3) window.addTrailParticle(e.clientX, e.clientY);
+            });
+            window.addEventListener('touchmove', (e) => {
+                if (e.touches[0] && Math.random() < 0.3) {
+                    window.addTrailParticle(e.touches[0].clientX, e.touches[0].clientY);
+                }
+            });
+
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                for (let i = particles.length - 1; i >= 0; i--) {
+                    particles[i].update();
+                    particles[i].draw();
+                    if (particles[i].isTrail && particles[i].life <= 0) {
+                        particles.splice(i, 1);
+                    }
+                }
+                requestAnimationFrame(animate);
+            }
+            animate();
+        }
+
+        function navigateTo(chapterId) {
+            playSoftNote(500);
+            const chapters = document.querySelectorAll('.chapter-page');
+            chapters.forEach(ch => ch.classList.remove('active'));
+
+            const target = document.getElementById(`chapter-${chapterId}`);
+            if (target) {
+                target.classList.add('active');
+                APP_STATE.currentChapter = chapterId;
+
+                const badge = document.getElementById('chapter-badge');
+                if (badge) {
+                    const titles = {
+                        index: 'Chapter 1 • Entrance',
+                        teddy: 'Chapter 1.5 • Dedication',
+                        birthday: 'Chapter 2 • Birthday Cake',
+                        letter: 'Chapter 3 • Love Letter',
+                        memories: 'Chapter 4 • Photo Gallery',
+                        story: 'Chapter 5 • Our Story',
+                        reasons: 'Chapter 6 • Why I Love You',
+                        future: 'Chapter 7 • Our Starlit Future',
+                        final: 'Chapter 8 • Forever Climax'
+                    };
+                    badge.textContent = titles[chapterId] || 'Chapter • Love Story';
+                }
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+
+                if (chapterId === 'future') {
+                    setTimeout(initStarlitCanvas, 100);
+                }
+            }
+        }
+
+        function openHomeSealEnvelope() {
+            playChord([440, 554.37, 659.25]);
+            openPinModal();
+        }
+
+        function openPinModal() {
+            APP_STATE.pinInput = '';
+            updatePinDots();
+            updateClock();
+            const modal = document.getElementById('pin-modal');
+            if (modal) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }
+        }
+
+        function closePinModal() {
+            const modal = document.getElementById('pin-modal');
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+        }
+
+        function pressPinDigit(digit) {
+            playSoftNote(600);
+            if (APP_STATE.pinInput.length < 4) {
+                APP_STATE.pinInput += digit;
+                updatePinDots();
+
+                if (APP_STATE.pinInput.length === 4) {
+                    setTimeout(verifyPinPasscode, 200);
+                }
+            }
+        }
+
+        function deletePinDigit() {
+            playSoftNote(350);
+            if (APP_STATE.pinInput.length > 0) {
+                APP_STATE.pinInput = APP_STATE.pinInput.slice(0, -1);
+                updatePinDots();
+            }
+        }
+
+        function updatePinDots() {
+            const dots = document.querySelectorAll('.pin-dot');
+            dots.forEach((dot, idx) => {
+                if (idx < APP_STATE.pinInput.length) {
+                    dot.classList.add('bg-pink-400', 'border-pink-300');
+                    dot.classList.remove('bg-transparent');
+                } else {
+                    dot.classList.remove('bg-pink-400', 'border-pink-300');
+                    dot.classList.add('bg-transparent');
+                }
+            });
+        }
+
+        function verifyPinPasscode() {
+            const card = document.getElementById('pin-card');
+            if (APP_STATE.pinInput === APP_STATE.correctPin) {
+                playChord([523.25, 659.25, 783.99, 1046.50]);
+                closePinModal();
+                showCurtainStage();
+            } else {
+                playSoftNote(200);
+                if (card) {
+                    card.classList.add('animate-shake');
+                    setTimeout(() => card.classList.remove('animate-shake'), 450);
+                }
+                APP_STATE.pinInput = '';
+                updatePinDots();
+            }
+        }
+
+        function updateClock() {
+            const clock = document.getElementById('pin-clock');
+            if (clock) {
+                const now = new Date();
+                const h = String(now.getHours()).padStart(2, '0');
+                const m = String(now.getMinutes()).padStart(2, '0');
+                clock.textContent = `${h}:${m}`;
+            }
+        }
+
+        function showCurtainStage() {
+            const stage = document.getElementById('curtain-stage');
+            if (stage) {
+                stage.classList.remove('hidden', 'open');
+            }
+        }
+
+        function openCurtainsAndGoToTeddy() {
+            playChord([440, 554.37, 659.25, 880]);
+            const stage = document.getElementById('curtain-stage');
+            if (stage) {
+                stage.classList.add('open');
+                setTimeout(() => {
+                    stage.classList.add('hidden');
+                    navigateTo('teddy');
+                }, 1300);
+            }
+        }
+
+        function startHeartbeat() {
+            playSoftNote(300);
+            const status = document.getElementById('heartbeat-status');
+            if (status) status.innerHTML = "<span class='text-rose-400 font-bold'>❤️ Awais's heart is beating at 116 BPM for Aiman...</span>";
+            if (navigator.vibrate) navigator.vibrate([100, 50, 100, 500]);
+        }
+
+        function stopHeartbeat() {
+            const status = document.getElementById('heartbeat-status');
+            if (status) status.textContent = "Press & hold to feel my heart beating for you...";
+        }
+
+        function updateLiveAgeMetrics() {
+            const now = new Date();
+            const diffMs = now - APP_STATE.birthDate;
+
+            const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+            const years = Math.floor(days / 365.25);
+            const hours = Math.floor(diffMs / (1000 * 60 * 60));
+            const minutes = Math.floor(diffMs / (1000 * 60));
+
+            const yElem = document.getElementById('stat-years');
+            const dElem = document.getElementById('stat-days');
+            const hElem = document.getElementById('stat-hours');
+            const mElem = document.getElementById('stat-minutes');
+
+            if (yElem) yElem.textContent = years;
+            if (dElem) dElem.textContent = days.toLocaleString();
+            if (hElem) hElem.textContent = hours.toLocaleString();
+            if (mElem) mElem.textContent = minutes.toLocaleString();
+        }
+
+        function blowOutAllCandles() {
+            playSoftNote(800);
+            ['flame-left', 'flame-num1', 'flame-num2', 'flame-right'].forEach(id => {
+                const fl = document.getElementById(id);
+                if (fl) fl.classList.add('hidden');
+            });
+            ['smoke-left', 'smoke-num1', 'smoke-num2', 'smoke-right'].forEach(id => {
+                const sm = document.getElementById(id);
+                if (sm) sm.classList.remove('hidden');
+            });
+
+            const continueBox = document.getElementById('candles-blown-continue-box');
+            if (continueBox) continueBox.classList.remove('hidden');
+
+            playChord([523.25, 659.25, 783.99, 1046.50]);
+            triggerFireworks();
+        }
+
+        function startMicrophoneSensor() {
+            if (APP_STATE.isMicListening) return;
+
+            navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
+                APP_STATE.micStream = stream;
+                if (!APP_STATE.audioContext) {
+                    APP_STATE.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                }
+                const micSource = APP_STATE.audioContext.createMediaStreamSource(stream);
+                APP_STATE.micAnalyser = APP_STATE.audioContext.createAnalyser();
+                APP_STATE.micAnalyser.fftSize = 256;
+                micSource.connect(APP_STATE.micAnalyser);
+
+                APP_STATE.isMicListening = true;
+                const micText = document.getElementById('mic-btn-text');
+                const container = document.getElementById('mic-level-container');
+                if (micText) micText.textContent = 'Listening for your breath...';
+                if (container) container.classList.remove('hidden');
+
+                listenForBlowPuff();
+            }).catch(() => {
+                const micText = document.getElementById('mic-btn-text');
+                if (micText) micText.textContent = 'Tap candles to blow out! 🎂';
+            });
+        }
+
+        function listenForBlowPuff() {
+            if (!APP_STATE.isMicListening || !APP_STATE.micAnalyser) return;
+            const dataArray = new Uint8Array(APP_STATE.micAnalyser.frequencyBinCount);
+            APP_STATE.micAnalyser.getByteFrequencyData(dataArray);
+
+            let sum = 0;
+            for (let i = 0; i < dataArray.length; i++) {
+                sum += dataArray[i];
+            }
+            const average = sum / dataArray.length;
+
+            const bar = document.getElementById('mic-level-bar');
+            if (bar) bar.style.width = Math.min(100, average * 2) + '%';
+
+            if (average > 45) {
+                blowOutAllCandles();
+                APP_STATE.isMicListening = false;
+                if (APP_STATE.micStream) {
+                    APP_STATE.micStream.getTracks().forEach(t => t.stop());
+                }
+                return;
+            }
+            requestAnimationFrame(listenForBlowPuff);
+        }
+
+        function toggleLetterEnvelope() {
+            playChord([440, 554.37, 659.25]);
+            const env = document.getElementById('envelope-container');
+            const letter = document.getElementById('letter-content');
+            if (env) env.classList.add('hidden');
+            if (letter) letter.classList.remove('hidden');
+        }
+
+        function nextWhisperQuote() {
+            playSoftNote(600);
+            APP_STATE.whisperIndex = (APP_STATE.whisperIndex + 1) % SECRET_WHISPERS.length;
+            const qBox = document.getElementById('whisper-quote');
+            if (qBox) qBox.textContent = SECRET_WHISPERS[APP_STATE.whisperIndex];
+        }
+
+        function renderPolaroidGallery() {
+            const grid = document.getElementById('polaroid-grid');
+            if (!grid) return;
+            grid.innerHTML = '';
+
+            APP_STATE.memories.forEach((mem, idx) => {
+                const card = document.createElement('div');
+                card.className = "bg-slate-900 border border-pink-400/30 rounded-2xl p-3 xs:p-3.5 shadow-xl cursor-pointer hover:scale-[1.02] transition flex flex-col items-center select-none";
+                card.onclick = () => openMemoryModal(idx);
+
+                const mediaWrapper = document.createElement('div');
+                mediaWrapper.className = "w-full h-40 xs:h-48 sm:h-56 rounded-xl bg-slate-950 overflow-hidden flex items-center justify-center relative border border-pink-500/20 mb-2.5 xs:mb-3";
+
+                if (mem.type === 'video') {
+                    mediaWrapper.innerHTML = `
+                        <video src="${mem.url}" class="max-w-full max-h-full object-contain pointer-events-none"></video>
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-pink-300 text-2xl xs:text-3xl">
+                            <i class="fa-solid fa-circle-play"></i>
+                        </div>
+                    `;
+                } else {
+                    mediaWrapper.innerHTML = `
+                        <img src="${mem.url}" alt="${mem.title}" class="max-w-full max-h-full object-contain" onerror="this.src='https://placehold.co/400x400/1e0610/fce7f3?text=Aiman+Photo'">
+                    `;
+                }
+
+                card.appendChild(mediaWrapper);
+                card.innerHTML += `
+                    <h3 class="font-display text-xs xs:text-sm font-bold text-pink-200 mb-0.5 xs:mb-1">${mem.title}</h3>
+                    <p class="text-[10px] xs:text-[11px] font-serif text-slate-300 italic text-center line-clamp-2">${mem.caption}</p>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function openMemoryModal(idx) {
+            playSoftNote(600);
+            const mem = APP_STATE.memories[idx];
+            if (!mem) return;
+
+            const modal = document.getElementById('memory-modal');
+            const img = document.getElementById('modal-img');
+            const video = document.getElementById('modal-video');
+            const bgAudio = document.getElementById('bg-audio');
+            const title = document.getElementById('modal-title');
+            const caption = document.getElementById('modal-caption');
+
+            if (title) title.textContent = mem.title;
+            if (caption) caption.textContent = mem.caption;
+
+            if (mem.type === 'video') {
+                if (img) img.classList.add('hidden');
+                if (video) {
+                    video.src = mem.url;
+                    video.classList.remove('hidden');
+                    if (bgAudio && !bgAudio.paused) {
+                        APP_STATE.bgAudioWasPlaying = true;
+                        bgAudio.pause();
+                    }
+                    video.play().catch(() => {});
+                }
+            } else {
+                if (video) {
+                    video.pause();
+                    video.classList.add('hidden');
+                }
+                if (img) {
+                    img.src = mem.url;
+                    img.classList.remove('hidden');
+                }
+                if (bgAudio && bgAudio.paused && APP_STATE.bgAudioWasPlaying !== false) {
+                    bgAudio.play().catch(() => {});
+                }
+            }
+
+            if (modal) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }
+        }
+
+        function closeMemoryModal() {
+            const modal = document.getElementById('memory-modal');
+            const video = document.getElementById('modal-video');
+            const bgAudio = document.getElementById('bg-audio');
+
+            if (video) {
+                video.pause();
+            }
+            if (bgAudio && APP_STATE.bgAudioWasPlaying !== false) {
+                bgAudio.play().catch(() => {});
+            }
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+        }
+
+        function openAddMemoryModal() {
+            const modal = document.getElementById('add-memory-modal');
+            if (modal) { modal.classList.remove('hidden'); modal.classList.add('flex'); }
+        }
+        function closeAddMemoryModal() {
+            const modal = document.getElementById('add-memory-modal');
+            if (modal) { modal.classList.add('hidden'); modal.classList.remove('flex'); }
+        }
+
+        function saveNewMemory() {
+            const title = document.getElementById('input-memory-title').value || 'New Memory ❤️';
+            const type = document.getElementById('input-memory-type').value;
+            const urlInput = document.getElementById('input-memory-url').value;
+            const caption = document.getElementById('input-memory-caption').value || 'A special moment together.';
+            const fileInput = document.getElementById('input-memory-file');
+
+            if (fileInput && fileInput.files && fileInput.files[0]) {
+                const file = fileInput.files[0];
+                const objectUrl = URL.createObjectURL(file);
+                const fileType = file.type.startsWith('video') ? 'video' : 'image';
+                APP_STATE.memories.unshift({ type: fileType, url: objectUrl, title, caption });
+            } else if (urlInput) {
+                APP_STATE.memories.unshift({ type, url: urlInput, title, caption });
+            } else {
+                return;
+            }
+
+            renderPolaroidGallery();
+            closeAddMemoryModal();
+            playChord([523.25, 659.25, 783.99]);
+        }
+
+        function revealNextReason() {
+            playSoftNote(600);
+            APP_STATE.reasonIndex = (APP_STATE.reasonIndex + 1) % REASONS_LIST.length;
+
+            const currentNum = document.getElementById('reason-current-num');
+            const textElem = document.getElementById('reason-text-box');
+            const percentElem = document.getElementById('reason-progress-percent');
+            const barElem = document.getElementById('reason-progress-bar');
+
+            const pct = Math.round(((APP_STATE.reasonIndex + 1) / REASONS_LIST.length) * 100);
+
+            if (currentNum) currentNum.textContent = APP_STATE.reasonIndex + 1;
+            if (textElem) textElem.textContent = REASONS_LIST[APP_STATE.reasonIndex];
+            if (percentElem) percentElem.textContent = `${pct}%`;
+            if (barElem) barElem.style.width = `${pct}%`;
+
+            if (navigator.vibrate) navigator.vibrate(40);
+
+            if (APP_STATE.reasonIndex === REASONS_LIST.length - 1) {
+                playChord([523.25, 659.25, 783.99, 1046.50]);
+                triggerFireworks();
+            }
+        }
+
+        let starPoints = [];
+        function initStarlitCanvas() {
+            const canvas = document.getElementById('starlit-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            const rect = canvas.getBoundingClientRect();
+            canvas.width = rect.width;
+            canvas.height = rect.height;
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            for (let i = 0; i < 60; i++) {
+                ctx.fillStyle = 'rgba(255, 255, 255, ' + (Math.random() * 0.8 + 0.2) + ')';
+                ctx.beginPath();
+                ctx.arc(Math.random() * canvas.width, Math.random() * canvas.height, Math.random() * 1.8 + 0.5, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function drawStarConstellation(e) {
+            const canvas = document.getElementById('starlit-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            const rect = canvas.getBoundingClientRect();
+
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            playSoftNote(800 + Math.random() * 400);
+
+            ctx.save();
+            ctx.shadowBlur = 15;
+            ctx.shadowColor = '#fef08a';
+            ctx.fillStyle = '#ffffff';
+            ctx.beginPath();
+            ctx.arc(x, y, 4, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.restore();
+
+            starPoints.push({ x, y });
+
+            if (starPoints.length > 1) {
+                const prev = starPoints[starPoints.length - 2];
+                ctx.strokeStyle = 'rgba(251, 191, 36, 0.6)';
+                ctx.lineWidth = 1.5;
+                ctx.setLineDash([4, 4]);
+                ctx.beginPath();
+                ctx.moveTo(prev.x, prev.y);
+                ctx.lineTo(x, y);
+                ctx.stroke();
+            }
+        }
+
+        function nextFinaleStep() {
+            playSoftNote(600);
+            APP_STATE.finaleStep++;
+
+            const step1 = document.getElementById('finale-step-1');
+            const step2 = document.getElementById('finale-step-2');
+            const step3 = document.getElementById('finale-step-3');
+            const step4 = document.getElementById('finale-step-4');
+            const btn = document.getElementById('btn-next-finale-step');
+
+            if (APP_STATE.finaleStep === 2) {
+                if (step1) step1.classList.add('hidden');
+                if (step2) step2.classList.remove('hidden');
+            } else if (APP_STATE.finaleStep === 3) {
+                if (step2) step2.classList.add('hidden');
+                if (step3) step3.classList.remove('hidden');
+            } else if (APP_STATE.finaleStep >= 4) {
+                if (step3) step3.classList.add('hidden');
+                if (step4) step4.classList.remove('hidden', 'flex');
+                if (step4) step4.classList.add('flex');
+                if (btn) btn.classList.add('hidden');
+
+                playChord([523.25, 659.25, 783.99, 1046.50]);
+                triggerFireworks();
+            }
+        }
+
+        function openLoveJarModal() {
+            const modal = document.getElementById('lovejar-modal');
+            if (modal) { modal.classList.remove('hidden'); modal.classList.add('flex'); }
+        }
+        function closeLoveJarModal() {
+            const modal = document.getElementById('lovejar-modal');
+            if (modal) { modal.classList.add('hidden'); modal.classList.remove('flex'); }
+        }
+        function pullLoveJarNote() {
+            playSoftNote(700);
+            const noteBox = document.getElementById('jar-note-display');
+            const randomNote = LOVE_JAR_NOTES[Math.floor(Math.random() * LOVE_JAR_NOTES.length)];
+            if (noteBox) noteBox.textContent = randomNote;
+        }
+
+        function openAgeModal() {
+            const modal = document.getElementById('age-modal');
+            if (modal) { modal.classList.remove('hidden'); modal.classList.add('flex'); }
+        }
+        function closeAgeModal() {
+            const modal = document.getElementById('age-modal');
+            if (modal) { modal.classList.add('hidden'); modal.classList.remove('flex'); }
+        }
+        function saveAgeSettings() {
+            const input = document.getElementById('input-birthdate');
+            if (input && input.value) {
+                APP_STATE.birthDate = new Date(input.value);
+                updateLiveAgeMetrics();
+            }
+            closeAgeModal();
+            playChord([523.25, 659.25, 783.99]);
+        }
+
+        function openSoulmateModal() {
+            const modal = document.getElementById('soulmate-modal');
+            if (modal) { modal.classList.remove('hidden'); modal.classList.add('flex'); }
+        }
+        function closeSoulmateModal() {
+            stopFingerprintScan();
+            const modal = document.getElementById('soulmate-modal');
+            if (modal) { modal.classList.add('hidden'); modal.classList.remove('flex'); }
+        }
+        function startFingerprintScan() {
+            playSoftNote(440);
+            const laser = document.getElementById('scanner-laser');
+            const pBar = document.getElementById('scanner-progress-bar');
+            const fill = document.getElementById('scanner-fill');
+            const status = document.getElementById('scanner-status');
+
+            if (laser) laser.classList.remove('hidden');
+            if (pBar) pBar.classList.remove('hidden');
+
+            APP_STATE.scanProgress = 0;
+            if (fill) fill.style.width = '0%';
+            if (status) status.textContent = "Scanning heartbeat frequency & soul compatibility...";
+
+            if (APP_STATE.scanTimer) clearInterval(APP_STATE.scanTimer);
+            APP_STATE.scanTimer = setInterval(() => {
+                APP_STATE.scanProgress += 5;
+                if (fill) fill.style.width = APP_STATE.scanProgress + '%';
+                playSoftNote(400 + APP_STATE.scanProgress * 5);
+
+                if (navigator.vibrate) navigator.vibrate(30);
+
+                if (APP_STATE.scanProgress >= 100) {
+                    clearInterval(APP_STATE.scanTimer);
+                    if (status) status.innerHTML = "<span class='text-emerald-300 font-bold text-xs xs:text-sm'>1000% PERFECT MATCH! Eternal Soulmates Identified ❤</span>";
+                    playChord([523.25, 659.25, 783.99, 1046.50]);
+                    triggerFireworks();
+                }
+            }, 100);
+        }
+        function stopFingerprintScan() {
+            if (APP_STATE.scanTimer) clearInterval(APP_STATE.scanTimer);
+            const laser = document.getElementById('scanner-laser');
+            if (laser) laser.classList.add('hidden');
+        }
+
+        function openLoveWheelModal() {
+            const modal = document.getElementById('wheel-modal');
+            if (modal) { modal.classList.remove('hidden'); modal.classList.add('flex'); }
+        }
+        function closeLoveWheelModal() {
+            const modal = document.getElementById('wheel-modal');
+            if (modal) { modal.classList.add('hidden'); modal.classList.remove('flex'); }
+        }
+        function spinLoveWheel() {
+            if (APP_STATE.wheelSpinning) return;
+            APP_STATE.wheelSpinning = true;
+
+            const WHEEL_COUPONS = [
+                "🍦 Unlimited Late-Night Ice Cream Date!",
+                "💆 30-Minute Massage & Hugs Pass!",
+                "👑 Queen for a Whole Day (Awais obeys all rules)!",
+                "🎬 You Choose the Next Movie Night!",
+                "🎁 Mystery Surprise Shopping Gift!",
+                "🍕 Favorite Takeaway Feast on Awais!"
+            ];
+
+            const disc = document.getElementById('wheel-disc');
+            const resultElem = document.getElementById('wheel-result');
+            const btn = document.getElementById('btn-spin-wheel');
+
+            if (btn) btn.disabled = true;
+            if (resultElem) resultElem.textContent = "Spinning the wheel of destiny...";
+
+            const randomDeg = 1440 + Math.floor(Math.random() * 360);
+            if (disc) disc.style.transform = `rotate(${randomDeg}deg)`;
+
+            let soundInterval = setInterval(() => {
+                playSoftNote(500 + Math.random() * 300);
+            }, 150);
+
+            setTimeout(() => {
+                clearInterval(soundInterval);
+                APP_STATE.wheelSpinning = false;
+                if (btn) btn.disabled = false;
+
+                const wonPrize = WHEEL_COUPONS[Math.floor(Math.random() * WHEEL_COUPONS.length)];
+                if (resultElem) {
+                    resultElem.innerHTML = `<span class="gold-shimmer font-bold text-xs xs:text-sm">🎉 YOU WON: ${wonPrize}</span>`;
+                }
+                playChord([523.25, 659.25, 783.99, 1046.50]);
+                triggerFireworks();
+            }, 4000);
+        }
+
+        function openLoveQuizModal() {
+            APP_STATE.quizIndex = 0;
+            APP_STATE.quizScore = 0;
+            renderQuizQuestion();
+            const modal = document.getElementById('quiz-modal');
+            if (modal) { modal.classList.remove('hidden'); modal.classList.add('flex'); }
+        }
+        function closeLoveQuizModal() {
+            const modal = document.getElementById('quiz-modal');
+            if (modal) { modal.classList.add('hidden'); modal.classList.remove('flex'); }
+        }
+
+        function renderQuizQuestion() {
+            const QUIZ_QUESTIONS = [
+                {
+                    q: "What is Awais's absolute favorite thing about Aiman?",
+                    options: [
+                        "Her radiant smile & cute laugh",
+                        "Her kind and caring heart",
+                        "The cute little excitement moods she makes",
+                        "All of the above (x1000) ❤️"
+                    ],
+                    correct: 3,
+                    comment: "Correct! Every single thing about you is my favorite! ❤️"
+                },
+                {
+                    q: "How many days has the world been better since Aiman was born?",
+                    options: [
+                        "Just a few days",
+                        "5,843 glorious days!",
+                        "A couple of months",
+                        "Since yesterday"
+                    ],
+                    correct: 1,
+                    comment: "Spot on! 5,843 days of continuous sunshine! ✨"
+                },
+                {
+                    q: "What is Awais's forever promise to Aiman on her 16th birthday?",
+                    options: [
+                        "To always keep her smile glowing",
+                        "To support her through good and hard days",
+                        "To keep choosing her again and again",
+                        "All of these forever and ever! 💖"
+                    ],
+                    correct: 3,
+                    comment: "Bingo! You unlocked the Soulmate Certificate! 📜"
+                }
+            ];
+
+            const stepBox = document.getElementById('quiz-card-step');
+            const certBox = document.getElementById('quiz-certificate-step');
+            if (stepBox) stepBox.classList.remove('hidden');
+            if (certBox) certBox.classList.add('hidden');
+
+            const qObj = QUIZ_QUESTIONS[APP_STATE.quizIndex];
+            const title = document.getElementById('quiz-question-title');
+            const optionsBox = document.getElementById('quiz-options-box');
+            const feedback = document.getElementById('quiz-feedback-text');
+
+            if (title) title.textContent = `Q${APP_STATE.quizIndex + 1}: ${qObj.q}`;
+            if (feedback) feedback.textContent = "";
+
+            if (optionsBox) {
+                optionsBox.innerHTML = "";
+                qObj.options.forEach((optText, idx) => {
+                    const btn = document.createElement('button');
+                    btn.className = "w-full py-2.5 px-3.5 bg-slate-900/90 hover:bg-slate-800 border border-pink-500/30 rounded-xl text-xs font-semibold text-pink-100 text-left transition active:scale-98 shadow";
+                    btn.textContent = optText;
+                    btn.onclick = () => {
+                        if (feedback) feedback.textContent = qObj.comment;
+                        playSoftNote(600);
+                        setTimeout(() => {
+                            APP_STATE.quizIndex++;
+                            if (APP_STATE.quizIndex < QUIZ_QUESTIONS.length) {
+                                renderQuizQuestion();
+                            } else {
+                                if (stepBox) stepBox.classList.add('hidden');
+                                if (certBox) certBox.classList.remove('hidden');
+                                playChord([523.25, 659.25, 783.99, 1046.50]);
+                                triggerFireworks();
+                            }
+                        }, 1200);
+                    };
+                    optionsBox.appendChild(btn);
+                });
+            }
+        }
+
+        function toggleLoveBubbles() {
+            APP_STATE.bubblesActive = !APP_STATE.bubblesActive;
+            const container = document.getElementById('love-bubbles-layer');
+
+            if (APP_STATE.bubblesActive) {
+                if (container) container.style.pointerEvents = 'auto';
+                if (APP_STATE.bubbleTimer) clearInterval(APP_STATE.bubbleTimer);
+                APP_STATE.bubbleTimer = setInterval(spawnSingleLoveBubble, 1200);
+                for (let i = 0; i < 5; i++) spawnSingleLoveBubble();
+                showToast("🫧 Love Bubbles activated! Tap to pop them!");
+            } else {
+                if (container) {
+                    container.innerHTML = '';
+                    container.style.pointerEvents = 'none';
+                }
+                if (APP_STATE.bubbleTimer) clearInterval(APP_STATE.bubbleTimer);
+                showToast("🫧 Love Bubbles turned off!");
+            }
+        }
+
+        function spawnSingleLoveBubble() {
+            const container = document.getElementById('love-bubbles-layer');
+            if (!container || !APP_STATE.bubblesActive) return;
+
+            const bubble = document.createElement('div');
+            bubble.className = 'love-bubble';
+            const size = Math.random() * 25 + 40;
+            const startX = Math.random() * (window.innerWidth - 70) + 15;
+
+            bubble.style.width = `${size}px`;
+            bubble.style.height = `${size}px`;
+            bubble.style.left = `${startX}px`;
+            bubble.style.bottom = `-80px`;
+            bubble.innerHTML = ['💖', '💋', '🌟', '💕', '✨'][Math.floor(Math.random() * 5)];
+
+            bubble.onclick = (e) => {
+                e.stopPropagation();
+                playSoftNote(900 + Math.random() * 200);
+                if (window.addTrailParticle) window.addTrailParticle(e.clientX, e.clientY);
+                bubble.style.transform = 'scale(1.5)';
+                bubble.style.opacity = '0';
+                setTimeout(() => bubble.remove(), 200);
+            };
+
+            container.appendChild(bubble);
+
+            let pos = -80;
+            const speed = Math.random() * 1.5 + 1;
+            const anim = setInterval(() => {
+                if (!APP_STATE.bubblesActive || pos > window.innerHeight + 100) {
+                    clearInterval(anim);
+                    bubble.remove();
+                    return;
+                }
+                pos += speed;
+                bubble.style.bottom = pos + 'px';
+            }, 20);
+        }
+
+        function toggleMobileExtrasMenu() {
+            playSoftNote(500);
+            const modal = document.getElementById('mobile-extras-modal');
+            if (modal) {
+                if (modal.classList.contains('hidden')) {
+                    modal.classList.remove('hidden');
+                    modal.classList.add('flex');
+                } else {
+                    modal.classList.add('hidden');
+                    modal.classList.remove('flex');
+                }
+            }
+        }
+
+        function sendKissToAwais() {
+            playChord([523.25, 659.25, 783.99, 1046.50]);
+            if (navigator.vibrate) navigator.vibrate([100, 50, 100, 50, 200]);
+
+            for (let i = 0; i < 28; i++) {
+                setTimeout(() => {
+                    const kiss = document.createElement('div');
+                    kiss.className = "fixed z-50 pointer-events-none text-2xl xs:text-3xl sm:text-4xl transition-all duration-1000 ease-out";
+                    kiss.textContent = ['💋', '💖', '😘', '💕', '💌'][Math.floor(Math.random() * 5)];
+                    kiss.style.left = (window.innerWidth / 2 + (Math.random() - 0.5) * 180) + 'px';
+                    kiss.style.bottom = '100px';
+                    document.body.appendChild(kiss);
+
+                    requestAnimationFrame(() => {
+                        kiss.style.transform = `translate(${(Math.random() - 0.5) * 260}px, -${Math.random() * 450 + 180}px) scale(1.5) rotate(${Math.random() * 360}deg)`;
+                        kiss.style.opacity = '0';
+                    });
+
+                    setTimeout(() => kiss.remove(), 1200);
+                }, i * 40);
+            }
+            showToast("💋 Kiss delivered to Awais! His heart is glowing ❤️");
+        }
+
+        function triggerFireworks() {
+            for (let i = 0; i < 20; i++) {
+                setTimeout(() => {
+                    if (window.addTrailParticle) {
+                        window.addTrailParticle(
+                            Math.random() * window.innerWidth,
+                            Math.random() * window.innerHeight * 0.6
+                        );
+                    }
+                }, i * 50);
+            }
+        }
+
+        function showToast(msg) {
+            let toast = document.getElementById('app-toast');
+            if (!toast) {
+                toast = document.createElement('div');
+                toast.id = 'app-toast';
+                toast.className = 'fixed top-14 xs:top-16 sm:top-20 left-1/2 -translate-x-1/2 z-50 glass-panel px-4 xs:px-6 py-2.5 xs:py-3 rounded-full border border-rose-400/60 text-pink-100 font-display text-xs sm:text-sm shadow-[0_0_35px_rgba(244,114,182,0.7)] flex items-center gap-2 pointer-events-none transition-all duration-500 opacity-0 transform -translate-y-6 max-w-[90vw] text-center';
+                document.body.appendChild(toast);
+            }
+            toast.innerHTML = `<span class="gold-shimmer font-bold">${msg}</span>`;
+            toast.classList.remove('opacity-0', '-translate-y-6');
+            toast.classList.add('opacity-100', 'translate-y-0');
+
+            setTimeout(() => {
+                toast.classList.remove('opacity-100', 'translate-y-0');
+                toast.classList.add('opacity-0', '-translate-y-6');
+            }, 3000);
+        }
+
+        window.onload = function() {
+            initFloatingHeartsCanvas();
+            updateLiveAgeMetrics();
+            renderPolaroidGallery();
+            setInterval(updateLiveAgeMetrics, 1000);
+            setInterval(updateClock, 10000);
+
+            const videoElem = document.getElementById('modal-video');
+            if (videoElem) {
+                videoElem.addEventListener('ended', function() {
+                    const bgAudio = document.getElementById('bg-audio');
+                    if (bgAudio && APP_STATE.bgAudioWasPlaying !== false) {
+                        bgAudio.play().catch(() => {});
+                    }
+                });
+            }
+
+            const unlockAudio = () => {
+                const audio = document.getElementById('bg-audio');
+                if (audio) {
+                    audio.play().catch(() => {});
+                }
+                window.removeEventListener('click', unlockAudio);
+                window.removeEventListener('touchstart', unlockAudio);
+            };
+            window.addEventListener('click', unlockAudio);
+            window.addEventListener('touchstart', unlockAudio);
+        };
+    </script>
+</body>
+</html>
